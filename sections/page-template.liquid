@@ -1,0 +1,45 @@
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <div class="section-header text-center">
+        <h1>{{ page.title }}</h1>
+      </div>
+
+      {% if page.content.size > 0 %}
+        <div class="rte">
+          {{ page.content }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+
+
+{% schema %}
+{
+  "name": {
+    "cs": "Strana",
+    "da": "Side",
+    "de": "Buchseite",
+    "en": "Page",
+    "es": "Página",
+    "fi": "Sivu",
+    "fr": "Page",
+    "it": "Pagina",
+    "ja": "ページ",
+    "ko": "페이지",
+    "nb": "Side",
+    "nl": "Side",
+    "pl": "Strona",
+    "pt-BR": "Página",
+    "pt-PT": "Página",
+    "sv": "Sida",
+    "th": "หน้าหนังสือ",
+    "tr": "Sayfa",
+    "vi": "Trang",
+    "zh-CN": "頁",
+    "zh-TW": "頁"
+  }
+}
+{% endschema %}

@@ -1,16 +1,6 @@
 <div class="page-width">
   <div class="grid">
     <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
-      <div class="section-header text-center">
-        <h1>{{ page.title }}</h1>
-      </div>
-
-      {% if page.content.size > 0 %}
-        <div class="rte">
-          {{ page.content }}
-        </div>
-      {% endif %}
-
       <div class="contact-form form-vertical">
         {%- assign formId = 'ContactForm' -%}
         {% form 'contact', id: formId %}
@@ -60,3 +50,33 @@
     </div>
   </div>
 </div>
+
+
+
+{% schema %}
+{
+  "name": {
+    "cs": "Kontaktní formulář",
+    "da": "Kontaktformular",
+    "de": "Kontakt Formular",
+    "en": "Contact form",
+    "es": "Formulario de contacto",
+    "fi": "Yhteydenottolomake",
+    "fr": "Formulaire de contact",
+    "it": "Modulo di Contatto",
+    "ja": "お問い合わせフォーム",
+    "ko": "문의 양식",
+    "nb": "Kontakt skjema",
+    "nl": "Kontaktformular",
+    "pl": "Formularz kontaktowy",
+    "pt-BR": "Formulário de Contato",
+    "pt-PT": "Formulário de Contato",
+    "sv": "Kontaktformulär",
+    "th": "แบบฟอร์มการติดต่อ",
+    "tr": "İletişim Formu",
+    "vi": "Mâu liên hệ",
+    "zh-CN": "聯繫表",
+    "zh-TW": "聯繫表"
+  }
+}
+{% endschema %}

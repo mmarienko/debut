@@ -1,0 +1,120 @@
+{
+  "sections": {
+    "hero-1": {
+      "type": "hero",
+      "settings": {
+        "hero_size": "large",
+        "text_size": "large"
+      }
+    },
+    "feature-row": {
+      "type": "feature-row",
+      "settings": {
+      }
+    },
+    "feature-columns": {
+      "type": "feature-columns",
+      "blocks": {
+        "feature-columns-0": {
+          "type": "text_block",
+          "settings": {
+          }
+        },
+        "feature-columns-1": {
+          "type": "text_block",
+          "settings": {
+          }
+        },
+        "feature-columns-2": {
+          "type": "text_block",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "feature-columns-0",
+        "feature-columns-1",
+        "feature-columns-2"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "collection": {
+      "type": "collection",
+      "settings": {
+        "grid": 4
+      }
+    },
+    "hero-2": {
+      "type": "hero",
+      "settings": {
+        "text_size": "large"
+      }
+    },
+    "quotes": {
+      "type": "quotes",
+      "blocks": {
+        "quotes-0": {
+          "type": "quote",
+          "settings": {
+          }
+        },
+        "quotes-1": {
+          "type": "quote",
+          "settings": {
+          }
+        },
+        "quotes-2": {
+          "type": "quote",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "quotes-0",
+        "quotes-1",
+        "quotes-2"
+      ],
+      "settings": {
+        "title": ""
+      }
+    },
+    "image-bar": {
+      "type": "image-bar",
+      "blocks": {
+        "image-bar-0": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "image-bar-1": {
+          "type": "image",
+          "settings": {
+          }
+        },
+        "image-bar-2": {
+          "type": "image",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "image-bar-0",
+        "image-bar-1",
+        "image-bar-2"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "hero-1",
+    "feature-row",
+    "feature-columns",
+    "collection",
+    "hero-2",
+    "quotes",
+    "image-bar"
+  ]
+}

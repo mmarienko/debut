@@ -1,0 +1,36 @@
+<div class="text-center return-link-wrapper page-width">
+  <a href="{{ blog.url }}" class="btn btn--secondary btn--has-icon-before">
+    {% include 'icon-arrow-left' %}
+    {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
+  </a>
+</div>
+
+
+
+{% schema %}
+{
+  "name": {
+    "cs": "Zpět na blog",
+    "da": "Tilbage til bloggen",
+    "de": "Zurück zum Blog",
+    "en": "Back to blog",
+    "es": "Volver al blog",
+    "fi": "Takaisin blogiin",
+    "fr": "Retour au blog",
+    "it": "Torna al blog",
+    "ja": "ブログに戻る",
+    "ko": "블로그로 돌아가기",
+    "nb": "Tilbake til bloggen",
+    "nl": "Tilbage til bloggen",
+    "pl": "Powrót do bloga",
+    "pt-BR": "Voltar ao blog",
+    "pt-PT": "Voltar ao blog",
+    "sv": "Tillbaka till bloggen",
+    "th": "กลับไปที่บล็อก",
+    "tr": "Bloga geri dön",
+    "vi": "Quay lại blog",
+    "zh-CN": "返回博客",
+    "zh-TW": "返回博客"
+  }
+}
+{% endschema %}

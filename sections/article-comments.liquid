@@ -11,14 +11,6 @@
   {%- assign number_of_comments = article.comments_count -%}
 {%- endif -%}
 
-<article class="page-width" aria-labelledby="title-0">
-  <div class="grid">
-    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
-      {% section 'article-template' %}
-    </div>
-  </div>
-</article>
-
 {% if blog.comments_enabled? %}
   {% if number_of_comments > 0 %}
     <hr aria-hidden="true">
@@ -133,50 +125,32 @@
   </div>
 {% endif %}
 
-<div class="text-center return-link-wrapper page-width">
-  <a href="{{ blog.url }}" class="btn btn--secondary btn--has-icon-before">
-    {% include 'icon-arrow-left' %}
-    {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
-  </a>
-</div>
 
-<script type="application/ld+json">
+
+{% schema %}
 {
-  "@context": "http://schema.org",
-  "@type": "Article",
-  "articleBody": {{ article.content | strip_html | json }},
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": {{ shop.url | append: page.url | json }}
-  },
-  "headline": {{ article.title | json }},
-  {% if article.excerpt != blank %}
-    "description": {{ article.excerpt | strip_html | json }},
-  {% endif %}
-  {% if article.image %}
-    {% assign image_size = article.image.width | append: 'x' %}
-    "image": [
-      {{ article | img_url: image_size | prepend: "https:" | json }}
-    ],
-  {% endif %}
-  "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
-  "dateCreated": {{ article.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
-  "author": {
-    "@type": "Person",
-    "name": {{ article.author | json }}
-  },
-  "publisher": {
-    "@type": "Organization",
-    {% if page_image %}
-      {% assign image_size = page_image.width | append: 'x' %}
-      "logo": {
-        "@type": "ImageObject",
-        "height": {{ page_image.height | json }},
-        "url": {{ page_image | img_url: image_size | prepend: "https:" | json }},
-        "width": {{ page_image.width | json }}
-      },
-    {% endif %}
-    "name": {{ shop.name | json }}
+  "name": {
+    "cs": "Komentáře",
+    "da": "Kommentarer",
+    "de": "Bemerkungen",
+    "en": "Comments",
+    "es": "Comentarios",
+    "fi": "Kommentit",
+    "fr": "Commentaires",
+    "it": "Commenti",
+    "ja": "コメントコメント",
+    "ko": "코멘트",
+    "nb": "Kommentarer",
+    "nl": "Kommentarer",
+    "pl": "Uwagi",
+    "pt-BR": "Comentários",
+    "pt-PT": "Comentários",
+    "sv": "Kommentarer",
+    "th": "ความคิดเห็น",
+    "tr": "Yorumlar",
+    "vi": "Bình luận",
+    "zh-CN": "評論",
+    "zh-TW": "評論"
   }
 }
-</script>
+{% endschema %}
