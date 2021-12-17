@@ -3,41 +3,39 @@
     <h1>{{ page_title }}</h1>
   </header>
 
-  {%- assign blocks = section.blocks | sort: 'collection.all_products_count' -%}
-
-  {% case section.settings.grid %}
-    {% when 2 %}
-      {%- assign grid_item_width = 'medium-up--one-half' -%}
-      {%- assign image_size = '530x' -%}
-    {% when 3 %}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
-      {%- assign image_size = '350x' -%}
-    {% when 4 %}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
-      {%- assign image_size = '250x' -%}
-    {% when 5 %}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
-      {%- assign image_size = '225x' -%}
-  {% endcase %}
+  {% liquid
+    case section.settings.grid
+      when 2
+        assign grid_item_width = 'medium-up--one-half'
+      when 3
+        assign grid_item_width = 'small--one-half medium-up--one-third'
+      when 4
+        assign grid_item_width = 'small--one-half medium-up--one-quarter'
+      when 5
+        assign grid_item_width = 'small--one-half medium-up--one-fifth'
+    endcase
+  %}
 
   <ul class="grid grid--uniform">
     {% if section.settings.display_type == 'all' %}
-      {% case section.settings.sort %}
-        {% when 'products_high' or 'products_low' %}
-          {%- assign collections = collections | sort: 'all_products_count' -%}
-        {% when 'date' or 'date_reversed' %}
-          {%- assign collections = collections | sort: 'published_at' -%}
-      {% endcase %}
+      {% liquid
+        case section.settings.sort
+          when 'products_high' or 'products_low'
+            assign collections = collections | sort: 'all_products_count'
+          when 'date' or 'date_reversed'
+            assign collections = collections | sort: 'published_at'
+        endcase
+      %}
       {% if section.settings.sort == 'products_low' or section.settings.sort == 'date' or section.settings.sort == 'alphabetical' %}
         {% for collection in collections %}
           <li class="grid__item {{ grid_item_width }}">
-            {% include 'collection-grid-item', collection: collection %}
+            {% render 'collection-grid-item', collection: collection %}
           </li>
         {% endfor %}
       {% else %}
         {% for collection in collections reversed %}
           <li class="grid__item {{ grid_item_width }}">
-            {% include 'collection-grid-item', collection: collection %}
+            {% render 'collection-grid-item', collection: collection %}
           </li>
         {% endfor %}
       {% endif %}
@@ -45,7 +43,7 @@
       {% for block in section.blocks %}
         <li class="grid__item {{ grid_item_width }}">
           {%- assign collection = collections[block.settings.collection] -%}
-          {% include 'collection-grid-item', collection: collection %}
+          {% render 'collection-grid-item', collection: collection %}
         </li>
       {% endfor %}
     {% endif %}

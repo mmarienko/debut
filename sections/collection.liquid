@@ -5,29 +5,30 @@
     </div>
   {% endif %}
 
-  {%- assign collection = collections[section.settings.collection] -%}
+  {%- liquid
+    assign collection = collections[section.settings.collection]
+    assign product_limit = section.settings.grid | times: section.settings.rows
 
-  {% case section.settings.grid %}
-    {% when 2 %}
-      {%- assign max_height = 530 -%}
-      {%- assign grid_item_width = 'medium-up--one-half' -%}
-    {% when 3 %}
-      {%- assign max_height = 345 -%}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
-    {% when 4 %}
-      {%- assign max_height = 250 -%}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
-    {% when 5 %}
-      {%- assign max_height = 195 -%}
-      {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
-  {% endcase %}
-
-  {%- assign product_limit = section.settings.grid | times: section.settings.rows -%}
+    case section.settings.grid
+      when 2
+        assign max_height = 530
+        assign grid_item_width = 'medium-up--one-half'
+      when 3
+        assign max_height = 345
+        assign grid_item_width = 'small--one-half medium-up--one-third'
+      when 4
+        assign max_height = 250
+        assign grid_item_width = 'small--one-half medium-up--one-quarter'
+      when 5
+        assign max_height = 195
+        assign grid_item_width = 'small--one-half medium-up--one-fifth'
+    endcase
+  -%}
 
   <ul class="grid grid--uniform grid--view-items">
     {% for product in collection.products limit: product_limit %}
       <li class="grid__item grid__item--{{section.id}} {{ grid_item_width }}">
-        {% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
+        {% render 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
       </li>
     {% else %}
 
@@ -42,7 +43,7 @@
               {{ 'product-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
             </div>
             <div class="h4 grid-view-item__title" aria-hidden="true">{{ 'homepage.onboarding.product_title' | t }}</div>
-            {% include 'product-price' %}
+            {% render 'product-price' %}
           </div>
         </li>
       {% endfor %}

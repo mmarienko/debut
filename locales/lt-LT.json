@@ -15,7 +15,7 @@
       "vendor": "Tiekėjas",
       "quantity_minimum_message": "Kiekis turi būti 1 arba daugiau",
       "include_taxes": "Mokesčiai įtraukti.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Siuntimo išlaidos<\/a> apskaičiuojamos atsiskaitant.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Siuntimo išlaidos</a> apskaičiuojamos atsiskaitant.",
       "unit_price_label": "Vieneto kaina",
       "view_cart": "Žr. krepšelį",
       "view_in_space": "Peržiūra savo erdvėje",
@@ -58,7 +58,7 @@
       "login_form_submit": "Įvesti",
       "signup_form_email_label": "El. paštas",
       "signup_form_success": "Prieš pat atsidarydami atsiųsime jums el. laišką!",
-      "admin_link_html": "Ar esate parduotuvės savininkas? <a href=\"\/admin\" class=\"text-link\">Prisijunkite čia<\/a>",
+      "admin_link_html": "Ar esate parduotuvės savininkas? <a href=\"/admin\" class=\"text-link\">Prisijunkite čia</a>",
       "password_link": "Apsilankyti naudojant slaptažodį"
     },
     "social": {
@@ -115,7 +115,7 @@
       "dropdown_label": "Kalba"
     },
     "country": {
-      "dropdown_label": "Šalis \/ regionas"
+      "dropdown_label": "Šalis / regionas"
     }
   },
   "sections": {
@@ -136,7 +136,7 @@
     "map": {
       "address_error": "Ieškant šio adreso įvyko klaida",
       "address_no_results": "Nerasta šio adreso rezultatų",
-      "address_query_limit_html": "Viršijote „Google“ API naudojimo apribojimą. Apsvarstykite galimybę naujovinti į <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">planą „Premium“<\/a>.",
+      "address_query_limit_html": "Viršijote „Google“ API naudojimo apribojimą. Apsvarstykite galimybę naujovinti į <a href=\"https://developers.google.com/maps/premium/usage-limits\">planą „Premium“</a>.",
       "auth_error_html": "Patvirtinant „Google“ žemėlapių paskyrą įvyko klaida.",
       "section_heading": "Vieta"
     },
@@ -190,14 +190,14 @@
     "general": {
       "title": "Jūsų krepšelis",
       "note": "Pridėkite prie užsakymo pastabą",
-      "removed_item_html": "Iš krepšelio pašalinta <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span>.",
+      "removed_item_html": "Iš krepšelio pašalinta <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span>.",
       "remove": "Pašalinti",
       "subtotal": "Tarpinė suma",
       "savings": "Sutaupote",
       "taxes_and_shipping_at_checkout": "Mokesčiai ir siuntimo išlaidos apskaičiuojami atsiskaitant",
-      "taxes_and_shipping_policy_at_checkout_html": "Mokesčiai ir <a href=\"{{ link }}\">siuntimo išlaidos<\/a> apskaičiuojami atsiskaitant",
+      "taxes_and_shipping_policy_at_checkout_html": "Mokesčiai ir <a href=\"{{ link }}\">siuntimo išlaidos</a> apskaičiuojami atsiskaitant",
       "taxes_included_but_shipping_at_checkout": "Mokesčiai įtraukti, o siuntimo išlaidos apskaičiuojamos atsiskaitant",
-      "taxes_included_and_shipping_policy_html": "Mokesčiai įtraukti. <a href=\"{{ link }}\">Siuntimo išlaidos<\/a> apskaičiuojamos atsiskaitant.",
+      "taxes_included_and_shipping_policy_html": "Mokesčiai įtraukti. <a href=\"{{ link }}\">Siuntimo išlaidos</a> apskaičiuojamos atsiskaitant.",
       "update": "Atnaujinti",
       "checkout": "Atsiskaityti",
       "empty": "Šiuo metu jūsų krepšelis tuščias.",
@@ -292,7 +292,7 @@
       "address1": "Adresas",
       "address2": "Butas, apartamentai ar kt.",
       "city": "Miestas",
-      "country": "Šalis \/ regionas",
+      "country": "Šalis / regionas",
       "province": "Sritis",
       "zip": "Pašto kodas",
       "phone": "Telefonas",
@@ -430,8 +430,8 @@
       "check_other_stores": "Pažiūrėti ar yra kitose parduotuvėse",
       "pick_up_available": "Galimas paėmimas",
       "pick_up_currently_unavailable": "Paėmimas šiuo metu negalimas",
-      "pick_up_available_at_html": "Paėmimas galimas <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Paėmimas <strong>{{ location_name }}<\/strong> šiuo metu negalimas"
+      "pick_up_available_at_html": "Paėmimas galimas <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Paėmimas <strong>{{ location_name }}</strong> šiuo metu negalimas"
     }
   }
 }

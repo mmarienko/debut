@@ -25,7 +25,7 @@
     "pagination": {
       "previous": "Trang trước",
       "next": "Trang sau",
-      "current_page": "Trang {{ current }}\/{{ total }}"
+      "current_page": "Trang {{ current }}/{{ total }}"
     },
     "password_page": {
       "opening_soon": "Sắp khai trương",
@@ -35,7 +35,7 @@
       "login_form_submit": "Nhập",
       "signup_form_email_label": "Email",
       "signup_form_success": "Chúng tôi sẽ gửi email cho bạn ngay trước khi mở cửa!",
-      "admin_link_html": "Bạn có phải chủ cửa hàng không? <a href=\"\/admin\" class=\"text-link\">Đăng nhập ở đây<\/a>",
+      "admin_link_html": "Bạn có phải chủ cửa hàng không? <a href=\"/admin\" class=\"text-link\">Đăng nhập ở đây</a>",
       "password_link": "Vào bằng mật khẩu"
     },
     "social": {
@@ -67,7 +67,7 @@
       "products": "Sản phẩm",
       "loading": "Đang tải",
       "clear_search_term": "Xóa cụm từ tìm kiếm",
-      "number_of_results": "{{ result_number }}\/{{ results_count }}",
+      "number_of_results": "{{ result_number }}/{{ results_count }}",
       "number_of_results_found": "Tìm thấy {{ results_count }} kết quả",
       "one_result_found": "Tìm thấy 1 kết quả"
     },
@@ -88,7 +88,7 @@
       "dropdown_label": "Ngôn ngữ"
     },
     "country": {
-      "dropdown_label": "Quốc gia\/Vùng"
+      "dropdown_label": "Quốc gia/Vùng"
     }
   },
   "sections": {
@@ -101,7 +101,7 @@
       "pause_slideshow": "Tạm dừng bản trình chiếu",
       "rotate_slideshow": "Phát bản trình chiếu",
       "load_slide": "Tải trang chiếu {{ slide_number }}",
-      "navigation_instructions": "Sử dụng mũi tên trái\/phải để điều hướng bản trình chiếu hoặc vuốt sang trái\/phải nếu đang dùng thiết bị di động"
+      "navigation_instructions": "Sử dụng mũi tên trái/phải để điều hướng bản trình chiếu hoặc vuốt sang trái/phải nếu đang dùng thiết bị di động"
     },
     "featured_product": {
       "title": "Sản phẩm nổi bật",
@@ -112,7 +112,7 @@
     "map": {
       "address_error": "Lỗi tìm kiếm địa chỉ đó",
       "address_no_results": "Không có kết quả cho địa chỉ đó",
-      "address_query_limit_html": "Bạn đã vượt quá giới hạn sử dụng API của Google. Cân nhắc nâng cấp lên <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Gói Premium<\/a>.",
+      "address_query_limit_html": "Bạn đã vượt quá giới hạn sử dụng API của Google. Cân nhắc nâng cấp lên <a href=\"https://developers.google.com/maps/premium/usage-limits\">Gói Premium</a>.",
       "auth_error_html": "Đã xảy ra sự cố khi xác thực tài khoản Google Maps.",
       "section_heading": "Địa điểm"
     },
@@ -159,14 +159,14 @@
     "general": {
       "title": "Giỏ hàng của bạn",
       "note": "Thêm ghi chú cho đơn hàng",
-      "removed_item_html": "Xóa <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> khỏi giỏ hàng.",
+      "removed_item_html": "Xóa <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> khỏi giỏ hàng.",
       "remove": "Xóa",
       "subtotal": "Tổng phụ",
       "savings": "Bạn sẽ tiết kiệm",
       "taxes_and_shipping_at_checkout": "Thuế và phí vận chuyển được tính khi thanh toán",
-      "taxes_and_shipping_policy_at_checkout_html": "Thuế và <a href=\"{{ link }}\">phí vận chuyển<\/a> được tính khi thanh toán",
+      "taxes_and_shipping_policy_at_checkout_html": "Thuế và <a href=\"{{ link }}\">phí vận chuyển</a> được tính khi thanh toán",
       "taxes_included_but_shipping_at_checkout": "Đã bao gồm thuế và phí vận chuyển được tính khi thanh toán",
-      "taxes_included_and_shipping_policy_html": "Đã bao gồm thuế. <a href=\"{{ link }}\">Phí vận chuyển<\/a> được tính khi thanh toán.",
+      "taxes_included_and_shipping_policy_html": "Đã bao gồm thuế. <a href=\"{{ link }}\">Phí vận chuyển</a> được tính khi thanh toán.",
       "update": "Cập nhật",
       "checkout": "Thanh toán",
       "empty": "Giỏ hàng hiện đang trống.",
@@ -257,9 +257,9 @@
       "address1": "Địa chỉ",
       "address2": "Căn hộ, tòa, v.v.",
       "city": "Thành phố",
-      "country": "Quốc gia\/Vùng",
+      "country": "Quốc gia/Vùng",
       "province": "Tỉnh",
-      "zip": "Mã bưu chính\/mã ZIP",
+      "zip": "Mã bưu chính/mã ZIP",
       "phone": "Điện thoại",
       "set_default": "Đặt làm địa chỉ mặc định",
       "add": "Thêm địa chỉ",
@@ -387,7 +387,7 @@
       "vendor": "Nhà cung cấp",
       "quantity_minimum_message": "Số lượng phải từ 1 trở lên",
       "include_taxes": "Đã bao gồm thuế.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Phí vận chuyển<\/a> được tính khi thanh toán.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Phí vận chuyển</a> được tính khi thanh toán.",
       "unit_price_label": "Đơn giá",
       "view_cart": "Xem giỏ hàng",
       "view_in_space": "Xem tại không gian của bạn",
@@ -416,8 +416,8 @@
       "check_other_stores": "Kiểm tra tình trạng còn hàng tại các cửa hàng khác",
       "pick_up_available": "Đã có dịch vụ nhận hàng",
       "pick_up_currently_unavailable": "Hiện chưa có dịch vụ nhận hàng",
-      "pick_up_available_at_html": "Đã có dịch vụ nhận hàng tại <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Hiện chưa có dịch vụ nhận hàng tại <strong>{{ location_name }}<\/strong>"
+      "pick_up_available_at_html": "Đã có dịch vụ nhận hàng tại <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Hiện chưa có dịch vụ nhận hàng tại <strong>{{ location_name }}</strong>"
     }
   }
 }

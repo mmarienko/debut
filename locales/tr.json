@@ -10,7 +10,7 @@
       },
       "refresh_page": "Bir seçim yapmanız sayfanın tamamının yenilenmesine neden olur.",
       "selection_help": "Bir seçim yapmak için boşluk tuşuna sonra ok tuşlarına basın.",
-      "unit_price_separator": "\/",
+      "unit_price_separator": "/",
       "error": "Hata"
     },
     "meta": {
@@ -25,7 +25,7 @@
     "pagination": {
       "previous": "Önceki sayfa",
       "next": "Sonraki sayfa",
-      "current_page": "Sayfa {{ current }}\/{{ total }}"
+      "current_page": "Sayfa {{ current }}/{{ total }}"
     },
     "password_page": {
       "opening_soon": "Yakında Açılıyor",
@@ -35,7 +35,7 @@
       "login_form_submit": "Gir",
       "signup_form_email_label": "E-posta",
       "signup_form_success": "Açılıştan hemen önce size e-posta göndereceğiz!",
-      "admin_link_html": "Mağaza sahibi misiniz? <a href=\"\/admin\" class=\"text-link\">Buradan oturum açın<\/a>",
+      "admin_link_html": "Mağaza sahibi misiniz? <a href=\"/admin\" class=\"text-link\">Buradan oturum açın</a>",
       "password_link": "Parola kullanarak girin"
     },
     "social": {
@@ -61,7 +61,7 @@
       "search_for": "Şunun için ara:",
       "loading": "Yükleniyor",
       "clear_search_term": "Arama terimini temizle",
-      "number_of_results": "{{ result_number }}\/{{ results_count }}",
+      "number_of_results": "{{ result_number }}/{{ results_count }}",
       "products": "Ürünler",
       "number_of_results_found": "{{ results_count }} sonuç bulundu",
       "one_result_found": "1 sonuç bulundu",
@@ -88,7 +88,7 @@
       "dropdown_label": "Dil"
     },
     "country": {
-      "dropdown_label": "Ülke\/Bölge"
+      "dropdown_label": "Ülke/Bölge"
     }
   },
   "sections": {
@@ -98,7 +98,7 @@
       "pause_slideshow": "Slayt gösterisini duraklat",
       "rotate_slideshow": "Slayt gösterisini oynat",
       "load_slide": "{{ slide_number }}. slaytı yükle",
-      "navigation_instructions": "Slayt gösterisinde gezinmek için sol\/sağ okları kullanın veya mobil cihaz kullanıyorsanız parmağınızı sola\/sağa kaydırın"
+      "navigation_instructions": "Slayt gösterisinde gezinmek için sol/sağ okları kullanın veya mobil cihaz kullanıyorsanız parmağınızı sola/sağa kaydırın"
     },
     "featured_product": {
       "title": "Öne çıkan ürün",
@@ -109,7 +109,7 @@
     "map": {
       "address_error": "Bu adres aranırken hata oluştu",
       "address_no_results": "Bu adres için sonuç yok",
-      "address_query_limit_html": "Google API kullanım sınırını aştınız. <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Plan<\/a>'a yükseltmeyi düşünün.",
+      "address_query_limit_html": "Google API kullanım sınırını aştınız. <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium Plan</a>'a yükseltmeyi düşünün.",
       "auth_error_html": "Google Haritalar hesabınızın kimlik doğrulaması yapılırken sorun oluştu.",
       "section_heading": "Konum"
     },
@@ -159,14 +159,14 @@
     "general": {
       "title": "Sepetiniz",
       "note": "Siparişinize not ekleyin",
-      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> sepetinizden çıkarıldı.",
+      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> sepetinizden çıkarıldı.",
       "remove": "Kaldır",
       "subtotal": "Alt toplam",
       "savings": "Tasarruf ediyorsunuz",
       "taxes_and_shipping_at_checkout": "Vergiler ve kargo, ödeme sayfasında hesaplanır",
-      "taxes_and_shipping_policy_at_checkout_html": "Vergiler ve <a href=\"{{ link }}\">kargo<\/a>, ödeme sayfasında hesaplanır",
+      "taxes_and_shipping_policy_at_checkout_html": "Vergiler ve <a href=\"{{ link }}\">kargo</a>, ödeme sayfasında hesaplanır",
       "taxes_included_but_shipping_at_checkout": "Vergi dahildir ve kargo, ödeme sayfasında hesaplanır",
-      "taxes_included_and_shipping_policy_html": "Vergi dahildir. <a href=\"{{ link }}\">Kargo<\/a>, ödeme sayfasında hesaplanır.",
+      "taxes_included_and_shipping_policy_html": "Vergi dahildir. <a href=\"{{ link }}\">Kargo</a>, ödeme sayfasında hesaplanır.",
       "update": "Güncelle",
       "checkout": "Ödeme",
       "empty": "Sepetiniz şu anda boş.",
@@ -257,7 +257,7 @@
       "address1": "Adres",
       "address2": "Apartman, daire vb.",
       "city": "Şehir",
-      "country": "Ülke\/Bölge",
+      "country": "Ülke/Bölge",
       "province": "İl",
       "zip": "Posta Kodu",
       "phone": "Telefon",
@@ -385,7 +385,7 @@
       "vendor": "Satıcı",
       "quantity_minimum_message": "Adet 1 veya daha fazla olmalıdır",
       "include_taxes": "Vergi dahildir.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Kargo<\/a>, ödeme sayfasında hesaplanır.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Kargo</a>, ödeme sayfasında hesaplanır.",
       "unit_price_label": "Birim fiyatı",
       "view_cart": "Sepeti görüntüle",
       "availability": "Stok durumu",
@@ -416,8 +416,8 @@
       "check_other_stores": "Diğer mağazalardaki kullanılabilirliği kontrol et",
       "pick_up_available": "Teslim alım kullanılabilir",
       "pick_up_currently_unavailable": "Teslim alım şu anda kullanılamıyor",
-      "pick_up_available_at_html": "Teslim alım <strong>{{ location_name }}<\/strong> konumunda kullanılabilir",
-      "pick_up_unavailable_at_html": "Teslim alım <strong>{{ location_name }}<\/strong> konumunda şu anda kullanılamıyor"
+      "pick_up_available_at_html": "Teslim alım <strong>{{ location_name }}</strong> konumunda kullanılabilir",
+      "pick_up_unavailable_at_html": "Teslim alım <strong>{{ location_name }}</strong> konumunda şu anda kullanılamıyor"
     }
   }
 }

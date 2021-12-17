@@ -5432,7 +5432,7 @@ theme.SearchResultsTemplate = (function() {
     }
 
     return (
-      '<img class="predictive-search-item__image lazyload" src="' +
+      '<img class="predictive-search-item__image" src="' +
       product.image.url +
       '" data-src="' +
       product.image.url +
@@ -9601,59 +9601,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   theme.FormStatus.init();
 
-  var selectors = {
-    image: '[data-image]',
-    lazyloaded: '.lazyloaded'
-  };
-
-  document.addEventListener('lazyloaded', function(evt) {
-    var image = evt.target;
-
-    removeImageLoadingAnimation(image);
-
-    if (document.body.classList.contains('template-index')) {
-      var mainContent = document.getElementById('MainContent');
-
-      if (mainContent && mainContent.children && mainContent.children.length) {
-        var firstSection = document.getElementsByClassName('index-section')[0];
-
-        if (!firstSection.contains(image)) return;
-
-        window.performance.mark('debut:index:first_image_visible');
-      }
-    }
-
-    if (image.hasAttribute('data-bgset')) {
-      var innerImage = image.querySelector(selectors.lazyloaded);
-
-      if (innerImage) {
-        var alt = image.getAttribute('data-alt');
-        var src = innerImage.hasAttribute('data-src')
-          ? innerImage.getAttribute('data-src')
-          : image.getAttribute('data-bg');
-
-        image.setAttribute('alt', alt ? alt : '');
-        image.setAttribute('src', src ? src : '');
-      }
-    }
-
-    if (!image.hasAttribute('data-image')) {
-      return;
-    }
-  });
-
-  // When the theme loads, lazysizes might load images before the "lazyloaded"
-  // event listener has been attached. When this happens, the following function
-  // hides the loading placeholders.
-  function onLoadHideLazysizesAnimation() {
-    var alreadyLazyloaded = document.querySelectorAll('.lazyloaded');
-    alreadyLazyloaded.forEach(function(image) {
-      removeImageLoadingAnimation(image);
-    });
-  }
-
-  onLoadHideLazysizesAnimation();
-
   document.addEventListener(
     'touchstart',
     function() {
@@ -9673,15 +9620,4 @@ document.addEventListener('DOMContentLoaded', function() {
 // eslint-disable-next-line no-unused-vars
 function onYouTubeIframeAPIReady() {
   theme.Video.loadVideos();
-}
-
-function removeImageLoadingAnimation(image) {
-  // Remove loading animation
-  var imageWrapper = image.hasAttribute('data-image-loading-animation')
-    ? image
-    : image.closest('[data-image-loading-animation]');
-
-  if (imageWrapper) {
-    imageWrapper.removeAttribute('data-image-loading-animation');
-  }
 }

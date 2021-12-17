@@ -35,7 +35,7 @@
       "login_form_submit": "Naar binnen",
       "signup_form_email_label": "E-mail",
       "signup_form_success": "Wij sturen je een e-mail nog voordat we opengaan!",
-      "admin_link_html": "Ben je de winkeleigenaar? <a href=\"\/admin\" class=\"text-link\">Log hier in<\/a>",
+      "admin_link_html": "Ben je de winkeleigenaar? <a href=\"/admin\" class=\"text-link\">Log hier in</a>",
       "password_link": "Ga naar binnen met wachtwoord"
     },
     "social": {
@@ -88,7 +88,7 @@
       "dropdown_label": "Taal"
     },
     "country": {
-      "dropdown_label": "Land\/regio"
+      "dropdown_label": "Land/regio"
     }
   },
   "sections": {
@@ -98,7 +98,7 @@
       "pause_slideshow": "Diavoorstelling pauzeren",
       "rotate_slideshow": "Diavoorstelling afspelen",
       "load_slide": "Laad dia {{ slide_number }}",
-      "navigation_instructions": "Gebruik de pijlen links\/rechts om door de diavoorstelling te navigeren, of veeg links\/rechts op een mobiel apparaat"
+      "navigation_instructions": "Gebruik de pijlen links/rechts om door de diavoorstelling te navigeren, of veeg links/rechts op een mobiel apparaat"
     },
     "featured_product": {
       "title": "Uitgelicht product",
@@ -109,7 +109,7 @@
     "map": {
       "address_error": "Fout bij het opzoeken van dat adres",
       "address_no_results": "Geen resultaten voor dat adres",
-      "address_query_limit_html": "Je hebt de gebruikslimiet van de Google API overschreden. Overweeg een upgrade naar een <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium-pakket<\/a>.",
+      "address_query_limit_html": "Je hebt de gebruikslimiet van de Google API overschreden. Overweeg een upgrade naar een <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium-pakket</a>.",
       "auth_error_html": "Er is een probleem opgetreden bij het verifiëren van je Google Maps-account.",
       "section_heading": "Locatie"
     },
@@ -159,14 +159,14 @@
     "general": {
       "title": "Je winkelwagen",
       "note": "Voeg een opmerking aan je bestelling toe",
-      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> uit je winkelwagen verwijderd.",
+      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> uit je winkelwagen verwijderd.",
       "remove": "Verwijderen",
       "subtotal": "Subtotaal",
       "savings": "Je bespaart",
       "taxes_and_shipping_at_checkout": "Belastingen en verzendkosten worden berekend bij de checkout",
-      "taxes_and_shipping_policy_at_checkout_html": "Belastingen en <a href=\"{{ link }}\">verzendkosten<\/a> worden berekend bij de checkout",
+      "taxes_and_shipping_policy_at_checkout_html": "Belastingen en <a href=\"{{ link }}\">verzendkosten</a> worden berekend bij de checkout",
       "taxes_included_but_shipping_at_checkout": "Belasting inbegrepen en verzendkosten worden berekend bij de checkout",
-      "taxes_included_and_shipping_policy_html": "Inclusief btw. <a href=\"{{ link }}\">Verzendkosten<\/a> worden berekend bij de checkout.",
+      "taxes_included_and_shipping_policy_html": "Inclusief btw. <a href=\"{{ link }}\">Verzendkosten</a> worden berekend bij de checkout.",
       "update": "Bijwerken",
       "checkout": "Afrekenen",
       "empty": "Je winkelwagen is leeg.",
@@ -257,7 +257,7 @@
       "address1": "Adres",
       "address2": "Appartementnr. etc.",
       "city": "Stad",
-      "country": "Land\/regio",
+      "country": "Land/regio",
       "province": "Provincie",
       "zip": "Postcode",
       "phone": "Telefoon",
@@ -385,7 +385,7 @@
       "vendor": "Verkoper",
       "quantity_minimum_message": "Hoeveelheid moet 1 of meer zijn",
       "include_taxes": "Inclusief btw",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Verzendkosten<\/a> worden berekend bij de checkout.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Verzendkosten</a> worden berekend bij de checkout.",
       "unit_price_label": "Eenheidsprijs",
       "view_cart": "Winkelwagen bekijken",
       "availability": "Beschikbaarheid",
@@ -416,8 +416,8 @@
       "check_other_stores": "Controleer de beschikbaarheid van andere winkels",
       "pick_up_available": "Afhaling is beschikbaar",
       "pick_up_currently_unavailable": "Afhaling is momenteel niet beschikbaar",
-      "pick_up_available_at_html": "Afhaling is beschikbaar bij <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Afhaling is momenteel niet beschikbaar bij <strong>{{ location_name }}<\/strong>"
+      "pick_up_available_at_html": "Afhaling is beschikbaar bij <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Afhaling is momenteel niet beschikbaar bij <strong>{{ location_name }}</strong>"
     }
   }
 }

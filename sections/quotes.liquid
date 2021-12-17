@@ -18,7 +18,7 @@
               data-slider-item>
 
               <blockquote class="quotes-slider__text text-center">
-                <span class="quote-icon">{% include 'icon-quote' %}</span>
+                <span class="quote-icon">{% render 'icon-quote' %}</span>
                 {% if block.settings.quote != blank %}
                   <div class="rte-setting rte">{{ block.settings.quote }}</div>
                 {% endif %}
@@ -47,7 +47,7 @@
   {% endif %}
 
   {% if section.blocks.size == 0 %}
-    {% include 'no-blocks' %}
+    {% render 'no-blocks' %}
   {% endif %}
 </div>
 

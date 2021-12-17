@@ -17,17 +17,20 @@
                 {% if article.image %}
                   {% capture img_id %}ArticleImage-{{ article.image.id }}{% endcapture %}
                   {% capture img_wrapper_id %}ArticleImageWrapper-{{ article.image.id }}{% endcapture %}
-                  {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                  {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '.' -%}
 
-                  {% include 'image-style', image: article.image, height: 345, wrapper_id: img_wrapper_id, img_id: img_id %}
+                  {% render 'image-style', image: article.image, height: 345, wrapper_id: img_wrapper_id, img_id: img_id %}
                   <div id="{{ img_wrapper_id }}" class="article__grid-image-wrapper js">
-                    <div class="article__grid-image-container" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100}}%;" data-image-loading-animation>
+                    <div class="article__grid-image-container" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;" data-image-loading-animation>
                       <img id="{{ img_id }}"
-                          class="article__grid-image lazyload"
-                          data-src="{{ img_url }}"
+                          class="article__grid-image"
+                          src="{{ img_url }}"
                           data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
                           data-aspectratio="{{ article.image.aspect_ratio }}"
                           data-sizes="auto"
+                          loading="lazy"
+                          width="auto"
+                          height="auto"
                           alt="">
                     </div>
                   </div>

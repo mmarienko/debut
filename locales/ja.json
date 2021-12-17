@@ -25,7 +25,7 @@
     "pagination": {
       "previous": "前のページ",
       "next": "次のページ",
-      "current_page": "ページ： {{ current }} \/ {{ total }}"
+      "current_page": "ページ： {{ current }} / {{ total }}"
     },
     "password_page": {
       "opening_soon": "まもなくオープンします",
@@ -35,7 +35,7 @@
       "login_form_submit": "入力する",
       "signup_form_email_label": "メール",
       "signup_form_success": "ストアがオープンする直前にメールでお知らせします！",
-      "admin_link_html": "あなたはストアのオーナーですか？<a href=\"\/admin\" class=\"text-link\">こちらからログインする<\/a>",
+      "admin_link_html": "あなたはストアのオーナーですか？<a href=\"/admin\" class=\"text-link\">こちらからログインする</a>",
       "password_link": "パスワードを入力してください"
     },
     "social": {
@@ -61,7 +61,7 @@
       "search_for": "検索する",
       "loading": "読み込んでいます",
       "clear_search_term": "検索語をクリアする",
-      "number_of_results": "{{ result_number }}\/{{ results_count }}",
+      "number_of_results": "{{ result_number }}/{{ results_count }}",
       "products": "商品",
       "number_of_results_found": "{{ results_count }}件の結果が見つかりました",
       "one_result_found": "1件の結果が見つかりました",
@@ -88,7 +88,7 @@
       "dropdown_label": "言語"
     },
     "country": {
-      "dropdown_label": "国\/地域"
+      "dropdown_label": "国/地域"
     }
   },
   "sections": {
@@ -109,7 +109,7 @@
     "map": {
       "address_error": "住所を調べる際にエラーが発生しました",
       "address_no_results": "その住所は見つかりませんでした",
-      "address_query_limit_html": "Google APIの使用量の制限を超えました。<a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">プレミアムプラン<\/a>へのアップグレードをご検討ください。",
+      "address_query_limit_html": "Google APIの使用量の制限を超えました。<a href=\"https://developers.google.com/maps/premium/usage-limits\">プレミアムプラン</a>へのアップグレードをご検討ください。",
       "auth_error_html": "あなたのGoogle Mapsのアカウント認証で問題が発生しました。",
       "section_heading": "アクセス"
     },
@@ -159,14 +159,14 @@
     "general": {
       "title": "ショッピングカート",
       "note": "注文にメモを追加する",
-      "removed_item_html": "カートから <span class=\"cart__removed-product-details\">({{ quantity }}) 個の{{ link }}<\/span>が消去されました。",
+      "removed_item_html": "カートから <span class=\"cart__removed-product-details\">({{ quantity }}) 個の{{ link }}</span>が消去されました。",
       "remove": "削除",
       "subtotal": "小計",
       "savings": "節約",
       "taxes_and_shipping_at_checkout": "税と配送料は購入手続き時に計算されます",
-      "taxes_and_shipping_policy_at_checkout_html": "税と<a href=\"{{ link }}\">配送料<\/a>は購入手続き時に計算されます",
+      "taxes_and_shipping_policy_at_checkout_html": "税と<a href=\"{{ link }}\">配送料</a>は購入手続き時に計算されます",
       "taxes_included_but_shipping_at_checkout": "税込みで配送料は購入手続き時に計算されます。",
-      "taxes_included_and_shipping_policy_html": "税込価格。<a href=\"{{ link }}\">配送料<\/a>は購入手続き時に計算されます。",
+      "taxes_included_and_shipping_policy_html": "税込価格。<a href=\"{{ link }}\">配送料</a>は購入手続き時に計算されます。",
       "update": "アップデート",
       "checkout": "ご購入手続きへ",
       "empty": "カート内に商品がありません。",
@@ -257,7 +257,7 @@
       "address1": "住所",
       "address2": "建物名、部屋番号など",
       "city": "市区町村",
-      "country": "国 \/ 地域",
+      "country": "国 / 地域",
       "province": "都道府県",
       "zip": "郵便番号",
       "phone": "電話番号",
@@ -385,7 +385,7 @@
       "vendor": "販売元",
       "quantity_minimum_message": "数量は1以上でなければなりません",
       "include_taxes": "税込",
-      "shipping_policy_html": "<a href=\"{{ link }}\">配送料<\/a>は購入手続き時に計算されます。",
+      "shipping_policy_html": "<a href=\"{{ link }}\">配送料</a>は購入手続き時に計算されます。",
       "unit_price_label": "単価",
       "view_cart": "カートを見る",
       "availability": "公開状況",
@@ -416,8 +416,8 @@
       "check_other_stores": "別のストアでの出品状況を確認する",
       "pick_up_available": "受取が可能です",
       "pick_up_currently_unavailable": "受取は現在できません",
-      "pick_up_available_at_html": "<strong>{{ location_name }}<\/strong>での受取が可能です",
-      "pick_up_unavailable_at_html": "<strong>{{ location_name }}<\/strong>での受取は現在できません"
+      "pick_up_available_at_html": "<strong>{{ location_name }}</strong>での受取が可能です",
+      "pick_up_unavailable_at_html": "<strong>{{ location_name }}</strong>での受取は現在できません"
     }
   }
 }

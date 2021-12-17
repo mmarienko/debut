@@ -1,90 +1,83 @@
-{%- assign social_icons = false -%}
-{%- assign inline_list = false -%}
-{%- assign locale_selector = false -%}
-{%- assign country_selector = false -%}
-{%- assign show_payment_icons = false -%}
-{%- assign show_selectors = false -%}
+{%- liquid
+  assign social_icons = false
+  assign inline_list = false
+  assign locale_selector = false
+  assign country_selector = false
+  assign show_payment_icons = false
+  assign show_selectors = false
 
 
-{%- assign show_country_selector = section.settings.show_currency_selector  -%}
-{%- if show_country_selector and localization.available_countries.size > 1 -%}
-  {%- assign country_selector = true -%}
-{%- endif -%}
+  assign show_country_selector = section.settings.show_currency_selector
+  if show_country_selector and localization.available_countries.size > 1
+    assign country_selector = true
+  endif
 
-{%- if section.settings.show_locale_selector and localization.available_languages.size > 1 -%}
-  {%- assign locale_selector = true -%}
-{%- endif -%}
+  if section.settings.show_locale_selector and localization.available_languages.size > 1
+    assign locale_selector = true
+  endif
 
-{%- if section.settings.show_payment_icons -%}
-  {%- unless shop.enabled_payment_types == empty -%}
-    {%- assign show_payment_icons = true -%}
-  {%- endunless -%}
-{%- endif -%}
+  if section.settings.show_payment_icons
+    unless shop.enabled_payment_types == empty
+      assign show_payment_icons = true
+    endunless
+  endif
 
-{%- if country_selector or locale_selector -%}
-  {%- assign show_selectors = true -%}
-{%- endif -%}
+  if country_selector or locale_selector
+    assign show_selectors = true
+  endif
 
-{%- if
-  settings.social_twitter_link != blank
-  or settings.social_facebook_link != blank
-  or settings.social_pinterest_link != blank
-  or settings.social_instagram_link != blank
-  or settings.social_tumblr_link != blank
-  or settings.social_snapchat_link != blank
-  or settings.social_youtube_link != blank
-  or settings.social_vimeo_link != blank
-  or request.page_type == 'article'
-  or request.page_type == 'blog'
+  if settings.social_twitter_link != blank or settings.social_facebook_link != blank or settings.social_pinterest_link != blank or settings.social_instagram_link != blank or settings.social_tumblr_link != blank or settings.social_snapchat_link != blank or settings.social_youtube_link != blank or settings.social_vimeo_link != blank or request.page_type == 'article' or request.page_type == 'blog'
+    assign social_icons = true
+  endif
+
+  assign payment_width_class = "one-half"
+  if show_selectors
+    unless social_icons
+      assign payment_width_class = ""
+    endunless
+  endif
+
+  assign copyright_show_class = "medium-up--hide"
+  if social_icons
+    unless show_selectors
+      assign copyright_show_class = ""
+    endunless
+  endif
+
+  case section.blocks.size
+    when 1
+      assign footer_item = 'site-footer__item--full-width'
+      assign inline_list = true
+    when 2
+      assign footer_item = 'site-footer__item--one-half'
+      assign inline_list = true
+    when 3
+      assign footer_item = 'site-footer__item--one-third'
+      for block in section.blocks
+        if block.type == 'newsletter'
+          assign footer_item = 'site-footer__item--one-quarter'
+          break
+        endif
+      endfor
+    when 4
+      assign footer_item = 'site-footer__item--one-quarter'
+    when 5
+      assign footer_item = 'site-footer__item--one-fifth'
+  endcase
 -%}
-  {%- assign social_icons = true -%}
-{%- endif -%}
-
-{%- assign payment_width_class = "one-half" -%}
-{%- if show_selectors -%}
-  {%- unless social_icons -%}
-    {%- assign payment_width_class = "" -%}
-  {%- endunless -%}
-{%- endif -%}
-
-{%- assign copyright_show_class = "medium-up--hide" -%}
-{%- if social_icons -%}
-  {%- unless show_selectors -%}
-    {%- assign copyright_show_class = "" -%}
-  {%- endunless -%}
-{%- endif -%}
-
-{%- case section.blocks.size -%}
-  {%- when 1 -%}
-    {%- assign footer_item = 'site-footer__item--full-width' -%}
-    {%- assign inline_list = true -%}
-  {%- when 2 -%}
-    {%- assign footer_item = 'site-footer__item--one-half' -%}
-    {%- assign inline_list = true -%}
-  {%- when 3 -%}
-    {%- assign footer_item = 'site-footer__item--one-third' -%}
-    {%- for block in section.blocks -%}
-      {%- if block.type == 'newsletter' -%}
-        {%- assign footer_item = 'site-footer__item--one-quarter' -%}
-        {%- break -%}
-      {%- endif -%}
-    {%- endfor -%}
-  {%- when 4 -%}
-    {%- assign footer_item = 'site-footer__item--one-quarter' -%}
-  {%- when 5 -%}
-    {%- assign footer_item = 'site-footer__item--one-fifth' -%}
-{%- endcase -%}
 
 {% comment %} Create an appropriate hover color based on text color and brightness {% endcomment %}
-{%- assign footer_text_color = section.settings.color_footer_text -%}
-{%- assign footer_text_color_brightness = section.settings.color_footer_text | color_brightness -%}
-{%- if footer_text_color_brightness <= 26 -%}
-  {%- assign footer_text_color_hover = footer_text_color | color_lighten: 25 -%}
-{%- elsif footer_text_color_brightness <= 65 -%}
-  {%- assign footer_text_color_hover = footer_text_color | color_lighten: 15 -%}
-{%- else -%}
-  {%- assign footer_text_color_hover = footer_text_color | color_darken: 10 -%}
-{%- endif -%}
+{%- liquid
+  assign footer_text_color = section.settings.color_footer_text
+  assign footer_text_color_brightness = section.settings.color_footer_text | color_brightness
+  if footer_text_color_brightness <= 26
+    assign footer_text_color_hover = footer_text_color | color_lighten: 25
+  elsif footer_text_color_brightness <= 65
+    assign footer_text_color_hover = footer_text_color | color_lighten: 15
+  else
+    assign footer_text_color_hover = footer_text_color | color_darken: 10
+  endif
+-%}
 
 <style>
   .site-footer__hr {
@@ -193,7 +186,7 @@
                     {% if form.errors contains 'email' %}
                       <span id="{{ formId }}-email-error" class="input-error-message">
                         <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
-                        {% include 'icon-error' %}
+                        {% render 'icon-error' %}
                         <span class="site-footer__newsletter-error">{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
                       </span>
                     {% endif %}
@@ -313,7 +306,7 @@
               {%- if settings[social_link] != blank -%}
                 <li class="social-icons__item">
                   <a class="social-icons__link" href="{{ settings[social_link] | escape }}" aria-describedby="a11y-external-message">
-                    {%- include icon_link -%}
+                    {%- render icon_link -%}
                     <span class="icon__fallback-text">{{ social }}</span>
                   </a>
                 </li>
@@ -323,7 +316,7 @@
             {%- if request.page_type == 'blog' or request.page_type == 'article' -%}
               <li>
                 <a class="social-icons__link" href="{{ shop.url }}{{ blog.url }}.atom">
-                  {% include 'icon-rss' %}
+                  {% render 'icon-rss' %}
                   <span class="icon__fallback-text">RSS</span>
                 </a>
               </li>

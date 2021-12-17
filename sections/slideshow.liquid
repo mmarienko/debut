@@ -6,23 +6,27 @@
     unless it is blank, in that case a ratio of 2:1 will be used.
   {% endcomment %}
 
-  {%- assign first_block = section.blocks[0] -%}
-  {%- if first_block.settings.image.aspect_ratio == blank -%}
-    {%- assign min_aspect_ratio = 2.0 -%}
-  {%- else -%}
-    {%- assign min_aspect_ratio = first_block.settings.image.aspect_ratio -%}
-  {%- endif -%}
-  {% assign wrapper_height = 100 | divided_by: min_aspect_ratio %}
+  {%- liquid
+    assign first_block = section.blocks[0]
+    if first_block.settings.image.aspect_ratio == blank
+      assign min_aspect_ratio = 2.0
+    else
+      assign min_aspect_ratio = first_block.settings.image.aspect_ratio
+    endif
+    assign wrapper_height = 100 | divided_by: min_aspect_ratio
+  -%}
 {%- endif -%}
 
-{%- assign text_alignments = section.settings.text_alignment | split: ' ' -%}
-{%- assign text_horizontal_alignment = text_alignments.first -%}
-{%- assign text_vertical_alignment = text_alignments.last | strip -%}
+{%- liquid
+  assign text_alignments = section.settings.text_alignment | split: ' '
+  assign text_horizontal_alignment = text_alignments.first
+  assign text_vertical_alignment = text_alignments.last | strip
+-%}
 
 <div data-section-id="{{ section.id }}" data-section-type="slideshow-section">
   {%- if section.blocks.size > 0 -%}
     <div id="SlideshowWrapper-{{ section.id }}" class="slideshow-wrapper" role="region" aria-label="slideshow" aria-describedby="slideshow-info" tabindex="-1" data-slider>
-      <div class="slideshow slideshow--{{ section.settings.slideshow_height }}{% if display_controls %} slideshow--display-controls{% endif %}"
+      <div class="slideshow slideshow--{{ section.settings.slideshow_height }}"
            id="Slideshow-{{ section.id }}"
            data-autorotate="{{ section.settings.autorotate }}"
            data-slider-container
@@ -34,41 +38,13 @@
         {%- for block in section.blocks -%}
           {%- assign block_image = block.settings.image -%}
           <div id="slickSlide-{{ block.id }}" class="slideshow__slide slideshow__slide--{{ block.id }}{% if forloop.first %} slideshow__slide--active{% endif %}" data-slider-slide-index="{{ forloop.index0 }}" data-slider-item {{ block.shopify_attributes }}>
-            {% if block_image == blank %}
-              <div class="slideshow__image js">
+            <div class="slideshow__image"{% if block_image %}{% unless block_image.alt == blank %} role="img" aria-label="{{ block_image.alt | escape }}"{% endunless %} style="background-image: url('{{ block_image | img_url: '2048x' }}'); background-position: {{ block.settings.alignment }};"{% endif %}>
+              {% if block_image == blank %}
                 <div class="placeholder-background">
-                  {% capture current %}{% cycle 1, 2 %}{% endcapture %}
-                  {{ 'lifestyle-' | append: current | placeholder_svg_tag: 'placeholder-svg' }}
+                  {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
                 </div>
-                {% if section.settings.show_overlay %}<div class="slideshow__overlay"></div>{% endif %}
-              </div>
-            {% else %}
-              <div
-                  {% unless block_image.alt == blank %}
-                  role="img"
-                  aria-label="{{ block_image.alt | escape }}"
-                  data-alt="{{ block_image.alt | escape }}"
-                  {% endunless %}
-                  class="slideshow__image box ratio-container lazyload{% unless forloop.first %} lazypreload{% endunless %} js"
-                  data-bg="{{ block_image | img_url: '300x300' }}"
-                  data-bgset="{% include 'bgset', image: block_image %}"
-                  data-sizes="auto"
-                  data-parent-fit="contain"
-                  style="background-position: {{ block.settings.alignment }};"
-                  data-image-loading-animation>
-                {% if section.settings.show_overlay %}<div class="slideshow__overlay"></div>{% endif %}
-              </div>
-            {% endif %}
-
-            <noscript>
-              <div class="slideshow__image"{% if block_image %}{% unless block_image.alt == blank %} role="img" aria-label="{{ block_image.alt | escape }}"{% endunless %} style="background-image: url('{{ block_image | img_url: '2048x' }}'); background-position: {{ block.settings.alignment }};"{% endif %}>
-                {% if block_image == blank %}
-                  <div class="placeholder-background">
-                    {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
-                  </div>
-                {% endif %}
-              </div>
-            </noscript>
+              {% endif %}
+            </div>
 
             <div class="slideshow__text-wrap slideshow__text-wrap--desktop">
               <div class="slideshow__text-content slideshow__text-content--vertical-{{ text_vertical_alignment }} text-{{ text_horizontal_alignment }}">
@@ -114,8 +90,8 @@
           {%- assign arrows_width = section.blocks.size | times: 18 | plus: 115 -%}
           <div class="slideshow__arrows"
                style="width: {{- arrows_width -}}px">
-            <button class="slideshow__arrow slideshow__arrow-previous" aria-label="{{ 'sections.slideshow.previous_slide' | t }}" data-slider-button>{% include 'icon-chevron-left' %}</button>
-            <button class="slideshow__arrow slideshow__arrow-next" aria-label="{{ 'sections.slideshow.next_slide' | t }}" data-slider-button data-slider-button-next>{% include 'icon-chevron-right' %}</button>
+            <button class="slideshow__arrow slideshow__arrow-previous" aria-label="{{ 'sections.slideshow.previous_slide' | t }}" data-slider-button>{% render 'icon-chevron-left' %}</button>
+            <button class="slideshow__arrow slideshow__arrow-next" aria-label="{{ 'sections.slideshow.next_slide' | t }}" data-slider-button data-slider-button-next>{% render 'icon-chevron-right' %}</button>
 
             <ul class="slick-dots" data-slider-indicators>
               {%- for block in section.blocks -%}
@@ -129,11 +105,11 @@
           {%- if section.settings.autorotate -%}
             <button type="button" class="slideshow__pause" data-id="{{ section.id }}" aria-live="polite" aria-pressed="false" data-slider-pause>
               <span class="slideshow__pause-stop">
-                {% include 'icon-pause' %}
+                {% render 'icon-pause' %}
                 <span class="icon__fallback-text">{{ 'sections.slideshow.pause_slideshow' | t }}</span>
               </span>
               <span class="slideshow__pause-rotate">
-                {% include 'icon-play' %}
+                {% render 'icon-play' %}
                 <span class="icon__fallback-text">{{ 'sections.slideshow.rotate_slideshow' | t }}</span>
               </span>
             </button>
@@ -144,8 +120,8 @@
     <div class="slideshow__text-wrap slideshow__text-wrap--mobile">
       {% if section.blocks.size > 1 %}
         <div class="slideshow__arrows slideshow__arrows--mobile">
-          <button class="slideshow__arrow slideshow__arrow-previous" aria-label="{{ 'sections.slideshow.previous_slide' | t }}" data-slider-button>{% include 'icon-chevron-left' %}</button>
-          <button class="slideshow__arrow slideshow__arrow-next" aria-label="{{ 'sections.slideshow.next_slide' | t }}" data-slider-button data-slider-button-next>{% include 'icon-chevron-right' %}</button>
+          <button class="slideshow__arrow slideshow__arrow-previous" aria-label="{{ 'sections.slideshow.previous_slide' | t }}" data-slider-button>{% render 'icon-chevron-left' %}</button>
+          <button class="slideshow__arrow slideshow__arrow-next" aria-label="{{ 'sections.slideshow.next_slide' | t }}" data-slider-button data-slider-button-next>{% render 'icon-chevron-right' %}</button>
 
           <ul class="slick-dots" data-slider-indicators>
             {%- for block in section.blocks -%}
@@ -158,14 +134,16 @@
       {% endif %}
 
       {%- for block in section.blocks -%}
-        {%- assign show_text = false -%}
-        {%- unless block.settings.slide_title == blank and block.settings.subheading == blank -%}
-          {%- assign show_text = true -%}
-        {%- endunless -%}
-        {%- assign show_link_button = false -%}
-        {%- if block.settings.button_label != blank and block.settings.button_link != blank -%}
-          {%- assign show_link_button = true -%}
-        {%- endif -%}
+        {%- liquid
+          assign show_text = false
+          unless block.settings.slide_title == blank and block.settings.subheading == blank
+            assign show_text = true
+          endunless
+          assign show_link_button = false
+          if block.settings.button_label != blank and block.settings.button_link != blank
+            assign show_link_button = true
+          endif
+        -%}
         {%- if show_text or show_link_button -%}
           <div class="slideshow__text-content slideshow__text-content--mobile{% if forloop.first %} slideshow__text-content--mobile-active{% endif %} text-center" data-slider-mobile-content-index="{{ forloop.index0 }}">
             <div class="page-width">

@@ -15,7 +15,7 @@
       "vendor": "Prodajalec",
       "quantity_minimum_message": "Količina mora biti 1 ali več",
       "include_taxes": "Vključno z davkom.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Dostava<\/a> se obračuna ob zaključku nakupa.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Dostava</a> se obračuna ob zaključku nakupa.",
       "unit_price_label": "Cena na enoto",
       "view_cart": "Prikaži košarico",
       "view_in_space": "Prikaži v prostoru",
@@ -58,7 +58,7 @@
       "login_form_submit": "Vstop",
       "signup_form_email_label": "E-poštni naslov",
       "signup_form_success": "Tik pred otvoritvijo vam bomo poslali e-pošto.",
-      "admin_link_html": "Ali ste lastnik trgovine? <a href=\"\/admin\" class=\"text-link\">Prijavite se tukaj<\/a>",
+      "admin_link_html": "Ali ste lastnik trgovine? <a href=\"/admin\" class=\"text-link\">Prijavite se tukaj</a>",
       "password_link": "Vstop z geslom"
     },
     "social": {
@@ -115,7 +115,7 @@
       "dropdown_label": "Jezik"
     },
     "country": {
-      "dropdown_label": "Država\/regija"
+      "dropdown_label": "Država/regija"
     }
   },
   "sections": {
@@ -125,7 +125,7 @@
       "pause_slideshow": "Zaustavi diaprojekcijo",
       "rotate_slideshow": "Predvajaj diaprojekcijo",
       "load_slide": "Naloži diapozitiv {{ slide_number }}",
-      "navigation_instructions": "Za pomikanje po diaprojekciji uporabite tipki levo\/desno oz. podrsnite v levo\/desno, če uporabljate mobilno napravo"
+      "navigation_instructions": "Za pomikanje po diaprojekciji uporabite tipki levo/desno oz. podrsnite v levo/desno, če uporabljate mobilno napravo"
     },
     "featured_product": {
       "title": "Izpostavljeni izdelek",
@@ -136,7 +136,7 @@
     "map": {
       "address_error": "Pri iskanju tega naslova je prišlo do napake",
       "address_no_results": "Ni rezultatov za ta naslov",
-      "address_query_limit_html": "Prekoračili ste omejitev uporabe Googlovega API-ja. Razmislite o nadgradnji na <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">paket Premium<\/a>.",
+      "address_query_limit_html": "Prekoračili ste omejitev uporabe Googlovega API-ja. Razmislite o nadgradnji na <a href=\"https://developers.google.com/maps/premium/usage-limits\">paket Premium</a>.",
       "auth_error_html": "Pri preverjanju pristnosti vašega računa za storitev Google Zemljevidi je prišlo do težave.",
       "section_heading": "Lokacija"
     },
@@ -190,14 +190,14 @@
     "general": {
       "title": "Vaša košarica",
       "note": "Dodajte opombo za naročilo",
-      "removed_item_html": "Odstranjeno iz košarice: <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span>.",
+      "removed_item_html": "Odstranjeno iz košarice: <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span>.",
       "remove": "Odstrani",
       "subtotal": "Vmesna vsota",
       "savings": "Vaš prihranek",
       "taxes_and_shipping_at_checkout": "Davki in dostava se obračunajo ob zaključku nakupa",
-      "taxes_and_shipping_policy_at_checkout_html": "Davki in <a href=\"{{ link }}\">dostava<\/a> se obračunajo ob zaključku nakupa",
+      "taxes_and_shipping_policy_at_checkout_html": "Davki in <a href=\"{{ link }}\">dostava</a> se obračunajo ob zaključku nakupa",
       "taxes_included_but_shipping_at_checkout": "Vključen davek in dostava se obračunata ob zaključku nakupa",
-      "taxes_included_and_shipping_policy_html": "Vključno z davkom. <a href=\"{{ link }}\">Dostava<\/a> se obračuna ob zaključku nakupa.",
+      "taxes_included_and_shipping_policy_html": "Vključno z davkom. <a href=\"{{ link }}\">Dostava</a> se obračuna ob zaključku nakupa.",
       "update": "Posodobi",
       "checkout": "Zaključi nakup",
       "empty": "Vaša košarica je trenutno prazna.",
@@ -292,7 +292,7 @@
       "address1": "Naslov",
       "address2": "Št. stanovanja, apartmaja itd.",
       "city": "Kraj",
-      "country": "Država\/regija",
+      "country": "Država/regija",
       "province": "Območje",
       "zip": "Poštna številka",
       "phone": "Telefonska številka",
@@ -430,8 +430,8 @@
       "check_other_stores": "Preverjanje razpoložljivosti v drugih trgovinah",
       "pick_up_available": "Na voljo je osebni prevzem",
       "pick_up_currently_unavailable": "Osebni prevzem trenutno ni na voljo",
-      "pick_up_available_at_html": "Osebni prevzem je mogoč na prevzemnem mestu <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Na prevzemnem mestu <strong>{{ location_name }}<\/strong> osebni prevzem trenutno ni mogoč"
+      "pick_up_available_at_html": "Osebni prevzem je mogoč na prevzemnem mestu <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Na prevzemnem mestu <strong>{{ location_name }}</strong> osebni prevzem trenutno ni mogoč"
     }
   }
 }

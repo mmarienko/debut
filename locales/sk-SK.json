@@ -35,7 +35,7 @@
       "login_form_submit": "Prejsť",
       "signup_form_email_label": "E-mail",
       "signup_form_success": "Tesne pred otvorením vám odošleme e-mail!",
-      "admin_link_html": "Ste vlastníkom obchodu? <a href=\"\/admin\" class=\"text-link\">Prihláste sa tu<\/a>",
+      "admin_link_html": "Ste vlastníkom obchodu? <a href=\"/admin\" class=\"text-link\">Prihláste sa tu</a>",
       "password_link": "Prejsť s použitím hesla"
     },
     "social": {
@@ -92,7 +92,7 @@
       "dropdown_label": "Jazyk"
     },
     "country": {
-      "dropdown_label": "Krajina\/oblasť"
+      "dropdown_label": "Krajina/oblasť"
     }
   },
   "sections": {
@@ -102,7 +102,7 @@
       "pause_slideshow": "Pozastaviť prezentáciu",
       "rotate_slideshow": "Prehrať prezentáciu",
       "load_slide": "Načítať snímku {{ slide_number }}",
-      "navigation_instructions": "Na navigáciu v prezentácii použite šípky doľava\/doprava alebo ak používate mobilné zariadenie, potiahnite prstom doľava\/doprava"
+      "navigation_instructions": "Na navigáciu v prezentácii použite šípky doľava/doprava alebo ak používate mobilné zariadenie, potiahnite prstom doľava/doprava"
     },
     "featured_product": {
       "title": "Odporúčaný produkt",
@@ -113,7 +113,7 @@
     "map": {
       "address_error": "Pri vyhľadávaní tejto adresy sa vyskytla chyba",
       "address_no_results": "Pre túto adresu sa nenašli žiadne výsledky",
-      "address_query_limit_html": "Prekročili ste limit používania rozhrania Google API. Zvážte inováciu na <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">prémiový plán<\/a>.",
+      "address_query_limit_html": "Prekročili ste limit používania rozhrania Google API. Zvážte inováciu na <a href=\"https://developers.google.com/maps/premium/usage-limits\">prémiový plán</a>.",
       "auth_error_html": "Pri overovaní konta Máp Google sa vyskytol problém.",
       "section_heading": "Miesto"
     },
@@ -167,14 +167,14 @@
     "general": {
       "title": "Váš košík",
       "note": "Pridajte k svojej objednávke poznámku",
-      "removed_item_html": "Odstránené <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> z košíka.",
+      "removed_item_html": "Odstránené <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> z košíka.",
       "remove": "Odstrániť",
       "subtotal": "Medzisúčet",
       "savings": "Ušetríte",
       "taxes_and_shipping_at_checkout": "Dane a doprava sa vypočítajú v pokladni",
-      "taxes_and_shipping_policy_at_checkout_html": "Dane a <a href=\"{{ link }}\">doprava<\/a> sa vypočítajú v pokladni",
+      "taxes_and_shipping_policy_at_checkout_html": "Dane a <a href=\"{{ link }}\">doprava</a> sa vypočítajú v pokladni",
       "taxes_included_but_shipping_at_checkout": "Dane sa zahrnú a doprava sa vypočíta v pokladni",
-      "taxes_included_and_shipping_policy_html": "Vrátane dane. <a href=\"{{ link }}\">Doprava<\/a> sa vypočíta v pokladni.",
+      "taxes_included_and_shipping_policy_html": "Vrátane dane. <a href=\"{{ link }}\">Doprava</a> sa vypočíta v pokladni.",
       "update": "Aktualizovať",
       "checkout": "Do pokladne",
       "empty": "Váš košík je momentálne prázdny.",
@@ -269,7 +269,7 @@
       "address1": "Adresa",
       "address2": "Apartmán, byt atď.",
       "city": "Mesto",
-      "country": "Krajina\/oblasť",
+      "country": "Krajina/oblasť",
       "province": "Kraj",
       "zip": "Poštové smerovacie číslo",
       "phone": "Telefón",
@@ -401,7 +401,7 @@
       "vendor": "Predajca",
       "quantity_minimum_message": "Množstvo musí byť 1 alebo viac",
       "include_taxes": "Vrátane dane.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Doprava<\/a> sa vypočíta v pokladni.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Doprava</a> sa vypočíta v pokladni.",
       "unit_price_label": "Jednotková cena",
       "view_cart": "Zobraziť košík",
       "view_in_space": "Zobraziť vo vašom priestore",
@@ -430,8 +430,8 @@
       "check_other_stores": "Skontrolovať dostupnosť v iných obchodoch",
       "pick_up_available": "K dispozícii na vyzdvihnutie",
       "pick_up_currently_unavailable": "Aktuálne dostupné na vyzdvihnutie",
-      "pick_up_available_at_html": "K dispozícii na vyzdvihnutie na adrese <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Aktuálne dostupné na vyzdvihnutie na adrese <strong>{{ location_name }}<\/strong>"
+      "pick_up_available_at_html": "K dispozícii na vyzdvihnutie na adrese <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Aktuálne dostupné na vyzdvihnutie na adrese <strong>{{ location_name }}</strong>"
     }
   }
 }

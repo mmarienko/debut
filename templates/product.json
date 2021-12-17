@@ -11,7 +11,7 @@
     }
   },
   "order": [
-    "main", 
+    "main",
     "product-recommendations",
     "product-back-to-collection"
   ]

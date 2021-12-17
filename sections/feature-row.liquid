@@ -4,16 +4,19 @@
       {% if section.settings.image != blank %}
         {% capture img_id %}FeatureRowImage-{{ section.id }}{% endcapture %}
         {% capture wrapper_id %}FeatureRowImageWrapper-{{ section.id }}{% endcapture %}
-        {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-        {% include 'image-style', image: section.settings.image, height: 545, wrapper_id: wrapper_id, img_id: img_id %}
+        {%- assign img_url = section.settings.image | img_url: '1x1' | replace: '_1x1.', '.' -%}
+        {% render 'image-style', image: section.settings.image, height: 545, wrapper_id: wrapper_id, img_id: img_id %}
         <div id="{{ wrapper_id }}" class="feature-row__image-wrapper js">
-          <div style="padding-top:{{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100}}%;" data-image-loading-animation>
+          <div style="padding-top:{{ 1 | divided_by: section.settings.image.aspect_ratio | times: 100 }}%;" data-image-loading-animation>
             <img id="{{ img_id }}"
-                 class="feature-row__image lazyload"
-                 data-src="{{ img_url }}"
+                 class="feature-row__image"
+                 src="{{ img_url }}"
                  data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
                  data-aspectratio="{{ section.settings.image.aspect_ratio }}"
                  data-sizes="auto"
+                 loading="lazy"
+                 width="auto"
+                 height="auto"
                  alt="{{ section.settings.image.alt | escape }}">
           </div>
         </div>

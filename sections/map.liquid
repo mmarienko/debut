@@ -1,13 +1,15 @@
-{%- assign display_map = false -%}
-{%- assign onboarding = false -%}
-{%- assign bg_image = section.settings.background_image -%}
+{%- liquid
+  assign display_map = false
+  assign onboarding = false
+  assign bg_image = section.settings.background_image
 
-{%- if section.settings.api_key == blank and bg_image == blank -%}
-  {%- assign onboarding = true -%}
-{%- endif -%}
-{%- if section.settings.api_key != blank and section.settings.map_address -%}
-  {%- assign display_map = true -%}
-{%- endif -%}
+  if section.settings.api_key == blank and bg_image == blank
+    assign onboarding = true
+  endif
+  if section.settings.api_key != blank and section.settings.map_address
+    assign display_map = true
+  endif
+-%}
 
 <style>
   {% if bg_image.src != blank %}
@@ -47,7 +49,7 @@
                  rel="noopener"
                  aria-describedby="a11y-new-window-external-message"
               >
-                {% if section.settings.show_pin %}{% include 'icon-pin' %}{% endif %}
+                {% if section.settings.show_pin %}{% render 'icon-pin' %}{% endif %}
                 <span>{{ section.settings.button_text | escape }}</span>
               </a>
             </p>
@@ -57,15 +59,7 @@
     </div>
     <div class="map-section__background-wrapper">
       {% if bg_image != blank %}
-        <div class="map-section__image lazyload js"
-             data-bgset="{% include 'bgset', image: bg_image %}"
-             data-sizes="auto"
-             data-parent-fit="cover"
-             data-image-loading-animation>
-        </div>
-        <noscript>
-          <div class="map-section__image" style="background-image: url({{ bg_image | img_url: 'x800', crop: 'top' }});"></div>
-        </noscript>
+        <div class="map-section__image" style="background-image: url({{ bg_image | img_url: 'x800', crop: 'top' }});"></div>
       {% elsif onboarding == true %}
         <div class="placeholder-background">
           {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}

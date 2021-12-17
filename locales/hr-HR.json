@@ -15,7 +15,7 @@
       "vendor": "Prodavač",
       "quantity_minimum_message": "Količina mora biti 1 ili više",
       "include_taxes": "Porez je uključen.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Poštarina <\/a> se obračunava prilikom završetka kupnje.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Poštarina </a> se obračunava prilikom završetka kupnje.",
       "unit_price_label": "Jedinična cijena",
       "view_cart": "Prikaži košaricu",
       "view_in_space": "Pogledajte u svojem prostoru",
@@ -58,7 +58,7 @@
       "login_form_submit": "Unesi",
       "signup_form_email_label": "Pošalji e-poruku",
       "signup_form_success": "Poslat ćemo vam poruku e-pošte neposredno prije nego što otvorimo!",
-      "admin_link_html": "Jeste li vlasnik trgovine? <a href=\"\/admin\" class=\"text-link\">Prijavite se ovdje<\/a>",
+      "admin_link_html": "Jeste li vlasnik trgovine? <a href=\"/admin\" class=\"text-link\">Prijavite se ovdje</a>",
       "password_link": "Uđite pomoću lozinke"
     },
     "social": {
@@ -113,7 +113,7 @@
       "dropdown_label": "Jezik"
     },
     "country": {
-      "dropdown_label": "Država\/regija"
+      "dropdown_label": "Država/regija"
     }
   },
   "sections": {
@@ -123,7 +123,7 @@
       "pause_slideshow": "Pauziraj prezentaciju",
       "rotate_slideshow": "Reproduciraj prezentaciju",
       "load_slide": "Učitaj slajd {{ slide_number }}",
-      "navigation_instructions": "Pomičite se po prezentaciji pomoću strelica lijevo\/desno ili prijeđite prstom ulijevo\/udesno ako koristite mobilni uređaj"
+      "navigation_instructions": "Pomičite se po prezentaciji pomoću strelica lijevo/desno ili prijeđite prstom ulijevo/udesno ako koristite mobilni uređaj"
     },
     "featured_product": {
       "title": "Istaknuti proizvod",
@@ -134,7 +134,7 @@
     "map": {
       "address_error": "Pogreška prilikom traženja te adrese",
       "address_no_results": "Nema rezultata za tu adresu",
-      "address_query_limit_html": "Premašili ste ograničenje upotrebe Google API-ja. Razmislite o nadogradnji na <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">tarifu Premium<\/a> .",
+      "address_query_limit_html": "Premašili ste ograničenje upotrebe Google API-ja. Razmislite o nadogradnji na <a href=\"https://developers.google.com/maps/premium/usage-limits\">tarifu Premium</a> .",
       "auth_error_html": "Došlo je do problema s provjerom autentičnosti računa za Google karte.",
       "section_heading": "Lokacija"
     },
@@ -186,14 +186,14 @@
     "general": {
       "title": "Vaša košarica",
       "note": "Dodajte napomenu svojoj narudžbi",
-      "removed_item_html": "Iz košarice je uklonjen <span class=\"cart__removed-product-details\"> ({{ quantity }}) {{ link }} <\/span>.",
+      "removed_item_html": "Iz košarice je uklonjen <span class=\"cart__removed-product-details\"> ({{ quantity }}) {{ link }} </span>.",
       "remove": "Ukloni",
       "subtotal": "Podzbroj",
       "savings": "Štedite",
       "taxes_and_shipping_at_checkout": "Porezi i poštarina obračunavaju se prilikom završetka kupnje",
-      "taxes_and_shipping_policy_at_checkout_html": "Porezi i <a href=\"{{ link }}\">poštarina<\/a> obračunavaju se prilikom završetka kupnje",
+      "taxes_and_shipping_policy_at_checkout_html": "Porezi i <a href=\"{{ link }}\">poštarina</a> obračunavaju se prilikom završetka kupnje",
       "taxes_included_but_shipping_at_checkout": "Uključeni porezi i poštarina obračunavaju se prilikom završetka kupnje",
-      "taxes_included_and_shipping_policy_html": "Porez je uključen. <a href=\"{{ link }}\">Poštarina <\/a> se obračunava prilikom završetka kupnje.",
+      "taxes_included_and_shipping_policy_html": "Porez je uključen. <a href=\"{{ link }}\">Poštarina </a> se obračunava prilikom završetka kupnje.",
       "update": "Ažuriraj",
       "checkout": "Završi kupnju",
       "empty": "Vaša je košarica trenutno prazna.",
@@ -286,8 +286,8 @@
       "address1": "Adresa",
       "address2": "Broj stan, kata itd.",
       "city": "Grad",
-      "country": "Država \/ regija",
-      "province": "Županija \/ pokrajina",
+      "country": "Država / regija",
+      "province": "Županija / pokrajina",
       "zip": "Poštanski broj",
       "phone": "Telefon",
       "set_default": "Postavi kao zadanu adresu",
@@ -423,8 +423,8 @@
       "check_other_stores": "Provjeri dostupnost u drugim trgovinama",
       "pick_up_available": "Dostupno je preuzimanje",
       "pick_up_currently_unavailable": "Preuzimanje trenutno nije dostupno",
-      "pick_up_available_at_html": "Preuzimanje je dostupno na lokaciji <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Preuzimanje trenutno nije dostupno na lokaciji <strong>{{ location_name }}<\/strong>"
+      "pick_up_available_at_html": "Preuzimanje je dostupno na lokaciji <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Preuzimanje trenutno nije dostupno na lokaciji <strong>{{ location_name }}</strong>"
     }
   }
 }

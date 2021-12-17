@@ -1,13 +1,15 @@
-{% case section.settings.grid %}
-  {% when 2 %}
-    {%- assign max_height = 530 -%}
-  {% when 3 %}
-    {%- assign max_height = 345 -%}
-  {% when 4 %}
-    {%- assign max_height = 250 -%}
-  {% when 5 %}
-    {%- assign max_height = 195 -%}
-{% endcase %}
+{% liquid
+  case section.settings.grid
+    when 2
+      assign max_height = 530
+    when 3
+      assign max_height = 345
+    when 4
+      assign max_height = 250
+    when 5
+      assign max_height = 195
+  endcase
+%}
 
 {% if section.settings.layout == 'grid' %}
   {%- assign limit = section.settings.grid | times: section.settings.rows -%}
@@ -26,15 +28,7 @@
 
     {% if section.settings.show_collection_image and collection.image %}
       <div class="collection-hero">
-        <div class="collection-hero__image ratio-container lazyload js"
-             data-bgset="{% include 'bgset', image: collection.image %}"
-             data-sizes="auto"
-             data-parent-fit="cover"
-             data-image-loading-animation
-        ></div>
-        <noscript>
-          <div class="collection-hero__image" style="background-image: url({{ collection.image | img_url: '2048x600', crop: 'top' }});"></div>
-        </noscript>
+        <div class="collection-hero__image" style="background-image: url({{ collection.image | img_url: '2048x600', crop: 'top' }});"></div>
         <div class="collection-hero__title-wrapper">
           <h1 class="collection-hero__title page-width">
               <span class="visually-hidden">{{ 'collections.general.collection_label' | t }}: </span>
@@ -88,7 +82,7 @@
                           <option value="{{ new_url }}"{% if current_tags contains tag %} selected="selected"{% endif %}>{{ tag }}</option>
                         {% endfor %}
                       </select>
-                      {% include 'icon-chevron-down' %}
+                      {% render 'icon-chevron-down' %}
                     </div>
                   </div>
                 {% endunless %}
@@ -109,7 +103,7 @@
                         <option value="{{ option.value }}" {% if option.value == sort_by %}selected="selected"{% endif %}>{{ option.name }}</option>
                       {%- endfor -%}
                     </select>
-                    {% include 'icon-chevron-down' %}
+                    {% render 'icon-chevron-down' %}
                   </div>
                 </div>
               {% endif %}
@@ -126,21 +120,23 @@
 
   <div class="page-width" id="Collection">
     {% if section.settings.layout == 'grid' %}
-      {% case section.settings.grid %}
-      {% when 2 %}
-        {%- assign grid_item_width = 'medium-up--one-half' -%}
-      {% when 3 %}
-        {%- assign grid_item_width = 'small--one-half medium-up--one-third' -%}
-      {% when 4 %}
-        {%- assign grid_item_width = 'small--one-half medium-up--one-quarter' -%}
-      {% when 5 %}
-        {%- assign grid_item_width = 'small--one-half medium-up--one-fifth' -%}
-      {% endcase %}
+      {% liquid
+        case section.settings.grid
+          when 2
+            assign grid_item_width = 'medium-up--one-half'
+          when 3
+            assign grid_item_width = 'small--one-half medium-up--one-third'
+          when 4
+            assign grid_item_width = 'small--one-half medium-up--one-quarter'
+          when 5
+            assign grid_item_width = 'small--one-half medium-up--one-fifth'
+        endcase
+      %}
 
       <ul class="grid grid--uniform{% if collection.products_count > 0 %} grid--view-items{% endif %}">
         {% for product in collection.products %}
           <li class="grid__item grid__item--{{section.id}} {{ grid_item_width }}">
-            {% include 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
+            {% render 'product-card-grid', max_height: max_height, product: product, show_vendor: section.settings.show_vendor %}
           </li>
         {% else %}
           {% comment %}
@@ -179,7 +175,7 @@
       <ul class="list-view-items">
         {% for product in collection.products %}
           <li class="list-view-item">
-            {% include 'product-card-list', product: product, show_vendor: section.settings.show_vendor %}
+            {% render 'product-card-list', product: product, show_vendor: section.settings.show_vendor %}
           </li>
         {% else %}
 
@@ -189,7 +185,7 @@
           The onboarding styles and products are only loaded if the
           store has no products.
           {% endcomment %}
-          {% if collection.handle == 'all' and collection.all_vendors.size == 0 and collection.all_types.size == 0%}
+          {% if collection.handle == 'all' and collection.all_vendors.size == 0 and collection.all_types.size == 0 %}
             {% for i in (1..4) %}
               <li class="list-view-item">
                 <a href="#" class="list-view-item__link">
@@ -226,7 +222,7 @@
     {% endif %}
 
     {%- if paginate.pages > 1 -%}
-      {% include 'pagination', paginate: paginate %}
+      {% render 'pagination', paginate: paginate %}
     {%- endif -%}
   </div>
 </div>

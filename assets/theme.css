@@ -1050,31 +1050,6 @@ textarea {
   z-index: 10000;
   transition: none; }
 
-/*=============== Lazy loading ===================*/
-.box {
-  background: no-repeat;
-  background-color: #f7f7f7;
-  background-size: contain; }
-
-.ratio-container {
-  position: relative; }
-
-.ratio-container:after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 100%;
-  /* 16:9 = 56.25% = calc(9 / 16 * 100%) */
-  padding-bottom: 50%;
-  content: ""; }
-
-.ratio-container > * {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
 /*=============== Critical CSS ===================*/
 .main-content {
   opacity: 1; }
@@ -2330,8 +2305,6 @@ hr {
   .grid-view-item__image-wrapper .grid-view-item__image {
     position: absolute;
     top: 0; }
-  .grid-view-item__image.lazyload {
-    opacity: 0; }
 
 .list-view-item {
   margin-bottom: 22px; }

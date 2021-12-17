@@ -9,40 +9,42 @@
     {%- assign block_width_mobile = '' -%}
 
     {% for block in section.blocks %}
-      {% case block.settings.width %}
-        {% when '25%' %}
-          {%- assign max_height = 250 -%}
-          {%- assign block_width = 'medium-up--one-quarter' -%}
-          {%- assign block_width_mobile = 'small--one-half' -%}
-        {% when '33%' %}
-          {%- assign max_height = 345 -%}
-          {%- assign block_width = 'medium-up--one-third' -%}
-          {%- assign block_width_mobile = 'small--one-half' -%}
-        {% when '50%' %}
-          {%- assign max_height = 530 -%}
-          {%- assign block_width = 'medium-up--one-half' -%}
-          {%- assign block_width_mobile = 'small--one-half' -%}
-        {% when '66%' %}
-          {%- assign max_height = 720 -%}
-          {%- assign block_width = 'two-thirds' -%}
-        {% when '75%' %}
-          {%- assign max_height = 810 -%}
-          {%- assign block_width = 'three-quarters' -%}
-        {% when '100%' %}
-          {%- assign max_height = 1090 -%}
-          {%- assign block_width = 'one-whole' -%}
-      {% endcase %}
+      {% liquid
+        case block.settings.width
+          when '25%'
+            assign max_height = 250
+            assign block_width = 'medium-up--one-quarter'
+            assign block_width_mobile = 'small--one-half'
+          when '33%'
+            assign max_height = 345
+            assign block_width = 'medium-up--one-third'
+            assign block_width_mobile = 'small--one-half'
+          when '50%'
+            assign max_height = 530
+            assign block_width = 'medium-up--one-half'
+            assign block_width_mobile = 'small--one-half'
+          when '66%'
+            assign max_height = 720
+            assign block_width = 'two-thirds'
+          when '75%'
+            assign max_height = 810
+            assign block_width = 'three-quarters'
+          when '100%'
+            assign max_height = 1090
+            assign block_width = 'one-whole'
+        endcase
 
-      {%- if block.type == 'blog' or block.type == 'article' -%}
-        {%- assign block_width_mobile = 'small--one-whole' -%}
-      {%- endif -%}
+        if block.type == 'blog' or block.type == 'article'
+          assign block_width_mobile = 'small--one-whole'
+        endif
+      %}
 
       {% if block.type == 'image' %}
         {% capture img_id %}CustomImage--{{ forloop.index }}-{{ block.settings.image.id }}{% endcapture %}
         {% capture img_wrapper_id %}CustomImageWrapper--{{ forloop.index }}-{{ block.settings.image.id }}{% endcapture %}
 
         {% unless block.settings.image == blank %}
-          {% include 'image-style', image: block.settings.image, height: max_height, wrapper_id: img_wrapper_id, img_id: img_id %}
+          {% render 'image-style', image: block.settings.image, height: max_height, wrapper_id: img_wrapper_id, img_id: img_id %}
         {% endunless %}
       {% endif %}
 
@@ -51,14 +53,17 @@
           {% case block.type %}
             {% when 'image' %}
               {% if block.settings.image != blank %}
-                {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-                <div style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100}}%;" data-image-loading-animation>
+                {%- assign img_url = block.settings.image | img_url: '1x1' | replace: '_1x1.', '.' -%}
+                <div style="padding-top:{{ 1 | divided_by: block.settings.image.aspect_ratio | times: 100 }}%;" data-image-loading-animation>
                   <img id="{{ img_id }}"
-                       class="custom__image lazyload js"
-                       data-src="{{ img_url }}"
+                       class="custom__image js"
+                       src="{{ img_url }}"
                        data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
                        data-aspectratio="{{ block.settings.image.aspect_ratio }}"
                        data-sizes="auto"
+                       loading="lazy"
+                       width="auto"
+                       height="auto"
                        alt="{{ block.settings.image.alt | escape }}">
                 </div>
                 <noscript>
@@ -93,7 +98,7 @@
             {% when 'product' %}
               {%- assign product = all_products[block.settings.product] -%}
               {% if product.title.size > 0 %}
-                {% include 'product-card-grid', max_height: max_height, product: product %}
+                {% render 'product-card-grid', max_height: max_height, product: product %}
               {% else %}
                 {% comment %}
                   No product yet. Show onboarding one.
@@ -113,7 +118,7 @@
               {% endif %}
             {% when 'collection' %}
               {%- assign collection = collections[block.settings.collection] -%}
-              {% include 'collection-grid-item', collection: collection %}
+              {% render 'collection-grid-item', collection: collection %}
             {% when 'html' %}
               {% if block.settings.code != blank %}
                 {{ block.settings.code }}
@@ -137,16 +142,13 @@
                     {%- assign img = block.settings.cover_image -%}
                     {%- capture img_id -%}ArticleImage-{{ img.id }}{%- endcapture -%}
                     {%- capture img_wrapper_id -%}ArticleImageWrapper-{{ img.id }}{%- endcapture -%}
-                    {%- assign img_url = img | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                    {%- assign img_url = img | img_url: '1x1' | replace: '_1x1.', '.' -%}
 
-                    {% include 'image-style', image: img, height: 600, wrapper_id: img_wrapper_id, img_id: img_id %}
+                    {% render 'image-style', image: img, height: 600, wrapper_id: img_wrapper_id, img_id: img_id %}
 
                     <div class="blog-card__image-wrapper blog-card__image-wrapper--{{ block.settings.image_size }}">
                       <a href="{{ blog.url | default: '#' }}" class="blog-card__link">
-                        <div class="blog-card__overlay box ratio-container js lazyload" data-bgset="{% include 'bgset', image: img %}" data-sizes="auto" data-parent-fit="cover" data-image-loading-animation></div>
-                        <noscript>
-                          <div class="blog-card__overlay" style="background-image: url('{{ img | img_url: '1024x1024' }}')"></div>
-                        </noscript>
+                        <div class="blog-card__overlay" style="background-image: url('{{ img | img_url: '1024x1024' }}')"></div>
 
                         <div class="blog-card__title-wrapper">
                           <div class="blog-card__title h3">{{ blog.title }}</div>
@@ -180,7 +182,7 @@
                     {%- if article.image and cover_image != 'none' -%}
                       {%- capture img_id -%}ArticleImage-{{ article.image.id }}{%- endcapture -%}
                       {%- capture img_wrapper_id -%}ArticleImageWrapper-{{ article.image.id }}{%- endcapture -%}
-                      {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+                      {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '.' -%}
 
                       {% render 'image-style', image: article.image, height: 600, wrapper_id: img_wrapper_id, img_id: img_id %}
 
@@ -194,11 +196,14 @@
                       <div id="{{ img_wrapper_id }}" class="article__grid-image-wrapper article__grid-image-wrapper--{{ cover_image }} article-image-wrapper js">
                         <div class="article__grid-image-container" style="padding-top:{{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;" data-image-loading-animation>
                           <img id="{{ img_id }}"
-                              class="article__list-image lazyload"
-                              data-src="{{ img_url }}"
+                              class="article__list-image"
+                              src="{{ img_url }}"
                               data-widths="[180, 360, 540, 720, 905, 1090, 1296, 1512, 1728, 2048]"
                               data-aspectratio="{{ article.image.aspect_ratio }}"
                               data-sizes="auto"
+                              loading="lazy"
+                              width="auto"
+                              height="auto"
                               alt="">
                         </div>
                       </div>
@@ -319,7 +324,7 @@
   </div>
 
   {% if section.blocks.size == 0 %}
-    {% include 'no-blocks' %}
+    {% render 'no-blocks' %}
   {% endif %}
 </div>
 

@@ -1,32 +1,24 @@
 <div class="grid grid--no-gutters image-bar image-bar--{{ section.settings.section_height }}">
-  {% case section.blocks.size %}
-    {% when 1 %}
-      {%- assign column_size = '' -%}
-    {% when 2 %}
-      {%- assign column_size = 'medium-up--one-half' -%}
-    {% when 3 %}
-      {%- assign column_size = 'medium-up--one-third' -%}
-    {% else %}
-      {%- assign column_size = 'medium-up--one-quarter' -%}
-  {% endcase %}
+  {% liquid
+    case section.blocks.size
+      when 1
+        assign column_size = ''
+      when 2
+        assign column_size = 'medium-up--one-half'
+      when 3
+        assign column_size = 'medium-up--one-third'
+      else
+        assign column_size = 'medium-up--one-quarter'
+    endcase
+  %}
 
   {% for block in section.blocks %}
-    <div class="grid__item {{ column_size }} js" {{ block.shopify_attributes }}>
+    <div class="grid__item {{ column_size }}" {{ block.shopify_attributes }}>
       {% if block.settings.link != blank %}
         <a class="image-bar__link" href="{{ block.settings.link }}">
-          <div class="image-bar__item box ratio-container lazyload"
-               data-bgset="{% include 'bgset', image: block.settings.image %}"
-               data-sizes="auto"
-               data-parent-fit="cover"
-               style="background-position: {{ block.settings.alignment }};"
-               data-image-loading-animation>
+          <div class="image-bar__item image-bar__item--{{ block.id }}" style="background-image: url({{ block.settings.image | img_url: '2048x' }});">
       {% elsif block.settings.image != blank %}
-        <div class="image-bar__item image-bar__item--{{ block.id }} box ratio-container lazyload"
-             data-bgset="{% include 'bgset', image: block.settings.image %}"
-             data-sizes="auto"
-             data-parent-fit="cover"
-             style="background-position: {{ block.settings.alignment }};"
-             data-image-loading-animation>
+        <div class="image-bar__item image-bar__item--{{ block.id }}" style="background-image: url({{ block.settings.image | img_url: '2048x' }});">
       {% else %}
         <div class="image-bar__item">
       {% endif %}
@@ -47,16 +39,11 @@
         </div>
       {% endif %}
     </div>
-    <noscript>
-      <div class="grid__item {{ column_size }}" {{ block.shopify_attributes }}>
-        <div class="image-bar__item image-bar__item--{{ block.id }}" style="background-image: url({{ block.settings.image | img_url: '2048x' }});"></div>
-      </div>
-    </noscript>
   {% endfor %}
 </div>
 
 {% if section.blocks.size == 0 %}
-  {% include 'no-blocks' %}
+  {% render 'no-blocks' %}
 {% endif %}
 
 
