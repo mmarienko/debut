@@ -306,7 +306,26 @@
               {%- if settings[social_link] != blank -%}
                 <li class="social-icons__item">
                   <a class="social-icons__link" href="{{ settings[social_link] | escape }}" aria-describedby="a11y-external-message">
-                    {%- render icon_link -%}
+                    {% liquid
+                      case icon_link
+                        when 'icon-twitter'
+                          render 'icon-twitter'
+                        when 'icon-facebook'
+                          render 'icon-facebook'
+                        when 'icon-pinterest'
+                          render 'icon-pinterest'
+                        when 'icon-instagram'
+                          render 'icon-instagram'
+                        when 'icon-tumblr'
+                          render 'icon-tumblr'
+                        when 'icon-snapchat'
+                          render 'icon-snapchat'
+                        when 'icon-youtube'
+                          render 'icon-youtube'
+                        when 'icon-vimeo'
+                          render 'icon-vimeo'
+                      endcase
+                    %}
                     <span class="icon__fallback-text">{{ social }}</span>
                   </a>
                 </li>
