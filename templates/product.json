@@ -1,7 +1,32 @@
 {
   "sections": {
     "main": {
-      "type": "product-template"
+      "type": "product-template",
+      "blocks": {
+        "title": {
+          "type": "title"
+        },
+        "price": {
+          "type": "price"
+        },
+        "buttons": {
+          "type": "buttons"
+        },
+        "description": {
+          "type": "description"
+        },
+        "share": {
+          "type": "share"
+        }
+      },
+      "block_order": [
+        "title",
+        "subtitle",
+        "price",
+        "buttons",
+        "description",
+        "share"
+      ]
     },
     "product-recommendations": {
       "type": "product-recommendations"
