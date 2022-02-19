@@ -35,7 +35,7 @@
       "login_form_submit": "Masukkan",
       "signup_form_email_label": "E-mel",
       "signup_form_success": "Kami akan menghantar e-mel kepada anda sebelum kami buka!",
-      "admin_link_html": "Adakah anda pemilik kedai? <a href=\"\/admin\" class=\"text-link\">Log masuk di sini<\/a>",
+      "admin_link_html": "Adakah anda pemilik kedai? <a href=\"/admin\" class=\"text-link\">Log masuk di sini</a>",
       "password_link": "Masuk menggunakan kata laluan"
     },
     "social": {
@@ -88,7 +88,7 @@
       "dropdown_label": "Bahasa"
     },
     "country": {
-      "dropdown_label": "Negara\/wilayah"
+      "dropdown_label": "Negara/wilayah"
     }
   },
   "sections": {
@@ -98,7 +98,7 @@
       "pause_slideshow": "Jeda tayangan slaid",
       "rotate_slideshow": "Main tayangan slaid",
       "load_slide": "Muatkan slaid {{ slide_number }}",
-      "navigation_instructions": "Gunakan anak panah kiri\/kanan untuk menavigasi tayangan slaid atau leret ke kiri\/kanan jika menggunakan peranti mudah alih"
+      "navigation_instructions": "Gunakan anak panah kiri/kanan untuk menavigasi tayangan slaid atau leret ke kiri/kanan jika menggunakan peranti mudah alih"
     },
     "featured_product": {
       "title": "Produk yang ditampilkan",
@@ -109,7 +109,7 @@
     "map": {
       "address_error": "Ralat mencari alamat itu",
       "address_no_results": "Tiada hasil untuk alamat itu",
-      "address_query_limit_html": "Anda telah melebihi had penggunaan API Google. Pertimbangkan untuk menaik taraf ke <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Pelan Premium<\/a>.",
+      "address_query_limit_html": "Anda telah melebihi had penggunaan API Google. Pertimbangkan untuk menaik taraf ke <a href=\"https://developers.google.com/maps/premium/usage-limits\">Pelan Premium</a>.",
       "auth_error_html": "Terdapat masalah mengesahkan akaun Peta Google anda.",
       "section_heading": "Lokasi"
     },
@@ -159,14 +159,14 @@
     "general": {
       "title": "Troli anda",
       "note": "Tambah nota kepada pesanan anda",
-      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }} <\/span>dialih keluar dari troli anda.",
+      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }} </span>dialih keluar dari troli anda.",
       "remove": "Alih keluar",
       "subtotal": "Subjumlah",
       "savings": "Anda jimat",
       "taxes_and_shipping_at_checkout": "Cukai dan penghantaran dikira semasa daftar keluar",
-      "taxes_and_shipping_policy_at_checkout_html": "Cukai dan <a href=\"{{ link }}\">penghantaran<\/a> dikira semasa daftar keluar",
+      "taxes_and_shipping_policy_at_checkout_html": "Cukai dan <a href=\"{{ link }}\">penghantaran</a> dikira semasa daftar keluar",
       "taxes_included_but_shipping_at_checkout": "Termasuk cukai dan penghantaran dikira semasa daftar keluar",
-      "taxes_included_and_shipping_policy_html": "Termasuk cukai. <a href=\"{{ link }}\">Penghantaran<\/a> dikira semasa daftar keluar.",
+      "taxes_included_and_shipping_policy_html": "Termasuk cukai. <a href=\"{{ link }}\">Penghantaran</a> dikira semasa daftar keluar.",
       "update": "Kemas kini",
       "checkout": "Daftar keluar",
       "empty": "Troli anda kosong pada masa ini.",
@@ -257,9 +257,9 @@
       "address1": "Alamat",
       "address2": "Pangsapuri, suite, dll.",
       "city": "Bandar",
-      "country": "Negara\/Wilayah",
+      "country": "Negara/Wilayah",
       "province": "Wilayah",
-      "zip": "Poskod\/Kod Zip",
+      "zip": "Poskod/Kod Zip",
       "phone": "Telefon",
       "set_default": "Tetapkan sebagai alamat lalai",
       "add": "Tambah Alamat",
@@ -385,7 +385,7 @@
       "vendor": "Vendor",
       "quantity_minimum_message": "Kuantiti mestilah 1 atau lebih",
       "include_taxes": "Termasuk cukai.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Penghantaran<\/a> dikira semasa daftar keluar.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Penghantaran</a> dikira semasa daftar keluar.",
       "unit_price_label": "Harga seunit",
       "view_cart": "Lihat troli",
       "availability": "Ketersediaan",
@@ -416,8 +416,8 @@
       "check_other_stores": "Periksa ketersediaan di kedai lain",
       "pick_up_available": "Kutipan tersedia",
       "pick_up_currently_unavailable": "Kutipan tidak tersedia pada masa ini",
-      "pick_up_available_at_html": "Kutipan tersedia di <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Kutipan tidak tersedia pada masa ini di <strong>{{ location_name }}<\/strong>"
+      "pick_up_available_at_html": "Kutipan tersedia di <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Kutipan tidak tersedia pada masa ini di <strong>{{ location_name }}</strong>"
     }
   }
 }

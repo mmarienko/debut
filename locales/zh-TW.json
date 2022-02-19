@@ -35,7 +35,7 @@
       "login_form_submit": "進入",
       "signup_form_email_label": "電子郵件",
       "signup_form_success": "我們會在即將開張前寄電子郵件通知您！",
-      "admin_link_html": "您是店主嗎？<a href=\"\/admin\" class=\"text-link\">請在此登入<\/a>",
+      "admin_link_html": "您是店主嗎？<a href=\"/admin\" class=\"text-link\">請在此登入</a>",
       "password_link": "以密碼進入"
     },
     "social": {
@@ -61,7 +61,7 @@
       "search_for": "搜尋",
       "loading": "載入中",
       "clear_search_term": "清除搜尋詞彙",
-      "number_of_results": "{{ result_number }} \/ {{ results_count }}",
+      "number_of_results": "{{ result_number }} / {{ results_count }}",
       "products": "產品",
       "number_of_results_found": "找到 {{ results_count }} 項結果",
       "one_result_found": "找到 1 項結果",
@@ -88,7 +88,7 @@
       "dropdown_label": "語言"
     },
     "country": {
-      "dropdown_label": "國家\/地區"
+      "dropdown_label": "國家/地區"
     }
   },
   "sections": {
@@ -98,7 +98,7 @@
       "pause_slideshow": "暫停播放投影片",
       "rotate_slideshow": "播放投影片",
       "load_slide": "載入第 {{ slide_number }} 張投影片",
-      "navigation_instructions": "使用向左\/向右箭頭操作播放投影片。如使用行動裝置，請向左\/向右滑動"
+      "navigation_instructions": "使用向左/向右箭頭操作播放投影片。如使用行動裝置，請向左/向右滑動"
     },
     "featured_product": {
       "title": "精選產品",
@@ -109,7 +109,7 @@
     "map": {
       "address_error": "尋找此地址時發生錯誤",
       "address_no_results": "此地址無結果",
-      "address_query_limit_html": "您已超出 Google API 使用量限制。請考慮升級為<a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">付費方案<\/a>。",
+      "address_query_limit_html": "您已超出 Google API 使用量限制。請考慮升級為<a href=\"https://developers.google.com/maps/premium/usage-limits\">付費方案</a>。",
       "auth_error_html": "驗證 Google 地圖帳戶時發生問題。",
       "section_heading": "地點"
     },
@@ -159,14 +159,14 @@
     "general": {
       "title": "您的購物車",
       "note": "新增備註到您的訂單",
-      "removed_item_html": "已將 <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> 從您的購物車移除。",
+      "removed_item_html": "已將 <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> 從您的購物車移除。",
       "remove": "移除",
       "subtotal": "小計",
       "savings": "您將省下",
       "taxes_and_shipping_at_checkout": "結帳時計算稅金和運費",
-      "taxes_and_shipping_policy_at_checkout_html": "結帳時計算稅金和<a href=\"{{ link }}\">運費<\/a>",
+      "taxes_and_shipping_policy_at_checkout_html": "結帳時計算稅金和<a href=\"{{ link }}\">運費</a>",
       "taxes_included_but_shipping_at_checkout": "內含稅金，結帳時計算運費",
-      "taxes_included_and_shipping_policy_html": "內含稅金。結帳時計算<a href=\"{{ link }}\">運費<\/a>。",
+      "taxes_included_and_shipping_policy_html": "內含稅金。結帳時計算<a href=\"{{ link }}\">運費</a>。",
       "update": "更新",
       "checkout": "結帳",
       "empty": "您的購物車目前沒有商品。",
@@ -257,7 +257,7 @@
       "address1": "地址",
       "address2": "公寓、套房等",
       "city": "市",
-      "country": "國家\/地區",
+      "country": "國家/地區",
       "province": "省",
       "zip": "郵遞區號",
       "phone": "電話",
@@ -385,7 +385,7 @@
       "vendor": "廠商",
       "quantity_minimum_message": "數量必須大於或等於1",
       "include_taxes": "內含稅金。",
-      "shipping_policy_html": "結帳時計算<a href=\"{{ link }}\">運費<\/a>。",
+      "shipping_policy_html": "結帳時計算<a href=\"{{ link }}\">運費</a>。",
       "unit_price_label": "單價",
       "view_cart": "檢視購物車",
       "availability": "供貨情況",
@@ -416,8 +416,8 @@
       "check_other_stores": "查看其他商店的可用性",
       "pick_up_available": "可提供取貨服務",
       "pick_up_currently_unavailable": "目前無法提供取貨服務",
-      "pick_up_available_at_html": "可提供 <strong>{{ location_name }}<\/strong> 的取貨服務",
-      "pick_up_unavailable_at_html": "目前無法提供 <strong>{{ location_name }}<\/strong> 的取貨服務"
+      "pick_up_available_at_html": "可提供 <strong>{{ location_name }}</strong> 的取貨服務",
+      "pick_up_unavailable_at_html": "目前無法提供 <strong>{{ location_name }}</strong> 的取貨服務"
     }
   }
 }

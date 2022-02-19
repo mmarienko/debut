@@ -25,7 +25,7 @@
     "pagination": {
       "previous": "Előző oldal",
       "next": "Következő oldal",
-      "current_page": "{{ current }}.\/{{ total }} oldal"
+      "current_page": "{{ current }}./{{ total }} oldal"
     },
     "password_page": {
       "opening_soon": "Nyitás hamarosan",
@@ -35,7 +35,7 @@
       "login_form_submit": "Belépés",
       "signup_form_email_label": "E-mail-cím",
       "signup_form_success": "E-mailben értesítünk a nyitás előtt!",
-      "admin_link_html": "Te vagy a bolt tulajdonosa? <a href=\"\/admin\" class=\"text-link\">Jelentkezz be itt<\/a>",
+      "admin_link_html": "Te vagy a bolt tulajdonosa? <a href=\"/admin\" class=\"text-link\">Jelentkezz be itt</a>",
       "password_link": "Belépés jelszóval"
     },
     "social": {
@@ -67,7 +67,7 @@
       "products": "Termékek",
       "loading": "Betöltés",
       "clear_search_term": "Keresőszó törlése",
-      "number_of_results": "{{ result_number }} \/ {{ results_count }}",
+      "number_of_results": "{{ result_number }} / {{ results_count }}",
       "number_of_results_found": "{{ results_count }} találat",
       "one_result_found": "1 találat"
     },
@@ -88,7 +88,7 @@
       "dropdown_label": "Nyelv"
     },
     "country": {
-      "dropdown_label": "Ország\/régió"
+      "dropdown_label": "Ország/régió"
     }
   },
   "sections": {
@@ -109,7 +109,7 @@
     "map": {
       "address_error": "Hiba történt a cím keresésekor",
       "address_no_results": "Nincs eredmény erre a címre",
-      "address_query_limit_html": "Túllépted a felhasználható Google API-k számát. Érdemes lehet <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">prémium csomagra<\/a> váltanod.",
+      "address_query_limit_html": "Túllépted a felhasználható Google API-k számát. Érdemes lehet <a href=\"https://developers.google.com/maps/premium/usage-limits\">prémium csomagra</a> váltanod.",
       "auth_error_html": "Hiba történt a Google Térkép-fiók hitelesítésekor.",
       "section_heading": "Tartózkodási hely"
     },
@@ -159,14 +159,14 @@
     "general": {
       "title": "Kosár",
       "note": "Fűzz megjegyzést a megrendelésedhez",
-      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> eltávolítva a kosárból.",
+      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> eltávolítva a kosárból.",
       "remove": "Eltávolítás",
       "subtotal": "Részösszeg:",
       "savings": "Megtakarítás:",
       "taxes_and_shipping_at_checkout": "Az adókat és a szállítási költséget a megrendeléskor számítjuk ki",
-      "taxes_and_shipping_policy_at_checkout_html": "Az adókat és a <a href=\"{{ link }}\">szállítási költséget<\/a> a megrendeléskor számítjuk ki",
+      "taxes_and_shipping_policy_at_checkout_html": "Az adókat és a <a href=\"{{ link }}\">szállítási költséget</a> a megrendeléskor számítjuk ki",
       "taxes_included_but_shipping_at_checkout": "Tartalmazza a megrendeléskor kiszámított adót és szállítási költséget",
-      "taxes_included_and_shipping_policy_html": "Tartalmazza az adót. A megrendeléskor kiszámított <a href=\"{{ link }}\">szállítási költség<\/a>.",
+      "taxes_included_and_shipping_policy_html": "Tartalmazza az adót. A megrendeléskor kiszámított <a href=\"{{ link }}\">szállítási költség</a>.",
       "update": "Frissítés",
       "checkout": "Megrendelés",
       "empty": "A kosarad jelenleg üres.",
@@ -257,7 +257,7 @@
       "address1": "Cím",
       "address2": "Lakás, lakosztály, stb.",
       "city": "Település",
-      "country": "Ország\/régió",
+      "country": "Ország/régió",
       "province": "Megye",
       "zip": "Irányítószám",
       "phone": "Telefonszám",
@@ -387,7 +387,7 @@
       "vendor": "Forgalmazó",
       "quantity_minimum_message": "1-nél kisebb mennyiség nem adható meg",
       "include_taxes": "Tartalmazza az adót.",
-      "shipping_policy_html": "A megrendeléskor kiszámított <a href=\"{{ link }}\">szállítási költség<\/a>.",
+      "shipping_policy_html": "A megrendeléskor kiszámított <a href=\"{{ link }}\">szállítási költség</a>.",
       "unit_price_label": "Egységár",
       "view_cart": "Kosár megtekintése",
       "view_in_space": "Megtekintés a saját környezetben",
@@ -416,8 +416,8 @@
       "check_other_stores": "Kapható más webáruházakban?",
       "pick_up_available": "Személyesen átvehető",
       "pick_up_currently_unavailable": "Személyesen egyelőre nem vehető át",
-      "pick_up_available_at_html": "Személyesen átvehető itt: <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Személyesen egyelőre nem vehető át itt: <strong>{{ location_name }}<\/strong>"
+      "pick_up_available_at_html": "Személyesen átvehető itt: <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Személyesen egyelőre nem vehető át itt: <strong>{{ location_name }}</strong>"
     }
   }
 }

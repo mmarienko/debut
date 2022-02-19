@@ -25,7 +25,7 @@
     "pagination": {
       "previous": "이전 페이지",
       "next": "다음 페이지",
-      "current_page": "{{ current }}\/{{ total }}페이지"
+      "current_page": "{{ current }}/{{ total }}페이지"
     },
     "password_page": {
       "opening_soon": "곧 개장",
@@ -35,7 +35,7 @@
       "login_form_submit": "입력",
       "signup_form_email_label": "이메일",
       "signup_form_success": "개장 직전에 이메일을 송신해드립니다!",
-      "admin_link_html": "스토어 소유주입니까? <a href=\"\/admin\" class=\"text-link\">여기에 로그인 하기<\/a>",
+      "admin_link_html": "스토어 소유주입니까? <a href=\"/admin\" class=\"text-link\">여기에 로그인 하기</a>",
       "password_link": "비밀번호를 사용하여 입력하십시오."
     },
     "social": {
@@ -61,7 +61,7 @@
       "search_for": "검색",
       "loading": "로드 중",
       "clear_search_term": "검색어 지우기",
-      "number_of_results": "{{ result_number }}\/{{ results_count }}",
+      "number_of_results": "{{ result_number }}/{{ results_count }}",
       "products": "제품",
       "number_of_results_found": "{{ results_count }}개의 결과를 찾음",
       "one_result_found": "1개의 결과를 찾음",
@@ -88,7 +88,7 @@
       "dropdown_label": "언어"
     },
     "country": {
-      "dropdown_label": "국가\/지역"
+      "dropdown_label": "국가/지역"
     }
   },
   "sections": {
@@ -98,7 +98,7 @@
       "pause_slideshow": "슬라이드 멈춤",
       "rotate_slideshow": "슬라이드 쇼 재상",
       "load_slide": "{{ slide_number }} 슬라이드 로드",
-      "navigation_instructions": "왼쪽 \/ 오른쪽 화살표를 사용하여 슬라이드 쇼를 탐색하거나 모바일 장치를 사용하는 경우 왼쪽 \/ 오른쪽으로 스와이프합니다."
+      "navigation_instructions": "왼쪽 / 오른쪽 화살표를 사용하여 슬라이드 쇼를 탐색하거나 모바일 장치를 사용하는 경우 왼쪽 / 오른쪽으로 스와이프합니다."
     },
     "featured_product": {
       "title": "특별 상품",
@@ -109,7 +109,7 @@
     "map": {
       "address_error": "주소 찾기 오류",
       "address_no_results": "주소 검색 결과 없음",
-      "address_query_limit_html": "Google API 사용 제한을 초과하였습니다. <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">프리미엄 플랜<\/a> 으로 업그레이드를 고려하십시오.",
+      "address_query_limit_html": "Google API 사용 제한을 초과하였습니다. <a href=\"https://developers.google.com/maps/premium/usage-limits\">프리미엄 플랜</a> 으로 업그레이드를 고려하십시오.",
       "auth_error_html": "Google 지도 계정을 인증하는 중에 문제가 발생했습니다.",
       "section_heading": "위치"
     },
@@ -159,14 +159,14 @@
     "general": {
       "title": "장바구니",
       "note": "주문에 메모 추가",
-      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span>이 카드에서 제거되었습니다.",
+      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span>이 카드에서 제거되었습니다.",
       "remove": "제거",
       "subtotal": "소계",
       "savings": "저장 중입니다.",
       "taxes_and_shipping_at_checkout": "결제 시 세금 및 배송료가 계산됨",
-      "taxes_and_shipping_policy_at_checkout_html": "결제 시 세금 및 <a href=\"{{ link }}\">배송료<\/a> 가 계산됨",
+      "taxes_and_shipping_policy_at_checkout_html": "결제 시 세금 및 <a href=\"{{ link }}\">배송료</a> 가 계산됨",
       "taxes_included_but_shipping_at_checkout": "결제 시 세금이 포함되며 배송료가 계산됨",
-      "taxes_included_and_shipping_policy_html": "세금이 포함됨 결제 시 <a href=\"{{ link }}\">배송료<\/a> 가 계산됨",
+      "taxes_included_and_shipping_policy_html": "세금이 포함됨 결제 시 <a href=\"{{ link }}\">배송료</a> 가 계산됨",
       "update": "업데이트",
       "checkout": "결제",
       "empty": "현재 카트가 비어 있습니다.",
@@ -255,10 +255,10 @@
       "last_name": "성",
       "company": "회사",
       "address1": "주소",
-      "address2": "아파트, 동\/호수 등",
-      "city": "구\/군\/시",
-      "country": "국가\/지역",
-      "province": "시\/도",
+      "address2": "아파트, 동/호수 등",
+      "city": "구/군/시",
+      "country": "국가/지역",
+      "province": "시/도",
       "zip": "우편 번호",
       "phone": "전화",
       "set_default": "기본 주소로 설정",
@@ -385,7 +385,7 @@
       "vendor": "공급업체",
       "quantity_minimum_message": "수량이 1개 이상이어야 합니다.",
       "include_taxes": "세금이 포함됨",
-      "shipping_policy_html": "결제 시 <a href=\"{{ link }}\">배송료<\/a> 가 계산됨",
+      "shipping_policy_html": "결제 시 <a href=\"{{ link }}\">배송료</a> 가 계산됨",
       "unit_price_label": "단가",
       "view_cart": "카트 보기",
       "availability": "사용 가능성",
@@ -416,8 +416,8 @@
       "check_other_stores": "다른 스토어 사용 가능 여부 확인",
       "pick_up_available": "픽업을 사용할 수 있습니다.",
       "pick_up_currently_unavailable": "현재 픽업을 사용할 수 없습니다.",
-      "pick_up_available_at_html": "<strong>{{ location_name }}<\/strong>에서 픽업을 사용할 수 있습니다.",
-      "pick_up_unavailable_at_html": "<strong>{{ location_name }}<\/strong>에서는 현재 픽업을 사용할 수 없습니다."
+      "pick_up_available_at_html": "<strong>{{ location_name }}</strong>에서 픽업을 사용할 수 있습니다.",
+      "pick_up_unavailable_at_html": "<strong>{{ location_name }}</strong>에서는 현재 픽업을 사용할 수 없습니다."
     }
   }
 }

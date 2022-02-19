@@ -1,22 +1,26 @@
 <!-- /snippets/social-meta-tags.liquid -->
-{%- assign og_title = page_title | default: shop.name -%}
-{%- assign og_url = canonical_url | default: shop.url -%}
-{%- assign og_type = 'website' -%}
-{%- assign og_description = page_description | default: shop.description | default: shop.name -%}
+{%- liquid
+  assign og_title = page_title | default: shop.name
+  assign og_url = canonical_url | default: shop.url
+  assign og_type = 'website'
+  assign og_description = page_description | default: shop.description | default: shop.name
+-%}
 
 {% comment %} Template specific overides {% endcomment %}
-{% if request.page_type == 'product' %}
-  {%- assign og_type = 'product' -%}
+{% liquid
+  if request.page_type == 'product'
+    assign og_type = 'product'
 
-{% elsif request.page_type == 'article' %}
-  {%- assign og_type = 'article' -%}
+  elsif request.page_type == 'article'
+    assign og_type = 'article'
 
-{% elsif request.page_type == 'collection' %}
-  {%- assign og_type = 'product.group' -%}
+  elsif request.page_type == 'collection'
+    assign og_type = 'product.group'
 
-{% elsif request.page_type == 'password' %}
-  {%- assign og_url = shop.url -%}
-{% endif %}
+  elsif request.page_type == 'password'
+    assign og_url = shop.url
+  endif
+%}
 
 <meta property="og:site_name" content="{{ shop.name }}">
 <meta property="og:url" content="{{ og_url }}">

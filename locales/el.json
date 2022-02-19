@@ -15,7 +15,7 @@
       "vendor": "Προμηθευτής",
       "quantity_minimum_message": "Η ποσότητα πρέπει να είναι 1 ή μεγαλύτερη",
       "include_taxes": "Ο φόρος συμπεριλαμβάνεται.",
-      "shipping_policy_html": "Τα <a href=\"{{ link }}\">έξοδα αποστολής<\/a> υπολογίζονται κατά την ολοκλήρωση της παραγγελίας.",
+      "shipping_policy_html": "Τα <a href=\"{{ link }}\">έξοδα αποστολής</a> υπολογίζονται κατά την ολοκλήρωση της παραγγελίας.",
       "unit_price_label": "Τιμή μονάδας",
       "view_cart": "Προβολή καλαθιού",
       "view_in_space": "Προβολή στον χώρο σας",
@@ -58,7 +58,7 @@
       "login_form_submit": "Είσοδος",
       "signup_form_email_label": "Email",
       "signup_form_success": "Θα σας στείλουμε ένα email λίγο πριν ανοίξουμε!",
-      "admin_link_html": "Είστε ο ιδιοκτήτης του καταστήματος; <a href=\"\/admin\" class=\"text-link\">Συνδεθείτε εδώ<\/a>",
+      "admin_link_html": "Είστε ο ιδιοκτήτης του καταστήματος; <a href=\"/admin\" class=\"text-link\">Συνδεθείτε εδώ</a>",
       "password_link": "Είσοδος με τη χρήση κωδικού πρόσβασης"
     },
     "social": {
@@ -111,7 +111,7 @@
       "dropdown_label": "Γλώσσα"
     },
     "country": {
-      "dropdown_label": "Χώρα\/περιοχή"
+      "dropdown_label": "Χώρα/περιοχή"
     }
   },
   "sections": {
@@ -121,7 +121,7 @@
       "pause_slideshow": "Παύση παρουσίασης",
       "rotate_slideshow": "Αναπαραγωγή παρουσίασης",
       "load_slide": "Φόρτωση διαφάνειας {{ slide_number }}",
-      "navigation_instructions": "Χρησιμοποιήστε το αριστερό και το δεξί βέλος για να περιηγηθείτε στην παρουσίαση ή σύρετε αριστερά\/δεξιά, αν χρησιμοποιείτε κινητή συσκευή"
+      "navigation_instructions": "Χρησιμοποιήστε το αριστερό και το δεξί βέλος για να περιηγηθείτε στην παρουσίαση ή σύρετε αριστερά/δεξιά, αν χρησιμοποιείτε κινητή συσκευή"
     },
     "featured_product": {
       "title": "Επιλεγμένο προϊόν",
@@ -132,7 +132,7 @@
     "map": {
       "address_error": "Σφάλμα κατά την αναζήτηση της συγκεκριμένης διεύθυνσης",
       "address_no_results": "Δεν υπάρχουν αποτελέσματα για αυτήν τη διεύθυνση",
-      "address_query_limit_html": "Ξεπεράσατε το όριο χρήσης του Google API. Σκεφτείτε το ενδεχόμενο να κάνετε αναβάθμιση σε ένα <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Πρόγραμμα Premium<\/a>.",
+      "address_query_limit_html": "Ξεπεράσατε το όριο χρήσης του Google API. Σκεφτείτε το ενδεχόμενο να κάνετε αναβάθμιση σε ένα <a href=\"https://developers.google.com/maps/premium/usage-limits\">Πρόγραμμα Premium</a>.",
       "auth_error_html": "Παρουσιάστηκε πρόβλημα κατά τον έλεγχο ταυτότητας του λογαριασμού σας στους Χάρτες Google.",
       "section_heading": "Τοποθεσία"
     },
@@ -182,14 +182,14 @@
     "general": {
       "title": "Το καλάθι σας",
       "note": "Προσθέστε μια σημείωση στην παραγγελία σας",
-      "removed_item_html": "Κατάργηση <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> από το καλάθι σας.",
+      "removed_item_html": "Κατάργηση <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> από το καλάθι σας.",
       "remove": "Κατάργηση",
       "subtotal": "Υποσύνολο",
       "savings": "Εξοικονομείτε",
       "taxes_and_shipping_at_checkout": "Οι φόροι και τα έξοδα αποστολής υπολογίζονται κατά την ολοκλήρωση της παραγγελίας",
-      "taxes_and_shipping_policy_at_checkout_html": "Οι φόροι και τα <a href=\"{{ link }}\">έξοδα αποστολής<\/a> υπολογίζονται κατά την ολοκλήρωση της παραγγελίας",
+      "taxes_and_shipping_policy_at_checkout_html": "Οι φόροι και τα <a href=\"{{ link }}\">έξοδα αποστολής</a> υπολογίζονται κατά την ολοκλήρωση της παραγγελίας",
       "taxes_included_but_shipping_at_checkout": "Ο φόρος συμπεριλαμβάνεται και τα έξοδα αποστολής υπολογίζονται κατά την ολοκλήρωση της παραγγελίας",
-      "taxes_included_and_shipping_policy_html": "Ο φόρος συμπεριλαμβάνεται. Τα <a href=\"{{ link }}\">έξοδα αποστολής<\/a> υπολογίζονται κατά την ολοκλήρωση της παραγγελίας.",
+      "taxes_included_and_shipping_policy_html": "Ο φόρος συμπεριλαμβάνεται. Τα <a href=\"{{ link }}\">έξοδα αποστολής</a> υπολογίζονται κατά την ολοκλήρωση της παραγγελίας.",
       "update": "Ενημέρωση",
       "checkout": "Ολοκλήρωση παραγγελίας",
       "empty": "Το καλάθι σας είναι κενό.",
@@ -280,7 +280,7 @@
       "address1": "Διεύθυνση",
       "address2": "Διαμέρισμα, σουίτα, κ.λπ.",
       "city": "Πόλη",
-      "country": "Χώρα\/Περιοχή",
+      "country": "Χώρα/Περιοχή",
       "province": "Νομός",
       "zip": "Ταχυδρομικός κώδικας",
       "phone": "Τηλέφωνο",
@@ -416,8 +416,8 @@
       "check_other_stores": "Έλεγχος διαθεσιμότητας σε άλλα καταστήματα",
       "pick_up_available": "Υπάρχει δυνατότητα παραλαβής",
       "pick_up_currently_unavailable": "Δεν υπάρχει δυνατότητα παραλαβής",
-      "pick_up_available_at_html": "Υπάρχει δυνατότητα παραλαβής από <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Δεν υπάρχει δυνατότητα παραλαβής από <strong>{{ location_name }}<\/strong>"
+      "pick_up_available_at_html": "Υπάρχει δυνατότητα παραλαβής από <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Δεν υπάρχει δυνατότητα παραλαβής από <strong>{{ location_name }}</strong>"
     }
   }
 }

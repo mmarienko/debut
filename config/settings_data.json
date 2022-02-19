@@ -135,16 +135,7 @@
           "show_payment_icons": true
         }
       }
-    },
-    "content_for_index": [
-      "hero-1",
-      "feature-row",
-      "feature-columns",
-      "collection",
-      "hero-2",
-      "quotes",
-      "image-bar"
-    ]
+    }
   },
   "presets": {
     "Default": {
@@ -283,16 +274,7 @@
             "show_payment_icons": true
           }
         }
-      },
-      "content_for_index": [
-        "hero-1",
-        "feature-row",
-        "feature-columns",
-        "collection",
-        "hero-2",
-        "quotes",
-        "image-bar"
-      ]
+      }
     },
     "Light": {
       "color_text": "#162950",
@@ -539,16 +521,7 @@
             "color_footer_text": "#6d6d6d"
           }
         }
-      },
-      "content_for_index": [
-        "hero",
-        "featured-collections",
-        "slideshow",
-        "1492033924902",
-        "1492096252560",
-        "1492033877875",
-        "1492033809691"
-      ]
+      }
     }
   }
 }

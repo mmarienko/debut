@@ -35,7 +35,7 @@
       "login_form_submit": "Ввести",
       "signup_form_email_label": "Электронный адрес",
       "signup_form_success": "Мы отправим вам письмо незадолго до открытия!",
-      "admin_link_html": "Вы владелец магазина? <a href=\"\/admin\" class=\"text-link\">Войдите здесь<\/a>",
+      "admin_link_html": "Вы владелец магазина? <a href=\"/admin\" class=\"text-link\">Войдите здесь</a>",
       "password_link": "Войдите с помощью пароля"
     },
     "social": {
@@ -92,7 +92,7 @@
       "dropdown_label": "Язык"
     },
     "country": {
-      "dropdown_label": "Страна\/регион"
+      "dropdown_label": "Страна/регион"
     }
   },
   "sections": {
@@ -102,7 +102,7 @@
       "pause_slideshow": "Приостановить показ слайд-шоу",
       "rotate_slideshow": "Воспроизвести слайд-шоу",
       "load_slide": "Загрузить слайд {{ slide_number }}",
-      "navigation_instructions": "Используйте стрелки влево\/вправо для навигации по слайд-шоу или проведите влево\/вправо, если вы используете мобильное устройство"
+      "navigation_instructions": "Используйте стрелки влево/вправо для навигации по слайд-шоу или проведите влево/вправо, если вы используете мобильное устройство"
     },
     "featured_product": {
       "title": "Рекомендуемый продукт",
@@ -113,7 +113,7 @@
     "map": {
       "address_error": "Не удалось найти этот адрес",
       "address_no_results": "Нет результатов для этого адреса",
-      "address_query_limit_html": "Вы превысили ограничение использования Google API. Рассмотрите переход на план уровня <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Премиум<\/a>.",
+      "address_query_limit_html": "Вы превысили ограничение использования Google API. Рассмотрите переход на план уровня <a href=\"https://developers.google.com/maps/premium/usage-limits\">Премиум</a>.",
       "auth_error_html": "При аутентификации вашей учетной записи в Картах Google возникла проблема.",
       "section_heading": "Расположение"
     },
@@ -167,14 +167,14 @@
     "general": {
       "title": "Корзина",
       "note": "Добавить примечание к заказу",
-      "removed_item_html": "Удалено из корзины: <span class=\"cart__removed-product-details\"> ({{ quantity }}) {{ link }} <\/span>.",
+      "removed_item_html": "Удалено из корзины: <span class=\"cart__removed-product-details\"> ({{ quantity }}) {{ link }} </span>.",
       "remove": "Удалить",
       "subtotal": "Промежуточный итог",
       "savings": "Вы экономите",
       "taxes_and_shipping_at_checkout": "Налоги и стоимость доставки, рассчитанные при оформлении заказа",
-      "taxes_and_shipping_policy_at_checkout_html": "Налоги и <a href=\"{{ link }}\">стоимость доставки<\/a>, рассчитанные при оформлении заказа",
+      "taxes_and_shipping_policy_at_checkout_html": "Налоги и <a href=\"{{ link }}\">стоимость доставки</a>, рассчитанные при оформлении заказа",
       "taxes_included_but_shipping_at_checkout": "Сумма налога и стоимость доставки, рассчитанные при оформлении заказа",
-      "taxes_included_and_shipping_policy_html": "Налоги включены. <a href=\"{{ link }}\">Стоимость доставки<\/a>, рассчитанная при оформлении заказа.",
+      "taxes_included_and_shipping_policy_html": "Налоги включены. <a href=\"{{ link }}\">Стоимость доставки</a>, рассчитанная при оформлении заказа.",
       "update": "Обновить",
       "checkout": "Оформить заказ",
       "empty": "Корзина пуста.",
@@ -269,7 +269,7 @@
       "address1": "Адрес",
       "address2": "Квартира, апартаменты и т. д.",
       "city": "Город",
-      "country": "Страна\/регион",
+      "country": "Страна/регион",
       "province": "Область",
       "zip": "Почтовый индекс",
       "phone": "Телефон",
@@ -401,7 +401,7 @@
       "vendor": "Продавец",
       "quantity_minimum_message": "Значение в графе \"Количество\" не может быть меньше 1",
       "include_taxes": "Сумма налога включена.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Стоимость доставки<\/a> рассчитывается при оформлении заказа.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Стоимость доставки</a> рассчитывается при оформлении заказа.",
       "unit_price_label": "Цена за единицу",
       "view_cart": "Просмотреть корзину",
       "view_in_space": "Просматривайте в реальных условиях",
@@ -430,8 +430,8 @@
       "check_other_stores": "Проверить наличие в других магазинах",
       "pick_up_available": "Самовывоз доступен",
       "pick_up_currently_unavailable": "Самовывоз сейчас недоступен",
-      "pick_up_available_at_html": "Самовывоз доступен: <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Самовывоз сейчас недоступен: <strong>{{ location_name }}<\/strong>"
+      "pick_up_available_at_html": "Самовывоз доступен: <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Самовывоз сейчас недоступен: <strong>{{ location_name }}</strong>"
     }
   }
 }

@@ -5,19 +5,13 @@
     Example: http://shopname.myshopify.com/blogs/news/2022072-my-post?comment=3721372
 {%- endcomment -%}
 
-{%- if comment.status == 'pending' -%}
-  {%- assign number_of_comments = article.comments_count | plus: 1 -%}
-{%- else -%}
-  {%- assign number_of_comments = article.comments_count -%}
-{%- endif -%}
-
-<article class="page-width" aria-labelledby="title-0">
-  <div class="grid">
-    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
-      {% section 'article-template' %}
-    </div>
-  </div>
-</article>
+{%- liquid
+  if comment.status == 'pending' 
+    assign number_of_comments = article.comments_count | plus: 1 
+  else
+    assign number_of_comments = article.comments_count
+  endif
+-%}
 
 {% if blog.comments_enabled? %}
   {% if number_of_comments > 0 %}
@@ -39,19 +33,19 @@
                 {% endcomment %}
                 {% if comment.status == 'pending' %}
                   <li id="{{ comment.id }}" class="comment">
-                    {% include 'comment', comment: comment %}
+                    {% render 'comment', comment: comment %}
                   </li>
                 {% endif %}
 
                 {% for comment in article.comments %}
                   <li id="{{ comment.id }}" class="comment">
-                    {% include 'comment', comment: comment %}
+                    {% render 'comment', comment: comment %}
                   </li>
                 {% endfor %}
               </ul>
 
               {%- if paginate.pages > 1 -%}
-                {% include 'pagination', paginate: paginate %}
+                {% render 'pagination', paginate: paginate %}
               {%- endif -%}
 
             </div>
@@ -72,14 +66,16 @@
 
             <h2 class="h3">{{ 'blogs.comments.title' | t }}</h2>
 
-            {%- assign post_message = 'blogs.comments.success' -%}
-            {%- if blog.moderated? and comment.status == 'pending' -%}
-              {%- assign post_message = 'blogs.comments.success_moderated' -%}
-            {%- elsif comment.status == 'unapproved' or comment.status == 'spam' -%}
-              {%- assign post_message = 'blogs.comments.unapproved' -%}
-            {%- endif -%}
+            {%- liquid
+              assign post_message = 'blogs.comments.success'
+              if blog.moderated? and comment.status == 'pending'
+                assign post_message = 'blogs.comments.success_moderated'
+              elsif comment.status == 'unapproved' or comment.status == 'spam'
+                assign post_message = 'blogs.comments.unapproved'
+              endif
+            -%}
 
-            {% include 'form-status', form: form, form_id: formId, success_message: post_message %}
+            {% render 'form-status', form: form, form_id: formId, success_message: post_message %}
 
             <div class="grid">
 
@@ -89,7 +85,7 @@
                 {% if form.errors contains 'author' %}
                   <span id="{{ formId}}-author-error" class="input-error-message">
                     <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
-                    {% include 'icon-error' %}
+                    {% render 'icon-error' %}
                     <span>{{ 'blogs.comments.name' | t }} {{ form.errors.messages['author'] }}.</span>
                   </span>
                 {% endif %}
@@ -101,7 +97,7 @@
                 {% if form.errors contains 'email' %}
                   <span id="{{ formId}}-email-error" class="input-error-message">
                     <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
-                    {% include 'icon-error' %}
+                    {% render 'icon-error' %}
                     <span>{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.</span>
                   </span>
                 {% endif %}
@@ -113,7 +109,7 @@
                 {% if form.errors contains 'body' %}
                   <span id="{{ formId}}-body-error" class="input-error-message">
                     <span class="visually-hidden">{{ 'general.accessibility.error' | t }} </span>
-                    {% include 'icon-error' %}
+                    {% render 'icon-error' %}
                     <span>{{ 'blogs.comments.message' | t }} {{ form.errors.messages['body'] }}.</span>
                   </span>
                 {% endif %}
@@ -133,50 +129,10 @@
   </div>
 {% endif %}
 
-<div class="text-center return-link-wrapper page-width">
-  <a href="{{ blog.url }}" class="btn btn--secondary btn--has-icon-before">
-    {% include 'icon-arrow-left' %}
-    {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
-  </a>
-</div>
 
-<script type="application/ld+json">
+
+{% schema %}
 {
-  "@context": "http://schema.org",
-  "@type": "Article",
-  "articleBody": {{ article.content | strip_html | json }},
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": {{ shop.url | append: page.url | json }}
-  },
-  "headline": {{ article.title | json }},
-  {% if article.excerpt != blank %}
-    "description": {{ article.excerpt | strip_html | json }},
-  {% endif %}
-  {% if article.image %}
-    {% assign image_size = article.image.width | append: 'x' %}
-    "image": [
-      {{ article | img_url: image_size | prepend: "https:" | json }}
-    ],
-  {% endif %}
-  "datePublished": {{ article.published_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
-  "dateCreated": {{ article.created_at | date: '%Y-%m-%dT%H:%M:%SZ' | json }},
-  "author": {
-    "@type": "Person",
-    "name": {{ article.author | json }}
-  },
-  "publisher": {
-    "@type": "Organization",
-    {% if page_image %}
-      {% assign image_size = page_image.width | append: 'x' %}
-      "logo": {
-        "@type": "ImageObject",
-        "height": {{ page_image.height | json }},
-        "url": {{ page_image | img_url: image_size | prepend: "https:" | json }},
-        "width": {{ page_image.width | json }}
-      },
-    {% endif %}
-    "name": {{ shop.name | json }}
-  }
+  "name": "t:sections.article-comments.name"
 }
-</script>
+{% endschema %}

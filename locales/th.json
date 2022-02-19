@@ -35,7 +35,7 @@
       "login_form_submit": "ป้อน",
       "signup_form_email_label": "อีเมล",
       "signup_form_success": "เราจะส่งอีเมลแจ้งคุณก่อนที่ร้านจะเปิด!",
-      "admin_link_html": "คุณเป็นเจ้าของร้านใช่ไหม <a href=\"\/admin\" class=\"text-link\">เข้าสู่ระบบที่นี่<\/a>",
+      "admin_link_html": "คุณเป็นเจ้าของร้านใช่ไหม <a href=\"/admin\" class=\"text-link\">เข้าสู่ระบบที่นี่</a>",
       "password_link": "เข้าโดยใช้รหัสผ่าน"
     },
     "social": {
@@ -88,7 +88,7 @@
       "dropdown_label": "ภาษา"
     },
     "country": {
-      "dropdown_label": "ประเทศ\/ภูมิภาค"
+      "dropdown_label": "ประเทศ/ภูมิภาค"
     }
   },
   "sections": {
@@ -98,7 +98,7 @@
       "pause_slideshow": "หยุดสไลด์โชว์ชั่วคราว",
       "rotate_slideshow": "เล่นสไลด์โชว์",
       "load_slide": "โหลดสไลด์ {{ slide_number }}",
-      "navigation_instructions": "ใช้ลูกศรซ้าย\/ขวาเพื่อดูสไลด์โชว์ หรือปัดไปทางซ้าย\/ขวาหากคุณกำลังใช้อุปกรณ์มือถือ"
+      "navigation_instructions": "ใช้ลูกศรซ้าย/ขวาเพื่อดูสไลด์โชว์ หรือปัดไปทางซ้าย/ขวาหากคุณกำลังใช้อุปกรณ์มือถือ"
     },
     "featured_product": {
       "title": "สินค้าที่แนะนำ",
@@ -109,7 +109,7 @@
     "map": {
       "address_error": "เกิดข้อผิดพลาดในการค้นหาที่อยู่ดังกล่าว",
       "address_no_results": "ไม่พบผลลัพธ์สำหรับที่อยู่ดังกล่าว",
-      "address_query_limit_html": "คุณใช้ Google API ของคุณเกินขีดจำกัดการใช้งานแล้ว ลองพิจารณาอัปเกรดเป็น<a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">แผนพรีเมียม<\/a>",
+      "address_query_limit_html": "คุณใช้ Google API ของคุณเกินขีดจำกัดการใช้งานแล้ว ลองพิจารณาอัปเกรดเป็น<a href=\"https://developers.google.com/maps/premium/usage-limits\">แผนพรีเมียม</a>",
       "auth_error_html": "เกิดปัญหาในการยืนยันตัวตนสำหรับบัญชีผู้ใช้ Google Maps ของคุณ",
       "section_heading": "ตำแหน่งที่ตั้ง"
     },
@@ -159,14 +159,14 @@
     "general": {
       "title": "ตะกร้าสินค้าของคุณ",
       "note": "เพิ่มบันทึกไปยังคำสั่งซื้อของคุณ",
-      "removed_item_html": "ลบ <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> ออกจากตะกร้าของคุณแล้ว",
+      "removed_item_html": "ลบ <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> ออกจากตะกร้าของคุณแล้ว",
       "remove": "ลบออก",
       "subtotal": "ยอดรวมย่อย",
       "savings": "คุณจะประหยัด",
       "taxes_and_shipping_at_checkout": "ภาษีและค่าจัดส่งที่คิดคำนวณในระหว่างขั้นตอนการชำระเงิน",
-      "taxes_and_shipping_policy_at_checkout_html": "ภาษีและ<a href=\"{{ link }}\">ค่าจัดส่ง<\/a>ที่คิดคำนวณในระหว่างขั้นตอนการชำระเงิน",
+      "taxes_and_shipping_policy_at_checkout_html": "ภาษีและ<a href=\"{{ link }}\">ค่าจัดส่ง</a>ที่คิดคำนวณในระหว่างขั้นตอนการชำระเงิน",
       "taxes_included_but_shipping_at_checkout": "รวมภาษีและค่าจัดส่งที่คิดคำนวณในระหว่างขั้นตอนการชำระเงิน",
-      "taxes_included_and_shipping_policy_html": "รวมภาษี <a href=\"{{ link }}\">ค่าจัดส่ง<\/a>ที่คิดคำนวณในระหว่างขั้นตอนการชำระเงิน",
+      "taxes_included_and_shipping_policy_html": "รวมภาษี <a href=\"{{ link }}\">ค่าจัดส่ง</a>ที่คิดคำนวณในระหว่างขั้นตอนการชำระเงิน",
       "update": "อัพเดต",
       "checkout": "การชำระเงิน",
       "empty": "ตะกร้าของคุณว่างอยู่ในขณะนี้",
@@ -257,7 +257,7 @@
       "address1": "ที่อยู่",
       "address2": "อพาร์ทเม้นท์ ห้องชุด เป็นต้น",
       "city": "เมือง",
-      "country": "ประเทศ\/ภูมิภาค",
+      "country": "ประเทศ/ภูมิภาค",
       "province": "จังหวัด",
       "zip": "รหัสไปรษณีย์",
       "phone": "โทรศัพท์",
@@ -385,7 +385,7 @@
       "vendor": "ผู้ขาย",
       "quantity_minimum_message": "ปริมาณต้องมากกว่าหรือเท่ากับ 1",
       "include_taxes": "รวมภาษี",
-      "shipping_policy_html": "<a href=\"{{ link }}\">ค่าจัดส่ง<\/a>ที่คิดคำนวณในระหว่างขั้นตอนการชำระเงิน",
+      "shipping_policy_html": "<a href=\"{{ link }}\">ค่าจัดส่ง</a>ที่คิดคำนวณในระหว่างขั้นตอนการชำระเงิน",
       "unit_price_label": "ราคาต่อหน่วย",
       "view_cart": "ดูตะกร้าสินค้า",
       "availability": "ความพร้อมในการเผยแพร่",
@@ -416,8 +416,8 @@
       "check_other_stores": "ตรวจสอบความพร้อมที่ร้านค้าอื่นๆ",
       "pick_up_available": "การรับสินค้าด้วยตนเองพร้อมให้บริการ",
       "pick_up_currently_unavailable": "การรับสินค้าด้วยตนเองไม่พร้อมให้บริการในขณะนี้",
-      "pick_up_available_at_html": "การรับสินค้าด้วยตนเองพร้อมให้บริการที่ <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "การรับสินค้าด้วยตนเองไม่พร้อมให้บริการที่ <strong>{{ location_name }}<\/strong> ในขณะนี้"
+      "pick_up_available_at_html": "การรับสินค้าด้วยตนเองพร้อมให้บริการที่ <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "การรับสินค้าด้วยตนเองไม่พร้อมให้บริการที่ <strong>{{ location_name }}</strong> ในขณะนี้"
     }
   }
 }

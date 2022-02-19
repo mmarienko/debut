@@ -33,16 +33,18 @@
           {% for field in form.errors %}
             {% if error == field %}
 
-              {% capture field_label %}
-                {% case field %}
-                  {% when 'author' %}
-                    {{ 'contact.form.name' | t }}
-                  {% when 'body' %}
-                    {{ 'contact.form.message' | t }}
-                  {% else %}
-                    {{ form.errors.translated_fields[field] }}
-                {% endcase %}
-              {% endcapture %}
+              {% liquid
+                capture field_label
+                  case field
+                    when 'author'
+                      echo 'contact.form.name' | t 
+                    when 'body'
+                      echo 'contact.form.message' | t 
+                    else
+                      echo form.errors.translated_fields[field] 
+                  endcase
+                endcapture
+              %}
               <li>
                 {%- if field == 'form' -%}
                   {{ form.errors.messages[field] }}

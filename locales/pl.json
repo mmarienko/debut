@@ -35,7 +35,7 @@
       "login_form_submit": "Enter",
       "signup_form_email_label": "E-mail",
       "signup_form_success": "Wyślemy Ci wiadomość e-mail tuż przed otwarciem!",
-      "admin_link_html": "Czy jesteś właścicielem sklepu? <a href=\"\/admin\" class=\"text-link\">Zaloguj się tutaj<\/a>",
+      "admin_link_html": "Czy jesteś właścicielem sklepu? <a href=\"/admin\" class=\"text-link\">Zaloguj się tutaj</a>",
       "password_link": "Wejdź, wpisując hasło"
     },
     "social": {
@@ -92,7 +92,7 @@
       "dropdown_label": "Język"
     },
     "country": {
-      "dropdown_label": "Kraj\/region"
+      "dropdown_label": "Kraj/region"
     }
   },
   "sections": {
@@ -102,7 +102,7 @@
       "pause_slideshow": "Wstrzymaj pokaz slajdów",
       "rotate_slideshow": "Odtwórz pokaz slajdów",
       "load_slide": "Załaduj slajd {{ slide_number }}",
-      "navigation_instructions": "Użyj strzałek w lewo\/w prawo, aby poruszać się po pokazie slajdów lub przesuń palcem w lewo\/w prawo, jeśli używasz urządzenia mobilnego"
+      "navigation_instructions": "Użyj strzałek w lewo/w prawo, aby poruszać się po pokazie slajdów lub przesuń palcem w lewo/w prawo, jeśli używasz urządzenia mobilnego"
     },
     "featured_product": {
       "title": "Polecany produkt",
@@ -113,7 +113,7 @@
     "map": {
       "address_error": "Błąd podczas wyszukiwania tego adresu",
       "address_no_results": "Brak wyników dla tego adresu",
-      "address_query_limit_html": "Przekroczono limit używania interfejsu API Google. Rozważ przejście do <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Planu Premium<\/a>.",
+      "address_query_limit_html": "Przekroczono limit używania interfejsu API Google. Rozważ przejście do <a href=\"https://developers.google.com/maps/premium/usage-limits\">Planu Premium</a>.",
       "auth_error_html": "Wystąpił problem z uwierzytelnianiem Twojego konta Google Maps.",
       "section_heading": "Lokalizacja"
     },
@@ -167,14 +167,14 @@
     "general": {
       "title": "Twój koszyk",
       "note": "Dodaj notatkę do swojego zamówienia",
-      "removed_item_html": "Usunięto <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> z Twojego koszyka.",
+      "removed_item_html": "Usunięto <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> z Twojego koszyka.",
       "remove": "Usuń",
       "subtotal": "Suma częściowa",
       "savings": "Oszczędzasz",
       "taxes_and_shipping_at_checkout": "Podatki i koszty wysyłki obliczane przy kasie",
-      "taxes_and_shipping_policy_at_checkout_html": "Podatki i <a href=\"{{ link }}\">koszyt wysyłki<\/a> obliczane przy kasie",
+      "taxes_and_shipping_policy_at_checkout_html": "Podatki i <a href=\"{{ link }}\">koszyt wysyłki</a> obliczane przy kasie",
       "taxes_included_but_shipping_at_checkout": "Podatek wliczony w cenę i wysyłka obliczona przy kasie",
-      "taxes_included_and_shipping_policy_html": "Z wliczonym podatkiem. <a href=\"{{ link }}\">Koszt wysyłki<\/a> obliczony przy kasie.",
+      "taxes_included_and_shipping_policy_html": "Z wliczonym podatkiem. <a href=\"{{ link }}\">Koszt wysyłki</a> obliczony przy kasie.",
       "update": "Aktualizuj",
       "checkout": "Realizacja zakupu",
       "empty": "Twój koszyk jest obecnie pusty.",
@@ -269,7 +269,7 @@
       "address1": "Adres",
       "address2": "Mieszkanie, apartament, itp.",
       "city": "Miasto",
-      "country": "Kraj\/region",
+      "country": "Kraj/region",
       "province": "Prowincja",
       "zip": "Kod pocztowy",
       "phone": "Telefon",
@@ -399,7 +399,7 @@
       "vendor": "Dostawca",
       "quantity_minimum_message": "Ilość musi wynosić 1 lub więcej",
       "include_taxes": "Z wliczonym podatkiem.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Koszt wysyłki<\/a> obliczony przy realizacji zakupu.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Koszt wysyłki</a> obliczony przy realizacji zakupu.",
       "unit_price_label": "Cena jednostkowa",
       "view_cart": "Zobacz koszyk",
       "availability": "Dostępność",
@@ -430,8 +430,8 @@
       "check_other_stores": "Sprawdź dostępność w innych sklepach",
       "pick_up_available": "Odbiór jest możliwy",
       "pick_up_currently_unavailable": "Odbiór jest obecnie niemożliwy",
-      "pick_up_available_at_html": "Odbiór możliwy w <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Odbiór w <strong>{{ location_name }}<\/strong> jest obecnie niemożliwy"
+      "pick_up_available_at_html": "Odbiór możliwy w <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Odbiór w <strong>{{ location_name }}</strong> jest obecnie niemożliwy"
     }
   }
 }

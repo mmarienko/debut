@@ -15,7 +15,7 @@
       "vendor": "Доставчик",
       "quantity_minimum_message": "Количеството трябва да бъде 1 или повече",
       "include_taxes": "С включени данъци.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Доставката<\/a> се изчислява при плащане.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Доставката</a> се изчислява при плащане.",
       "unit_price_label": "Единична цена",
       "view_cart": "Покажи количката",
       "view_in_space": "Преглед във вашето пространство",
@@ -58,7 +58,7 @@
       "login_form_submit": "Въведете",
       "signup_form_email_label": "Имейл",
       "signup_form_success": "Ще ви изпратим имейл точно преди да отворим.",
-      "admin_link_html": "Вие ли сте собственикът на магазина? <a href=\"\/admin\" class=\"text-link\">Влезте тук<\/a>",
+      "admin_link_html": "Вие ли сте собственикът на магазина? <a href=\"/admin\" class=\"text-link\">Влезте тук</a>",
       "password_link": "Влизане с парола"
     },
     "social": {
@@ -111,7 +111,7 @@
       "dropdown_label": "Език"
     },
     "country": {
-      "dropdown_label": "Държава\/регион"
+      "dropdown_label": "Държава/регион"
     }
   },
   "sections": {
@@ -121,7 +121,7 @@
       "pause_slideshow": "Пауза на слайдшоуто",
       "rotate_slideshow": "Възпроизвеждане на слайдшоу",
       "load_slide": "Зареждане на слайд {{ slide_number }}",
-      "navigation_instructions": "Използвайте стрелките за наляво\/надясно, за да навигирате в слайдшоуто, или плъзнете с пръст наляво\/надясно, ако използвате мобилно устройство"
+      "navigation_instructions": "Използвайте стрелките за наляво/надясно, за да навигирате в слайдшоуто, или плъзнете с пръст наляво/надясно, ако използвате мобилно устройство"
     },
     "featured_product": {
       "title": "Препоръчан продукт",
@@ -132,7 +132,7 @@
     "map": {
       "address_error": "Грешка при търсенето на този адрес",
       "address_no_results": "За този адрес няма резултати",
-      "address_query_limit_html": "Превишихте ограничението за използване на Google API. Помислете за надграждане до <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">план Premium<\/a>.",
+      "address_query_limit_html": "Превишихте ограничението за използване на Google API. Помислете за надграждане до <a href=\"https://developers.google.com/maps/premium/usage-limits\">план Premium</a>.",
       "auth_error_html": "Възникна проблем при удостоверяването на профила ви в Google Карти.",
       "section_heading": "Местоположение"
     },
@@ -152,7 +152,7 @@
       "view_all_blogs": "Покажи всички блогове",
       "all_topics": "Всички теми",
       "by_author": "от {{ author }}",
-      "posted_in": "Публикувано в\/ъв",
+      "posted_in": "Публикувано в/ъв",
       "read_more": "Прочетете още",
       "read_more_title": "Прочетете още: {{ title }}",
       "back_to_blog": "Назад към {{ title }}",
@@ -182,14 +182,14 @@
     "general": {
       "title": "Вашата количка",
       "note": "Добавяне на бележка към поръчката ви",
-      "removed_item_html": "Премахнато от количката ви: <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span>.",
+      "removed_item_html": "Премахнато от количката ви: <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span>.",
       "remove": "Премахване",
       "subtotal": "Междинна сума",
       "savings": "Спестявате",
       "taxes_and_shipping_at_checkout": "Данъците и доставката се изчисляват при плащане",
-      "taxes_and_shipping_policy_at_checkout_html": "Данъците и <a href=\"{{ link }}\">доставката<\/a> се изчисляват при плащане",
+      "taxes_and_shipping_policy_at_checkout_html": "Данъците и <a href=\"{{ link }}\">доставката</a> се изчисляват при плащане",
       "taxes_included_but_shipping_at_checkout": "Данъците са включени, а доставката се изчислява при плащане",
-      "taxes_included_and_shipping_policy_html": "С включени данъци. <a href=\"{{ link }}\">Доставката<\/a> се изчислява при плащане.",
+      "taxes_included_and_shipping_policy_html": "С включени данъци. <a href=\"{{ link }}\">Доставката</a> се изчислява при плащане.",
       "update": "Актуализиране",
       "checkout": "Преминаване към плащане",
       "empty": "Количката ви в момента е празна.",
@@ -280,7 +280,7 @@
       "address1": "Адрес",
       "address2": "Етаж, апартамент и т.н.",
       "city": "Град",
-      "country": "Държава\/регион",
+      "country": "Държава/регион",
       "province": "Провинция",
       "zip": "Пощенски код",
       "phone": "Телефон",
@@ -416,8 +416,8 @@
       "check_other_stores": "Проверка за наличност в други магазини",
       "pick_up_available": "Възможност за взимане",
       "pick_up_currently_unavailable": "В момента няма възможност за взимане",
-      "pick_up_available_at_html": "Възможност за взимане от <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "В момента няма възможност за взимане от <strong>{{ location_name }}<\/strong>"
+      "pick_up_available_at_html": "Възможност за взимане от <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "В момента няма възможност за взимане от <strong>{{ location_name }}</strong>"
     }
   }
 }
