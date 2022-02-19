@@ -25,7 +25,7 @@
     "pagination": {
       "previous": "Edellinen sivu",
       "next": "Seuraava sivu",
-      "current_page": "Sivu {{ current }}\/{{ total }}"
+      "current_page": "Sivu {{ current }}/{{ total }}"
     },
     "password_page": {
       "opening_soon": "Avataan pian",
@@ -35,7 +35,7 @@
       "login_form_submit": "Siirry",
       "signup_form_email_label": "Sähköposti",
       "signup_form_success": "Lähetämme sinulle sähköpostiviestin juuri ennen avaamista!",
-      "admin_link_html": "Oletko kaupan omistaja? <a href=\"\/admin\" class=\"text-link\">Kirjaudu sisään tästä<\/a>",
+      "admin_link_html": "Oletko kaupan omistaja? <a href=\"/admin\" class=\"text-link\">Kirjaudu sisään tästä</a>",
       "password_link": "Siirry sisään käyttämällä salasanaa"
     },
     "social": {
@@ -61,7 +61,7 @@
       "search_for": "Hae",
       "loading": "Ladataan",
       "clear_search_term": "Tyhjennä hakutermi",
-      "number_of_results": "{{ result_number }} \/ {{ results_count }}",
+      "number_of_results": "{{ result_number }} / {{ results_count }}",
       "products": "Tuotteet",
       "number_of_results_found": "{{ results_count }} tulosta löytyi",
       "one_result_found": "1 tulos löytyi",
@@ -88,7 +88,7 @@
       "dropdown_label": "Kieli"
     },
     "country": {
-      "dropdown_label": "Maa\/alue"
+      "dropdown_label": "Maa/alue"
     }
   },
   "sections": {
@@ -98,7 +98,7 @@
       "pause_slideshow": "Keskeytä diaesitys",
       "rotate_slideshow": "Toista diaesitys",
       "load_slide": "Lataa dia {{ slide_number }}",
-      "navigation_instructions": "Siirry diaesitykseen vasemmalla\/oikealla nuolella tai pyyhkäise vasemmalle\/oikealle, jos käytät mobiililaitetta"
+      "navigation_instructions": "Siirry diaesitykseen vasemmalla/oikealla nuolella tai pyyhkäise vasemmalle/oikealle, jos käytät mobiililaitetta"
     },
     "featured_product": {
       "title": "Esittelyssä oleva tuote",
@@ -109,7 +109,7 @@
     "map": {
       "address_error": "Virhe etsittäessä tätä osoitetta",
       "address_no_results": "Tälle osoitteelle ei löytynyt tuloksia",
-      "address_query_limit_html": "Olet ylittänyt Google API: n käyttörajan. Harkitse päivitystä <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium-sopimukseen<\/a>.",
+      "address_query_limit_html": "Olet ylittänyt Google API: n käyttörajan. Harkitse päivitystä <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium-sopimukseen</a>.",
       "auth_error_html": "Google Maps -tilisi todentamisessa oli ongelma.",
       "section_heading": "Sijainti"
     },
@@ -128,7 +128,7 @@
       "view_all": "Näytä kaikki",
       "view_all_blogs": "Näytä kaikki blogit",
       "all_topics": "Kaikki aiheet",
-      "by_author": "\/ {{ author }}",
+      "by_author": "/ {{ author }}",
       "posted_in": "Julkaistu",
       "read_more": "Lue lisää",
       "read_more_title": "Lue lisää: {{ title }}",
@@ -159,14 +159,14 @@
     "general": {
       "title": "Ostoskorisi",
       "note": "Lisää kommentti tilaukseesi",
-      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> on poistettu ostoskorista.",
+      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> on poistettu ostoskorista.",
       "remove": "Poista",
       "subtotal": "Välisumma",
       "savings": "Säästät",
       "taxes_and_shipping_at_checkout": "Verot ja toimituskulut lasketaan kassalla",
-      "taxes_and_shipping_policy_at_checkout_html": "Verot ja <a href=\"{{ link }}\">toimituskulut<\/a>lasketaan kassalla",
+      "taxes_and_shipping_policy_at_checkout_html": "Verot ja <a href=\"{{ link }}\">toimituskulut</a>lasketaan kassalla",
       "taxes_included_but_shipping_at_checkout": "Sisältää veron, toimituskulut lasketaan kassalla",
-      "taxes_included_and_shipping_policy_html": "Sisältää veron. <a href=\"{{ link }}\">Toimituskulut<\/a> lasketaan kassalla.",
+      "taxes_included_and_shipping_policy_html": "Sisältää veron. <a href=\"{{ link }}\">Toimituskulut</a> lasketaan kassalla.",
       "update": "Päivitä",
       "checkout": "Maksu kassalle",
       "empty": "Ostoskorisi on tyhjä.",
@@ -257,7 +257,7 @@
       "address1": "Osoite",
       "address2": "Huoneisto jne.",
       "city": "Kaupunki",
-      "country": "Maa\/alue",
+      "country": "Maa/alue",
       "province": "Provinssi",
       "zip": "Postinumero",
       "phone": "Puhelin",
@@ -385,7 +385,7 @@
       "vendor": "Myyjä",
       "quantity_minimum_message": "Määrän on oltava vähintään 1",
       "include_taxes": "Sisältää veron.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Toimituskulut<\/a> lasketaan kassalla.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Toimituskulut</a> lasketaan kassalla.",
       "unit_price_label": "Yksikköhinta",
       "view_cart": "Katso ostoskori",
       "availability": "Saatavuus",
@@ -416,8 +416,8 @@
       "check_other_stores": "Tarkista saatavuus muista kaupoista",
       "pick_up_available": "Nouto saatavilla",
       "pick_up_currently_unavailable": "Nouto ei ole tällä hetkellä saatavilla",
-      "pick_up_available_at_html": "Nouto saatavilla paikassa <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Nouto ei ole tällä hekellä saatavilla paikassa <strong>{{ location_name }}<\/strong>"
+      "pick_up_available_at_html": "Nouto saatavilla paikassa <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Nouto ei ole tällä hekellä saatavilla paikassa <strong>{{ location_name }}</strong>"
     }
   }
 }

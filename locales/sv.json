@@ -35,7 +35,7 @@
       "login_form_submit": "Ange",
       "signup_form_email_label": "E-post",
       "signup_form_success": "Vi kommer att skicka ett e-postmeddelande precis innan vi öppnar!",
-      "admin_link_html": "Är det du som är butiksägare? <a href=\"\/admin\" class=\"text-link\">Logga in här<\/a>",
+      "admin_link_html": "Är det du som är butiksägare? <a href=\"/admin\" class=\"text-link\">Logga in här</a>",
       "password_link": "Ange lösenord för att ta dig in"
     },
     "social": {
@@ -88,7 +88,7 @@
       "dropdown_label": "Språk"
     },
     "country": {
-      "dropdown_label": "Land\/Region"
+      "dropdown_label": "Land/Region"
     }
   },
   "sections": {
@@ -98,7 +98,7 @@
       "pause_slideshow": "Pausa bildspelet",
       "rotate_slideshow": "Spela bildspel",
       "load_slide": "Ladda bild {{ slide_number }}",
-      "navigation_instructions": "Använd vänster-\/högerpil för att navigera i bildspelet eller svep åt vänster\/höger om du använder en mobil enhet"
+      "navigation_instructions": "Använd vänster-/högerpil för att navigera i bildspelet eller svep åt vänster/höger om du använder en mobil enhet"
     },
     "featured_product": {
       "title": "Utvald produkt",
@@ -109,7 +109,7 @@
     "map": {
       "address_error": "Det gick inte att hitta den adressen",
       "address_no_results": "Inga resultat för den adressen",
-      "address_query_limit_html": "Du har överskridit användningsgränsen för Google API. Överväg att uppgradera till en <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">premiumplan<\/a>.",
+      "address_query_limit_html": "Du har överskridit användningsgränsen för Google API. Överväg att uppgradera till en <a href=\"https://developers.google.com/maps/premium/usage-limits\">premiumplan</a>.",
       "auth_error_html": "Det gick inte att autentisera ditt Google Maps-konto.",
       "section_heading": "Plats"
     },
@@ -159,14 +159,14 @@
     "general": {
       "title": "Din varukorg",
       "note": "Lägg till en anteckning till ordern",
-      "removed_item_html": "Tog bort <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> från din kundvagn.",
+      "removed_item_html": "Tog bort <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> från din kundvagn.",
       "remove": "Ta bort",
       "subtotal": "Delsumma",
       "savings": "Du sparar",
       "taxes_and_shipping_at_checkout": "Skatter och frakt beräknas vid utcheckning",
-      "taxes_and_shipping_policy_at_checkout_html": "Skatter och <a href=\"{{ link }}\">frakt<\/a> beräknas vid utcheckning",
+      "taxes_and_shipping_policy_at_checkout_html": "Skatter och <a href=\"{{ link }}\">frakt</a> beräknas vid utcheckning",
       "taxes_included_but_shipping_at_checkout": "Skatt ingår och frakt beräknas vid utcheckning",
-      "taxes_included_and_shipping_policy_html": "Skatt ingår. <a href=\"{{ link }}\">Frakt<\/a> beräknas vid utcheckning.",
+      "taxes_included_and_shipping_policy_html": "Skatt ingår. <a href=\"{{ link }}\">Frakt</a> beräknas vid utcheckning.",
       "update": "Uppdatera",
       "checkout": "Utcheckningskassa",
       "empty": "Din varukorg är för tillfället tom.",
@@ -257,7 +257,7 @@
       "address1": "Adress",
       "address2": "Lägenhet, trappa, etc.",
       "city": "Stad",
-      "country": "Land\/Region",
+      "country": "Land/Region",
       "province": "Provins",
       "zip": "Postnummer",
       "phone": "Telefon",
@@ -385,7 +385,7 @@
       "vendor": "Säljare",
       "quantity_minimum_message": "Kvantiteten måste vara 1 eller mer",
       "include_taxes": "Skatt ingår.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Frakt<\/a>beräknas i kassan.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Frakt</a>beräknas i kassan.",
       "unit_price_label": "Enhetspris",
       "view_cart": "Visa varukorg",
       "availability": "Tillgänglighet",
@@ -416,8 +416,8 @@
       "check_other_stores": "Kontrollerar tillgänglighet i andra butiker",
       "pick_up_available": "Hämtning tillgänglig",
       "pick_up_currently_unavailable": "Hämtning är för närvarande inte tillgängligt",
-      "pick_up_available_at_html": "Hämtning tillgänglig på <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Hämtning är för närvarande inte tillgängligt på <strong>{{ location_name }}<\/strong>"
+      "pick_up_available_at_html": "Hämtning tillgänglig på <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Hämtning är för närvarande inte tillgängligt på <strong>{{ location_name }}</strong>"
     }
   }
 }

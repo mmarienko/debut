@@ -35,7 +35,7 @@
       "login_form_submit": "Accedi",
       "signup_form_email_label": "Email",
       "signup_form_success": "Ti invieremo un'email appena prima di aprire!",
-      "admin_link_html": "Sei il proprietario del negozio? <a href=\"\/admin\" class=\"text-link\">Accedi qui<\/a>",
+      "admin_link_html": "Sei il proprietario del negozio? <a href=\"/admin\" class=\"text-link\">Accedi qui</a>",
       "password_link": "Accedi usando la password"
     },
     "social": {
@@ -88,7 +88,7 @@
       "dropdown_label": "Lingua"
     },
     "country": {
-      "dropdown_label": "Paese\/Area geografica"
+      "dropdown_label": "Paese/Area geografica"
     }
   },
   "sections": {
@@ -98,7 +98,7 @@
       "pause_slideshow": "Metti in pausa",
       "rotate_slideshow": "Avvia slideshow",
       "load_slide": "Carica slide {{ slide_number }}",
-      "navigation_instructions": "Usa le frecce sinistra\/destra per navigare nella presentazione o scorri a sinistra\/destra se stai utilizzando un dispositivo mobile"
+      "navigation_instructions": "Usa le frecce sinistra/destra per navigare nella presentazione o scorri a sinistra/destra se stai utilizzando un dispositivo mobile"
     },
     "featured_product": {
       "title": "Prodotto presentato",
@@ -109,7 +109,7 @@
     "map": {
       "address_error": "Errore durante la ricerca dell'indirizzo",
       "address_no_results": "La ricerca non ha prodotto alcun risultato per quell’indirizzo",
-      "address_query_limit_html": "Hai superato il limite di utilizzo dell'API di Google. Considera l’aggiornamento a un <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Piano Premium<\/a>.",
+      "address_query_limit_html": "Hai superato il limite di utilizzo dell'API di Google. Considera l’aggiornamento a un <a href=\"https://developers.google.com/maps/premium/usage-limits\">Piano Premium</a>.",
       "auth_error_html": "Si è verificato un problema di autenticazione con il tuo account di Google Maps.",
       "section_heading": "Posizione"
     },
@@ -159,14 +159,14 @@
     "general": {
       "title": "Il tuo carrello",
       "note": "Aggiungi una nota al tuo ordine",
-      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> sono stati rimossi dal carrello.",
+      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> sono stati rimossi dal carrello.",
       "remove": "Rimuovi",
       "subtotal": "Subtotale",
       "savings": "Stai risparmiando",
       "taxes_and_shipping_at_checkout": "Imposte e spese di spedizione calcolate al momento del pagamento",
-      "taxes_and_shipping_policy_at_checkout_html": "Imposte e <a href=\"{{ link }}\">spese di spedizione<\/a> calcolate al momento del pagamento",
+      "taxes_and_shipping_policy_at_checkout_html": "Imposte e <a href=\"{{ link }}\">spese di spedizione</a> calcolate al momento del pagamento",
       "taxes_included_but_shipping_at_checkout": "Imposte incluse e spese di spedizione calcolate al momento del pagamento",
-      "taxes_included_and_shipping_policy_html": "Imposte incluse. <a href=\"{{ link }}\">Spedizione<\/a> calcolata al momento del pagamento.",
+      "taxes_included_and_shipping_policy_html": "Imposte incluse. <a href=\"{{ link }}\">Spedizione</a> calcolata al momento del pagamento.",
       "update": "Aggiornamento",
       "checkout": "Check-out",
       "empty": "Il tuo carrello è attualmente vuoto.",
@@ -257,7 +257,7 @@
       "address1": "Indirizzo",
       "address2": "Interno, scala, ecc.",
       "city": "Città",
-      "country": "Paese\/Area geografica",
+      "country": "Paese/Area geografica",
       "province": "Provincia",
       "zip": "CAP",
       "phone": "Numero di telefono",
@@ -385,7 +385,7 @@
       "vendor": "Venditore",
       "quantity_minimum_message": "La quantità deve essere 1 o più",
       "include_taxes": "Imposte incluse.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Spedizione<\/a> calcolata al momento del pagamento.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Spedizione</a> calcolata al momento del pagamento.",
       "unit_price_label": "Prezzo unitario",
       "view_cart": "Visualizza carrello",
       "availability": "Disponibilità",
@@ -416,8 +416,8 @@
       "check_other_stores": "Verifica la disponibilità in altri negozi",
       "pick_up_available": "Ritiro disponibile",
       "pick_up_currently_unavailable": "Ritiro attualmente non disponibile",
-      "pick_up_available_at_html": "Ritiro disponibile presso <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Ritiro presso <strong>{{ location_name }}<\/strong> attualmente non disponibile"
+      "pick_up_available_at_html": "Ritiro disponibile presso <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Ritiro presso <strong>{{ location_name }}</strong> attualmente non disponibile"
     }
   }
 }

@@ -11,11 +11,11 @@
 
   Usage:
   {%- for media in product.media -%}
-    {% include 'media', media: media, featured_media: featured_media, height: height %}
+    {% render 'media', media: media, featured_media: featured_media, height: height %}
   {%- endfor -%}
 
   {%- for media in product.media -%}
-    {% include 'media', media: media, featured_media: featured_media, height: height,
+    {% render 'media', media: media, featured_media: featured_media, height: height,
      enable_image_zoom: enable_image_zoom, image_zoom_size: product_image_zoom_size, image_scale: product_image_scale %}
   {%- endfor -%}
 {% endcomment %}
@@ -40,21 +40,24 @@
   {% case media.media_type %}
     {% when 'image' %}
       {% capture zoom_media_id %}ImageZoom-{{ section.id }}-{{ media.id }}{% endcapture %}
-      {%- assign img_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-      {% include 'image-style', height: height, wrapper_id: media_wrapper_id, img_id: media_id, image: media.preview_image %}
+      {%- assign img_url = media | img_url: '1x1' | replace: '_1x1.', '.' -%}
+      {% render 'image-style', height: height, wrapper_id: media_wrapper_id, img_id: media_id, image: media.preview_image %}
       <div
         id="{{ zoom_media_id }}"
-        style="padding-top:{{ 1 | divided_by: media.preview_image.aspect_ratio | times: 100}}%;"
+        style="padding-top:{{ 1 | divided_by: media.preview_image.aspect_ratio | times: 100 }}%;"
         class="product-single__media{% if product.media.size > 1 %} product-single__media--has-thumbnails{% endif %}{% if enable_image_zoom %} js-zoom-enabled{% endif %}"
         {% if enable_image_zoom %} data-image-zoom-wrapper data-zoom="{{ media | img_url: image_zoom_size, scale: image_scale }}"{% endif %}
         data-image-loading-animation>
         <img id="{{ media_id }}"
-          class="feature-row__image {{ media_class }} lazyload{% unless featured_media == media %} lazypreload{% endunless %}"
-          data-src="{{ img_url }}"
+          class="feature-row__image {{ media_class }}"
+          src="{{ img_url }}"
           data-widths="[180, 360, 540, 720, 900, 1080, 1296, 1512, 1728, 2048]"
           data-aspectratio="{{ media.preview_image.aspect_ratio }}"
           data-sizes="auto"
           {% if enable_image_zoom %} data-image-zoom {% endif %}
+          loading="lazy"
+          width="auto"
+          height="auto"
           alt="{{ media.alt | escape }}"
           {% if featured_media == media and request.page_type == 'product' %} onload="window.performance.mark('debut:product:image_visible');"{% endif %}>
       </div>

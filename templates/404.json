@@ -1,0 +1,10 @@
+{
+  "sections": {
+    "main": {
+      "type": "404"
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

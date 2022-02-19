@@ -35,7 +35,7 @@
       "login_form_submit": "输入",
       "signup_form_email_label": "电子邮件",
       "signup_form_success": "在我们打开之前，我们会向您发送电子邮件！",
-      "admin_link_html": "您是否是店主？<a href=\"\/admin\" class=\"text-link\">在此处登录<\/a>",
+      "admin_link_html": "您是否是店主？<a href=\"/admin\" class=\"text-link\">在此处登录</a>",
       "password_link": "使用密码进入"
     },
     "social": {
@@ -88,7 +88,7 @@
       "dropdown_label": "语言"
     },
     "country": {
-      "dropdown_label": "国家\/地区"
+      "dropdown_label": "国家/地区"
     }
   },
   "sections": {
@@ -98,7 +98,7 @@
       "pause_slideshow": "暂停幻灯片",
       "rotate_slideshow": "播放幻灯片",
       "load_slide": "加载幻灯片 {{ slide_number }}",
-      "navigation_instructions": "使用左\/右箭头浏览幻灯片或者在使用移动设备时向左\/向右轻扫"
+      "navigation_instructions": "使用左/右箭头浏览幻灯片或者在使用移动设备时向左/向右轻扫"
     },
     "featured_product": {
       "title": "特色产品",
@@ -109,7 +109,7 @@
     "map": {
       "address_error": "查找该地址时出错",
       "address_no_results": "未找到该地址的结果",
-      "address_query_limit_html": "您已超过 Google API 使用限制。考虑升级到<a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">高级套餐<\/a>。",
+      "address_query_limit_html": "您已超过 Google API 使用限制。考虑升级到<a href=\"https://developers.google.com/maps/premium/usage-limits\">高级套餐</a>。",
       "auth_error_html": "对您的 Maps 账户进行身份验证时出现问题。",
       "section_heading": "地点"
     },
@@ -159,14 +159,14 @@
     "general": {
       "title": "您的购物车",
       "note": "为订单添加备注",
-      "removed_item_html": "已从您的购物车删除了 <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span>。",
+      "removed_item_html": "已从您的购物车删除了 <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span>。",
       "remove": "删除",
       "subtotal": "小计",
       "savings": "您正在保存",
       "taxes_and_shipping_at_checkout": "结账时计算的税金和运费",
-      "taxes_and_shipping_policy_at_checkout_html": "结账时计算的税金和<a href=\"{{ link }}\">运费<\/a>",
+      "taxes_and_shipping_policy_at_checkout_html": "结账时计算的税金和<a href=\"{{ link }}\">运费</a>",
       "taxes_included_but_shipping_at_checkout": "结账时计算的税金（包含）和运费",
-      "taxes_included_and_shipping_policy_html": "税金（包含）。结账时计算的<a href=\"{{ link }}\">运费<\/a>。",
+      "taxes_included_and_shipping_policy_html": "税金（包含）。结账时计算的<a href=\"{{ link }}\">运费</a>。",
       "update": "更新",
       "checkout": "结账",
       "empty": "您的购物车当前是空的。",
@@ -257,9 +257,9 @@
       "address1": "地址",
       "address2": "公寓、房间号等。",
       "city": "城市",
-      "country": "国家\/地区",
+      "country": "国家/地区",
       "province": "省",
-      "zip": "邮编\/邮政编码",
+      "zip": "邮编/邮政编码",
       "phone": "电话",
       "set_default": "设为默认地址",
       "add": "添加地址",
@@ -385,7 +385,7 @@
       "vendor": "供应商",
       "quantity_minimum_message": "数量必须大于或等于 1",
       "include_taxes": "税金（包含）。",
-      "shipping_policy_html": "结账时计算的<a href=\"{{ link }}\">运费<\/a>。",
+      "shipping_policy_html": "结账时计算的<a href=\"{{ link }}\">运费</a>。",
       "unit_price_label": "单价",
       "view_cart": "查看购物车",
       "availability": "供货情况",
@@ -416,8 +416,8 @@
       "check_other_stores": "查看其他商店的可用服务",
       "pick_up_available": "提供取货服务",
       "pick_up_currently_unavailable": "目前无法提供取货服务",
-      "pick_up_available_at_html": "<strong>{{ location_name }}<\/strong> 提供取货服务",
-      "pick_up_unavailable_at_html": "<strong>{{ location_name }}<\/strong> 目前无法提供取货服务"
+      "pick_up_available_at_html": "<strong>{{ location_name }}</strong> 提供取货服务",
+      "pick_up_unavailable_at_html": "<strong>{{ location_name }}</strong> 目前无法提供取货服务"
     }
   }
 }

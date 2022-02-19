@@ -15,7 +15,7 @@
       "vendor": "Vânzător",
       "quantity_minimum_message": "Cantitatea trebuie să fie de 1 sau mai mult",
       "include_taxes": "Taxe incluse.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Transportul<\/a> este calculat la finalizarea comenzii.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Transportul</a> este calculat la finalizarea comenzii.",
       "unit_price_label": "Preț unitar",
       "view_cart": "Vezi coșul",
       "view_in_space": "Vezi în spațiul tău",
@@ -58,7 +58,7 @@
       "login_form_submit": "Intră",
       "signup_form_email_label": "E-mail",
       "signup_form_success": "Îți vom trimite un e-mail chiar înainte de deschidere!",
-      "admin_link_html": "Ești proprietarul magazinului? <a href=\"\/admin\" class=\"text-link\">Conectează-te aici<\/a>",
+      "admin_link_html": "Ești proprietarul magazinului? <a href=\"/admin\" class=\"text-link\">Conectează-te aici</a>",
       "password_link": "Intră folosind parola"
     },
     "social": {
@@ -113,7 +113,7 @@
       "dropdown_label": "Limbă"
     },
     "country": {
-      "dropdown_label": "Țară\/Regiune"
+      "dropdown_label": "Țară/Regiune"
     }
   },
   "sections": {
@@ -123,7 +123,7 @@
       "pause_slideshow": "Întrerupe prezentarea de diapozitive",
       "rotate_slideshow": "Redă prezentarea de diapozitive",
       "load_slide": "Încarcă diapozitivul {{ slide_number }}",
-      "navigation_instructions": "Utilizează săgețile stânga\/dreapta pentru a naviga în prezentare sau glisează stânga\/dreapta dacă folosești un dispozitiv mobil"
+      "navigation_instructions": "Utilizează săgețile stânga/dreapta pentru a naviga în prezentare sau glisează stânga/dreapta dacă folosești un dispozitiv mobil"
     },
     "featured_product": {
       "title": "Produs recomandat",
@@ -134,7 +134,7 @@
     "map": {
       "address_error": "Eroare la căutarea adresei respective",
       "address_no_results": "Nu există rezultate pentru adresa respectivă",
-      "address_query_limit_html": "Ai depășit limita de utilizare a API-ului Google. Ia în considerare trecerea la un <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Plan Premium<\/a>.",
+      "address_query_limit_html": "Ai depășit limita de utilizare a API-ului Google. Ia în considerare trecerea la un <a href=\"https://developers.google.com/maps/premium/usage-limits\">Plan Premium</a>.",
       "auth_error_html": "A apărut o problemă la autentificarea contului tău Google Maps.",
       "section_heading": "Locație"
     },
@@ -186,14 +186,14 @@
     "general": {
       "title": "Coșul tău",
       "note": "Adaugă o notă la comanda ta",
-      "removed_item_html": "S-a eliminat <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> din coșul tău.",
+      "removed_item_html": "S-a eliminat <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> din coșul tău.",
       "remove": "Elimină",
       "subtotal": "Subtotal",
       "savings": "Economisești",
       "taxes_and_shipping_at_checkout": "Taxele și transportul sunt calculate la finalizarea comenzii",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxele și <a href=\"{{ link }}\">transportul<\/a> sunt calculate la finalizarea comenzii",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxele și <a href=\"{{ link }}\">transportul</a> sunt calculate la finalizarea comenzii",
       "taxes_included_but_shipping_at_checkout": "Taxele sunt incluse și transportul este calculat la finalizarea comenzii",
-      "taxes_included_and_shipping_policy_html": "Taxe incluse. <a href=\"{{ link }}\">Transportul<\/a> este calculat la finalizarea comenzii.",
+      "taxes_included_and_shipping_policy_html": "Taxe incluse. <a href=\"{{ link }}\">Transportul</a> este calculat la finalizarea comenzii.",
       "update": "Actualizează",
       "checkout": "Finalizează comanda",
       "empty": "Coșul tău este momentan gol.",
@@ -286,8 +286,8 @@
       "address1": "Adresă",
       "address2": "Apartament, cameră etc.",
       "city": "Localitate",
-      "country": "Țară\/Regiune",
-      "province": "Județ\/provincie",
+      "country": "Țară/Regiune",
+      "province": "Județ/provincie",
       "zip": "Cod poștal",
       "phone": "Telefon",
       "set_default": "Setează ca adresă implicită",
@@ -423,8 +423,8 @@
       "check_other_stores": "Vezi disponibilitatea la alte magazine",
       "pick_up_available": "Ridicare disponibilă",
       "pick_up_currently_unavailable": "Ridicare indisponibilă momentan",
-      "pick_up_available_at_html": "Ridicare disponibilă la <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Ridicare indisponibilă momentan la <strong>{{ location_name }}<\/strong>"
+      "pick_up_available_at_html": "Ridicare disponibilă la <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Ridicare indisponibilă momentan la <strong>{{ location_name }}</strong>"
     }
   }
 }

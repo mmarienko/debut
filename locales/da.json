@@ -35,7 +35,7 @@
       "login_form_submit": "Tilgå",
       "signup_form_email_label": "Mail",
       "signup_form_success": "Vi sender en mail til dig, lige inden vi åbner.",
-      "admin_link_html": "Ejer du butikken? <a href=\"\/admin\" class=\"text-link\">Log ind her<\/a>",
+      "admin_link_html": "Ejer du butikken? <a href=\"/admin\" class=\"text-link\">Log ind her</a>",
       "password_link": "Brug adgangskode for at få adgang"
     },
     "social": {
@@ -88,7 +88,7 @@
       "dropdown_label": "Sprog"
     },
     "country": {
-      "dropdown_label": "Land\/område"
+      "dropdown_label": "Land/område"
     }
   },
   "sections": {
@@ -98,7 +98,7 @@
       "pause_slideshow": "Sæt diasshow på pause",
       "rotate_slideshow": "Afspil diasshow",
       "load_slide": "Indlæs dias {{ slide_number }}",
-      "navigation_instructions": "Brug venstre\/højre pile til at navigere i diasshowet eller swipe til venstre\/højre, hvis du bruger en mobilenhed"
+      "navigation_instructions": "Brug venstre/højre pile til at navigere i diasshowet eller swipe til venstre/højre, hvis du bruger en mobilenhed"
     },
     "featured_product": {
       "title": "Fremhævet produkt",
@@ -109,7 +109,7 @@
     "map": {
       "address_error": "Der opstod en fejl under forsøg på at finde adressen",
       "address_no_results": "Ingen resultater for den adresse",
-      "address_query_limit_html": "Du har overskredet Googles API-brugerbegrænsning. Overvej at opgradere til et <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium-abonnement<\/a>.",
+      "address_query_limit_html": "Du har overskredet Googles API-brugerbegrænsning. Overvej at opgradere til et <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium-abonnement</a>.",
       "auth_error_html": "Der opstod et problem under forsøg på at bekræfte din Google Maps-konto.",
       "section_heading": "Lokation"
     },
@@ -159,14 +159,14 @@
     "general": {
       "title": "Din indkøbskurv",
       "note": "Føj en bemærkning til din ordre",
-      "removed_item_html": "Der blev fjernet <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> fra din indkøbskurv.",
+      "removed_item_html": "Der blev fjernet <span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> fra din indkøbskurv.",
       "remove": "Fjern",
       "subtotal": "Subtotal",
       "savings": "Du sparer",
       "taxes_and_shipping_at_checkout": "Skatter og levering beregnes ved betaling",
-      "taxes_and_shipping_policy_at_checkout_html": "Skatter og <a href=\"{{ link }}\">levering<\/a> beregnes ved betaling",
+      "taxes_and_shipping_policy_at_checkout_html": "Skatter og <a href=\"{{ link }}\">levering</a> beregnes ved betaling",
       "taxes_included_but_shipping_at_checkout": "Inklusive skat. Levering beregnes ved betaling",
-      "taxes_included_and_shipping_policy_html": "Inklusive skat. <a href=\"{{ link }}\">Levering<\/a> beregnes ved betaling.",
+      "taxes_included_and_shipping_policy_html": "Inklusive skat. <a href=\"{{ link }}\">Levering</a> beregnes ved betaling.",
       "update": "Opdatér",
       "checkout": "Gå til betaling",
       "empty": "Din indkøbskurv er tom.",
@@ -257,7 +257,7 @@
       "address1": "Adresse",
       "address2": "Lejlighed, etage osv.",
       "city": "By",
-      "country": "Land\/område",
+      "country": "Land/område",
       "province": "Landsdel",
       "zip": "Postnummer",
       "phone": "Telefon",
@@ -385,7 +385,7 @@
       "vendor": "Forhandler",
       "quantity_minimum_message": "Antal skal være 1 eller mere",
       "include_taxes": "Inklusive moms.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Levering<\/a> beregnes ved betaling.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Levering</a> beregnes ved betaling.",
       "unit_price_label": "Stykpris",
       "view_cart": "Se indkøbskurv",
       "availability": "Tilgængelighed",
@@ -416,8 +416,8 @@
       "check_other_stores": "Kontrollér tilgængelighed i andre butikker",
       "pick_up_available": "Afhentning er tilgængeligt",
       "pick_up_currently_unavailable": "Afhentning er ikke tilgængeligt i øjeblikket",
-      "pick_up_available_at_html": "Afhentning er tilgængelig for <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Afhentning er ikke tilgængelig for <strong>{{ location_name }}<\/strong> i øjeblikket"
+      "pick_up_available_at_html": "Afhentning er tilgængelig for <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Afhentning er ikke tilgængelig for <strong>{{ location_name }}</strong> i øjeblikket"
     }
   }
 }

@@ -35,7 +35,7 @@
       "login_form_submit": "Betreten",
       "signup_form_email_label": "E-Mail",
       "signup_form_success": "Wir senden dir eine E-Mail, kurz bevor wir eröffnen!",
-      "admin_link_html": "Bist du der Shop-Inhaber? <a href=\"\/admin\" class=\"text-link\">Logge dich hier ein<\/a>",
+      "admin_link_html": "Bist du der Shop-Inhaber? <a href=\"/admin\" class=\"text-link\">Logge dich hier ein</a>",
       "password_link": "Mit Passwort betreten"
     },
     "social": {
@@ -88,7 +88,7 @@
       "dropdown_label": "Sprache"
     },
     "country": {
-      "dropdown_label": "Land\/Region"
+      "dropdown_label": "Land/Region"
     }
   },
   "sections": {
@@ -98,7 +98,7 @@
       "pause_slideshow": "Slideshow pausieren",
       "rotate_slideshow": "Diashow abspielen",
       "load_slide": "Folie {{ slide_number }} laden",
-      "navigation_instructions": "Nutze die linken\/rechten Pfeile, um durch die Slideshow zu navigieren, oder wische nach links bzw. rechts, wenn du ein mobiles Gerät verwendest"
+      "navigation_instructions": "Nutze die linken/rechten Pfeile, um durch die Slideshow zu navigieren, oder wische nach links bzw. rechts, wenn du ein mobiles Gerät verwendest"
     },
     "featured_product": {
       "title": "Vorgestelltes Produkt",
@@ -109,7 +109,7 @@
     "map": {
       "address_error": "Kann die Adresse nicht finden",
       "address_no_results": "Keine Ergebnisse für diese Adresse",
-      "address_query_limit_html": "Du hast die Nutzungsgrenze der Google-API überschritten. Du solltest über ein Upgrade auf einen <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium-Plan<\/a> nachdenken.",
+      "address_query_limit_html": "Du hast die Nutzungsgrenze der Google-API überschritten. Du solltest über ein Upgrade auf einen <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium-Plan</a> nachdenken.",
       "auth_error_html": "Es gab ein Problem bei der Authentifizierung deineses Google Maps-Kontos.",
       "section_heading": "Standort"
     },
@@ -159,14 +159,14 @@
     "general": {
       "title": "Warenkorb",
       "note": "Einen Hinweis zu deiner Bestellung hinzufügen",
-      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> aus deinem Warenkorb entfernt.",
+      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> aus deinem Warenkorb entfernt.",
       "remove": "Entfernen",
       "subtotal": "Zwischensumme",
       "savings": "Du sparst",
       "taxes_and_shipping_at_checkout": "Steuern und Versandkosten werden beim Checkout berechnet",
-      "taxes_and_shipping_policy_at_checkout_html": "zzgl. MwSt. und <a href=\"{{ link }}\">Versandkosten<\/a>",
+      "taxes_and_shipping_policy_at_checkout_html": "zzgl. MwSt. und <a href=\"{{ link }}\">Versandkosten</a>",
       "taxes_included_but_shipping_at_checkout": "inkl. MwSt. und zzgl. Versandkosten",
-      "taxes_included_and_shipping_policy_html": "inkl. MwSt. zzgl. <a href=\"{{ link }}\">Versandkosten<\/a>",
+      "taxes_included_and_shipping_policy_html": "inkl. MwSt. zzgl. <a href=\"{{ link }}\">Versandkosten</a>",
       "update": "Warenkorb aktualisieren",
       "checkout": "Checkout",
       "empty": "Dein Warenkorb ist im Moment leer.",
@@ -257,7 +257,7 @@
       "address1": "Adresse",
       "address2": "Wohnung, Zimmer usw.",
       "city": "Stadt",
-      "country": "Land \/ Region",
+      "country": "Land / Region",
       "province": "Bundesland",
       "zip": "PLZ",
       "phone": "Telefon",
@@ -385,7 +385,7 @@
       "vendor": "Verkäufer",
       "quantity_minimum_message": "Die Menge muss 1 oder mehr sein",
       "include_taxes": "inkl. MwSt.",
-      "shipping_policy_html": "zzgl. <a href=\"{{ link }}\">Versandkosten<\/a>",
+      "shipping_policy_html": "zzgl. <a href=\"{{ link }}\">Versandkosten</a>",
       "unit_price_label": "Einzelpreis",
       "view_cart": "Warenkorb einsehen",
       "availability": "Verfügbarkeit",
@@ -416,8 +416,8 @@
       "check_other_stores": "Verfügbarkeit in anderen Shops überprüfen",
       "pick_up_available": "Abholung verfügbar",
       "pick_up_currently_unavailable": "Abholung derzeit nicht verfügbar",
-      "pick_up_available_at_html": "Abholung bei <strong>{{ location_name }}<\/strong> verfügbar",
-      "pick_up_unavailable_at_html": "Abholung bei <strong>{{ location_name }}<\/strong> derzeit nicht verfügbar"
+      "pick_up_available_at_html": "Abholung bei <strong>{{ location_name }}</strong> verfügbar",
+      "pick_up_unavailable_at_html": "Abholung bei <strong>{{ location_name }}</strong> derzeit nicht verfügbar"
     }
   }
 }

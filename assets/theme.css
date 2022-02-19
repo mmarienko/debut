@@ -1050,31 +1050,6 @@ textarea {
   z-index: 10000;
   transition: none; }
 
-/*=============== Lazy loading ===================*/
-.box {
-  background: no-repeat;
-  background-color: #f7f7f7;
-  background-size: contain; }
-
-.ratio-container {
-  position: relative; }
-
-.ratio-container:after {
-  content: '';
-  display: block;
-  height: 0;
-  width: 100%;
-  /* 16:9 = 56.25% = calc(9 / 16 * 100%) */
-  padding-bottom: 50%;
-  content: ""; }
-
-.ratio-container > * {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; }
-
 /*=============== Critical CSS ===================*/
 .main-content {
   opacity: 1; }
@@ -1777,16 +1752,24 @@ textarea.input--error {
     height: 1em;
     margin-right: calc((10 / (var(--font-size-base))) * 1em); }
 
+.selector-wrapper {
+  position: relative; }
+
+.selector-wrapper:after {
+  content: '';
+  position: absolute;
+  bottom: calc(22px - 9px / 2);
+  right: 15px;
+  width: 9px;
+  height: 9px;
+  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgOSA5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPg0KICA8cGF0aCBkPSJNOC41NDIwNCAyLjU1ODA2QzguNzg2MTIgMi44MDIxNCA4Ljc4NjEyIDMuMTk3ODYgOC41NDIwNCAzLjQ0MTk0TDQuOTQyNDIgNy4wNDE1NkM0LjgyNTIxIDcuMTU4NzcgNC42NjU4NiA3LjIyNSA0LjUwMDEgNy4yMjVDNC4zMzQzNCA3LjIyNSA0LjE3NTM3IDcuMTU5MTUgNC4wNTgxNiA3LjA0MTk0TDAuNDU4MTU3IDMuNDQxOTRDMC4yMTQwNzkgMy4xOTc4NiAwLjIxNDA3OSAyLjgwMjE0IDAuNDU4MTU3IDIuNTU4MDZDMC43MDIyMzQgMi4zMTM5OCAxLjA5Nzk2IDIuMzEzOTggMS4zNDIwNCAyLjU1ODA2TDQuNTAwMSA1LjcxNjEyTDcuNjU4MTYgMi41NTgwNkM3LjkwMjIzIDIuMzEzOTggOC4yOTc5NiAyLjMxMzk4IDguNTQyMDQgMi41NTgwNloiIGZpbGw9IiMxNjI5NTAiLz4NCjwvc3ZnPg0K");
+  background: var(--color-text-field-text); }
 
 select,
 .disclosure__toggle {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-position: right center;
-  background-image: var(--svg-select-icon);
-  background-repeat: no-repeat;
-  background-position: right 10px center;
   line-height: 1.2;
   padding-right: 28px;
   text-indent: 0.01px;
@@ -2330,8 +2313,6 @@ hr {
   .grid-view-item__image-wrapper .grid-view-item__image {
     position: absolute;
     top: 0; }
-  .grid-view-item__image.lazyload {
-    opacity: 0; }
 
 .list-view-item {
   margin-bottom: 22px; }

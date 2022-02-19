@@ -35,7 +35,7 @@
       "login_form_submit": "Entrar",
       "signup_form_email_label": "Email",
       "signup_form_success": "Iremos enviar-lhe um e-mail imediatamente antes de abrirmos!",
-      "admin_link_html": "É o dono da loja? <a href=\"\/admin\" class=\"text-link\">Inicie sessão aqui<\/a>",
+      "admin_link_html": "É o dono da loja? <a href=\"/admin\" class=\"text-link\">Inicie sessão aqui</a>",
       "password_link": "Entre usando a palavra-passe"
     },
     "social": {
@@ -88,7 +88,7 @@
       "dropdown_label": "Idioma"
     },
     "country": {
-      "dropdown_label": "País\/região"
+      "dropdown_label": "País/região"
     }
   },
   "sections": {
@@ -98,7 +98,7 @@
       "pause_slideshow": "Pausa na apresentação de diapositivos",
       "rotate_slideshow": "Reproduzir apresentação de diapositivos",
       "load_slide": "Carregar slide {{ slide_number }}",
-      "navigation_instructions": "Utilize as setas esquerda\/direita para navegar pela apresentação, ou deslize para a esquerda\/direita se estiver a utilizar um dispositivo móvel"
+      "navigation_instructions": "Utilize as setas esquerda/direita para navegar pela apresentação, ou deslize para a esquerda/direita se estiver a utilizar um dispositivo móvel"
     },
     "featured_product": {
       "title": "Produto em destaque",
@@ -109,7 +109,7 @@
     "map": {
       "address_error": "Não é possível localizar o endereço",
       "address_no_results": "Nenhum resultado para este endereço",
-      "address_query_limit_html": "Você excedeu a cota de uso da API do Google. Considere a atualização para um <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Plano Premium<\/a>.",
+      "address_query_limit_html": "Você excedeu a cota de uso da API do Google. Considere a atualização para um <a href=\"https://developers.google.com/maps/premium/usage-limits\">Plano Premium</a>.",
       "auth_error_html": "Houve um problema autenticação de sua conta do Google Maps.",
       "section_heading": "Localização"
     },
@@ -159,14 +159,14 @@
     "general": {
       "title": "O seu carrinho",
       "note": "Adicione um comentário à sua encomenda",
-      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> removido do seu carrinho.",
+      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> removido do seu carrinho.",
       "remove": "Eliminar",
       "subtotal": "Subtotal",
       "savings": "Está a poupar",
       "taxes_and_shipping_at_checkout": "Impostos e envio calculados na finalização da compra",
-      "taxes_and_shipping_policy_at_checkout_html": "Impostos e <a href=\"{{ link }}\">envio<\/a> calculados na finalização da compra",
+      "taxes_and_shipping_policy_at_checkout_html": "Impostos e <a href=\"{{ link }}\">envio</a> calculados na finalização da compra",
       "taxes_included_but_shipping_at_checkout": "Imposto incluído e envio calculado na finalização da compra",
-      "taxes_included_and_shipping_policy_html": "Imposto incluído. <a href=\"{{ link }}\">Envio<\/a> calculado na finalização da compra.",
+      "taxes_included_and_shipping_policy_html": "Imposto incluído. <a href=\"{{ link }}\">Envio</a> calculado na finalização da compra.",
       "update": "Atualizar Carrinho de Compras",
       "checkout": "Finalizar a compra",
       "empty": "De momento, o seu carrinho está vazio.",
@@ -257,7 +257,7 @@
       "address1": "Endereço",
       "address2": "Andar, fração, etc.",
       "city": "Localidade",
-      "country": "País\/região",
+      "country": "País/região",
       "province": "Província",
       "zip": "Código Postal",
       "phone": "Telefone",
@@ -385,7 +385,7 @@
       "vendor": "Fornecedor",
       "quantity_minimum_message": "Quantidade deve ser 1 ou mais",
       "include_taxes": "Imposto incluído.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Envio<\/a> calculado na finalização da compra.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Envio</a> calculado na finalização da compra.",
       "unit_price_label": "Preço unitário",
       "view_cart": "Ver carrinho",
       "availability": "Disponibilidade",
@@ -416,8 +416,8 @@
       "check_other_stores": "Verificar a disponibilidade noutras lojas",
       "pick_up_available": "Recolha disponível",
       "pick_up_currently_unavailable": "Recolha atualmente indisponível",
-      "pick_up_available_at_html": "Recolha disponível em <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Recolha atualmente indisponível em <strong>{{ location_name }}<\/strong>"
+      "pick_up_available_at_html": "Recolha disponível em <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Recolha atualmente indisponível em <strong>{{ location_name }}</strong>"
     }
   }
 }

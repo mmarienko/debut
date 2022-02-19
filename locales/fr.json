@@ -35,7 +35,7 @@
       "login_form_submit": "Entrer",
       "signup_form_email_label": "E-mail",
       "signup_form_success": "Nous vous enverrons un e-mail juste avant l'ouverture !",
-      "admin_link_html": "Vous êtes le propriétaire de la boutique ? <a href=\"\/admin\" class=\"text-link\">Connectez-vous ici<\/a>.",
+      "admin_link_html": "Vous êtes le propriétaire de la boutique ? <a href=\"/admin\" class=\"text-link\">Connectez-vous ici</a>.",
       "password_link": "Entrer avec un mot de passe"
     },
     "social": {
@@ -88,7 +88,7 @@
       "dropdown_label": "Langue"
     },
     "country": {
-      "dropdown_label": "Pays\/région"
+      "dropdown_label": "Pays/région"
     }
   },
   "sections": {
@@ -98,7 +98,7 @@
       "pause_slideshow": "Mettre le diaporama en pause",
       "rotate_slideshow": "Lire le diaporama",
       "load_slide": "Charger la diapositive {{ slide_number }}",
-      "navigation_instructions": "Utilisez les flèches gauche\/droite pour naviguer dans le diaporama ou glissez vers la gauche\/droite sur un appareil mobile"
+      "navigation_instructions": "Utilisez les flèches gauche/droite pour naviguer dans le diaporama ou glissez vers la gauche/droite sur un appareil mobile"
     },
     "featured_product": {
       "title": "Produit en vedette",
@@ -109,7 +109,7 @@
     "map": {
       "address_error": "Une erreur s'est produite dans la recherche de cette adresse",
       "address_no_results": "Aucun résultat pour cette adresse",
-      "address_query_limit_html": "Vous avez dépassé la limite d'utilisation de l'API de Google. Pensez à mettre à niveau vers un <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">forfait premium<\/a>.",
+      "address_query_limit_html": "Vous avez dépassé la limite d'utilisation de l'API de Google. Pensez à mettre à niveau vers un <a href=\"https://developers.google.com/maps/premium/usage-limits\">forfait premium</a>.",
       "auth_error_html": "Une erreur s'est produite lors de l'authentification de votre compte Google Maps.",
       "section_heading": "Emplacement"
     },
@@ -159,14 +159,14 @@
     "general": {
       "title": "Votre panier",
       "note": "Ajouter une note à votre commande",
-      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}<\/span> supprimé(s) de votre panier.",
+      "removed_item_html": "<span class=\"cart__removed-product-details\">({{ quantity }}) {{ link }}</span> supprimé(s) de votre panier.",
       "remove": "Supprimer",
       "subtotal": "Sous-total",
       "savings": "Vous économisez",
       "taxes_and_shipping_at_checkout": "Taxes et frais de port calculés à l'étape de paiement",
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes et <a href=\"{{ link }}\">frais de port<\/a> calculés à l'étape de paiement",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes et <a href=\"{{ link }}\">frais de port</a> calculés à l'étape de paiement",
       "taxes_included_but_shipping_at_checkout": "Taxes incluses et frais de port calculés à l'étape de paiement",
-      "taxes_included_and_shipping_policy_html": "Taxes incluses. <a href=\"{{ link }}\">Frais de port<\/a> calculés à l'étape de paiement.",
+      "taxes_included_and_shipping_policy_html": "Taxes incluses. <a href=\"{{ link }}\">Frais de port</a> calculés à l'étape de paiement.",
       "update": "Mettre à jour",
       "checkout": "Passer à la caisse",
       "empty": "Votre panier est vide.",
@@ -257,7 +257,7 @@
       "address1": "Adresse",
       "address2": "Appt, suite, etc.",
       "city": "Ville",
-      "country": "Pays\/région",
+      "country": "Pays/région",
       "province": "Province",
       "zip": "Code postal",
       "phone": "Téléphone",
@@ -385,7 +385,7 @@
       "vendor": "Distributeur",
       "quantity_minimum_message": "La quantité doit être supérieure ou égale à 1",
       "include_taxes": "Taxes incluses.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Frais d'expédition<\/a> calculés lors du paiement.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Frais d'expédition</a> calculés lors du paiement.",
       "unit_price_label": "Prix unitaire",
       "view_cart": "Voir le panier",
       "availability": "Disponibilité",
@@ -416,8 +416,8 @@
       "check_other_stores": "Vérifier la disponibilité dans d'autres boutiques",
       "pick_up_available": "Ramassage disponible",
       "pick_up_currently_unavailable": "Ramassage actuellement indisponible",
-      "pick_up_available_at_html": "Ramassage disponible à <strong>{{ location_name }}<\/strong>",
-      "pick_up_unavailable_at_html": "Ramassage actuellement indisponible à <strong>{{ location_name }}<\/strong>"
+      "pick_up_available_at_html": "Ramassage disponible à <strong>{{ location_name }}</strong>",
+      "pick_up_unavailable_at_html": "Ramassage actuellement indisponible à <strong>{{ location_name }}</strong>"
     }
   }
 }

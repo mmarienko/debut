@@ -5,9 +5,19 @@
         <h1>{{ page.title }}</h1>
       </div>
 
-      <div class="rte">
-        {{ page.content }}
-      </div>
+      {% if page.content.size > 0 %}
+        <div class="rte">
+          {{ page.content }}
+        </div>
+      {% endif %}
     </div>
   </div>
 </div>
+
+
+
+{% schema %}
+{
+  "name": "t:sections.page-template.name"
+}
+{% endschema %}

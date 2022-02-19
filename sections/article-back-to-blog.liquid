@@ -1,0 +1,14 @@
+<div class="text-center return-link-wrapper page-width">
+  <a href="{{ blog.url }}" class="btn btn--secondary btn--has-icon-before">
+    {% render 'icon-arrow-left' %}
+    {{ 'blogs.article.back_to_blog' | t: title: blog.title }}
+  </a>
+</div>
+
+
+
+{% schema %}
+{
+  "name": "t:sections.article-back-to-blog.name"
+}
+{% endschema %}
