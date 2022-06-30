@@ -3701,6 +3701,7 @@ hr {
       margin: 0 auto; } }
 
 .site-header__logo-image {
+  background-color: transparent !important;
   display: block; }
   @media only screen and (min-width: 750px) {
     .site-header__logo-image {
